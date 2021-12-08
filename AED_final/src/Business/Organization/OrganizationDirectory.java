@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Business.Organization;
+package business.organization;
 
-import Business.Organization.Organization.Type;
+import business.organization.Organization.Type;
 import java.util.ArrayList;
 
 /**

@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Business.ecosystem;
+package business.ecosystem;
 
-import Business.Network.Network;
-import Business.Organization.Organization;
+import business.network.Network;
+import business.organization.Organization;
 import business.role.Role;
 import business.role.SystemAdminRole;
 import java.util.ArrayList;

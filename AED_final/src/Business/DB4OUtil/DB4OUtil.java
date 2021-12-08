@@ -2,8 +2,10 @@
 
 
 
-import Business.ecosystem.ConfigureASystem;
-import Business.ecosystem.Ecosystem;
+//mport Business.ecosystem.ConfigureASystem;
+//import Business.ecosystem.Ecosystem;
+import business.ecosystem.ConfigureASystem;
+import business.ecosystem.Ecosystem;
 import com.db4o.ObjectContainer;
 import com.db4o.config.EmbeddedConfiguration;
 import com.db4o.Db4oEmbedded;

@@ -3,11 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Business.Enterprise;
+package business.enterprise;
 
-
-import Business.Organization.Organization;
-
+import business.organization.Organization;
+import business.organization.OrganizationDirectory;
 
 /**
  *
@@ -25,7 +24,26 @@ public abstract class Enterprise extends Organization {
     }
 
     public enum EnterpriseType {
-       
+        CarCooper("Counting Car"),
+        Car("Car"),
+        CustomerSupport("Customer Support"),
+        Regulatory("Regulatory");
+
+        private String value;
+
+        private EnterpriseType(String value) {
+            this.value = value;
+        }
+
+        public String getValue() {
+            return value;
+        }
+
+        @Override
+        public String toString() {
+            return value;
+        }
+
     }
 
     public EnterpriseType getEnterpriseType() {

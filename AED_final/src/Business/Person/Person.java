@@ -3,18 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package business.network;
-
-import business.enterprise.EnterpriseDirectory;
+package business.person;
 
 /**
  *
  * @author Mrunal
  */
-public class Network {
+public class Person {
 
     private String name;
-    private EnterpriseDirectory enterpriseDirectory = new EnterpriseDirectory();
+    private int id;
+    private static int count = 1;
+
+    public Person() {
+        id = count;
+        count++;
+    }
 
     public String getName() {
         return name;
@@ -24,17 +28,24 @@ public class Network {
         this.name = name;
     }
 
-    public EnterpriseDirectory getEnterpriseDirectory() {
-        return enterpriseDirectory;
+    public int getId() {
+        return id;
     }
 
-    public void setEnterpriseDirectory(EnterpriseDirectory enterpriseDirectory) {
-        this.enterpriseDirectory = enterpriseDirectory;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public static int getCount() {
+        return count;
+    }
+
+    public static void setCount(int count) {
+        Person.count = count;
     }
 
     @Override
     public String toString() {
         return name;
     }
-
 }
