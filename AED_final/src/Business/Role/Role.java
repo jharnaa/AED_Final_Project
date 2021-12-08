@@ -20,7 +20,7 @@ public abstract class Role {
     public enum RoleType {
         Admin("Admin"),
         Designer("Designer"),
-        Manufacturer("Manufacturer"),
+        Producer("Producer"),
         InventoryManager("Inventory Staff"),
         Customer("Customer"),
         ClothFactoryManager("Cloth Factory Manager"),
