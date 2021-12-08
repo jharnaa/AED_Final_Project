@@ -7,7 +7,7 @@ package business.person;
 
 /**
  *
- * @author Mrunal
+ * @author mrunalbhalerao
  */
 public class Person {
 

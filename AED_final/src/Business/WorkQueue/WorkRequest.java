@@ -10,7 +10,7 @@ import business.useraccount.UserAccount;
 
 /**
  *
- * @author Mrunal
+ * @author mrunalbhalerao
  */
 public abstract class WorkRequest {
 
@@ -22,21 +22,8 @@ public abstract class WorkRequest {
     private String status;
 
     public enum WorkRequestType {
-        CustomerCustomized("Customer Customized"),
-        CarCompany("Car Company"),
-        Inventory("Inventory"),
-        OrderAtStore("OrderAtStore"),
-        Regulatory("Regulatory");
+        
 
-        private String value;
-
-        private WorkRequestType(String value) {
-            this.value = value;
-        }
-
-        public String getValue() {
-            return value;
-        }
     }
 
     public WorkRequest(String name) {

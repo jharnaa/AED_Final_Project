@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Mrunal
+ * @author mrunalbhalerao
  */
 public abstract class Organization {
 
@@ -32,13 +32,13 @@ public abstract class Organization {
     public enum Type {
         Admin("Admin"),
         Design("Design"),
-        Manufacture("Manufacture"),
-        Reporting("Reporting"),
+        Report("Report"),
+        ClothFactoryStaff("Car Company Staff"),
         Inventory("Inventory"),
-        CarCompanyStaff("Car Company Staff"),
         Customer("Customer"),
         Store("Store"),
-        QualityCheck("Quality Check");
+        Manufacturing("Manufacturing"),
+        QualityControl("Quality Check");
 
         private String value;
 

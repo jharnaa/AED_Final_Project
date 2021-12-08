@@ -3,14 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/mrunalbhalerao/NetBeansProjects/AED_Final_Project/AED_final/src/Business/Role/SystemAdminRole.java</file>
-            <file>file:/Users/mrunalbhalerao/NetBeansProjects/AED_Final_Project/AED_final/src/Business/WorkQueue/WorkRequest.java</file>
-            <file>file:/Users/mrunalbhalerao/NetBeansProjects/AED_Final_Project/AED_final/src/Business/Enterprise/Enterprise.java</file>
-            <file>file:/Users/mrunalbhalerao/NetBeansProjects/AED_Final_Project/AED_final/src/Business/Enterprise/clothFactoryEnterprise.java</file>
-            <file>file:/Users/mrunalbhalerao/NetBeansProjects/AED_Final_Project/AED_final/src/Business/Enterprise/EnterpriseDirectory.java</file>
-            <file>file:/Users/mrunalbhalerao/NetBeansProjects/AED_Final_Project/AED_final/src/Business/UserAccount/UserAccount.java</file>
+            <file>file:/Users/mrunalbhalerao/NetBeansProjects/AED_Final_Project/AED_final/src/Business/Organization/Organization.java</file>
+            <file>file:/Users/mrunalbhalerao/NetBeansProjects/AED_Final_Project/AED_final/src/Business/Organization/AdminOrganization.java</file>
             <file>file:/Users/mrunalbhalerao/NetBeansProjects/AED_Final_Project/AED_final/src/Business/Organization/OrganizationDirectory.java</file>
-            <file>file:/Users/mrunalbhalerao/NetBeansProjects/AED_Final_Project/AED_final/src/Business/Role/Role.java</file>
         </group>
     </open-files>
 </project-private>
