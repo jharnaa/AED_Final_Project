@@ -5,6 +5,7 @@
  */
 package Business.Organization;
 
+import Business.Role.StoreManagerRole;
 import Business.customer.ClothFactoryCatalog;
 import business.customer.MasterOrderList;
 import business.organization.Organization;
@@ -47,7 +48,7 @@ public class StoreOrganization extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList<>();
-        roles.add(new StoreStaffRole());
+        roles.add(new StoreManagerRole());
         return roles;
     }
     
