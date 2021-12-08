@@ -5,26 +5,26 @@
  */
 package Business.Organization;
 
-/**
- *
- * @author mrunalbhalerao
- */
-
-import Business.Role.ClothFactoryStaffRole;
+import Business.Role.CustomerRole;
 import business.organization.Organization;
 import business.role.Role;
 import java.util.ArrayList;
 
-public class ClothFactoryStaffOrganization extends Organization {
+/**
+ *
+ * @author mrunalbhalerao
+ */
+public class CustomerOrganization extends Organization {
 
-    public ClothFactoryStaffOrganization() {
-        super(Organization.Type.ClothFactoryStaff.getValue());
+            
+    public CustomerOrganization() {
+        super(Organization.Type.Customer.getValue());
     }
-
+    
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList<>();
-        roles.add(new ClothFactoryStaffRole());
+        roles.add(new CustomerRole());
         return roles;
     } 
     

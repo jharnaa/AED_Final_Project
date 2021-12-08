@@ -5,8 +5,8 @@
  */
 package Business.Role;
 
-import Business.Enterprise.clothFactoryEnterprise;
-import Business.Organization.ClothFactoryStaffOrganization;
+import Business.Enterprise.customerCareEnterprise;
+import Business.Organization.CustomerOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
@@ -18,15 +18,17 @@ import javax.swing.JPanel;
  *
  * @author mrunalbhalerao
  */
-public class ClothFactoryStaffRole extends Role {
+public class CustomerRole extends Role {
+
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
-    return new ClothStaffWorkAreaJPanel(userProcessContainer, account, (ClothFactoryStaffOrganization) organization, (clothFactoryEnterprise) enterprise, business);
 
+        return new CustomerMainJPanel(userProcessContainer, account, (CustomerOrganization) organization, (customerCareEnterprise) enterprise, business);
     }
 
     @Override
     public String toString() {
-        return "Cloth Factory Manager"; //To change body of generated methods, choose Tools | Templates.
+        return "Customer"; //To change body of generated methods, choose Tools | Templates.
     }
+    
 }
