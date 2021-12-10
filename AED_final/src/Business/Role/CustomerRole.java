@@ -7,6 +7,7 @@ package Business.Role;
 
 import Business.Enterprise.customerCareEnterprise;
 import Business.Organization.CustomerOrganization;
+import CustomerWorkArea.CustomerWorkAreaManagementJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
@@ -23,7 +24,7 @@ public class CustomerRole extends Role {
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
 
-        return new CustomerMainJPanel(userProcessContainer, account, (CustomerOrganization) organization, (customerCareEnterprise) enterprise, business);
+        return new CustomerWorkAreaManagementJPanel(userProcessContainer, account, (CustomerOrganization) organization, (customerCareEnterprise) enterprise, business);
     }
 
     @Override

@@ -7,6 +7,7 @@ package Business.Role;
 
 import Business.Enterprise.clothFactoryEnterprise;
 import Business.Organization.ClothFactoryStaffOrganization;
+import ClothFactoryStaffWorkArea.ClothFactoryWorkAreaManagementJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
@@ -21,7 +22,7 @@ import javax.swing.JPanel;
 public class ClothFactoryStaffRole extends Role {
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
-    return new ClothStaffWorkAreaJPanel(userProcessContainer, account, (ClothFactoryStaffOrganization) organization, (clothFactoryEnterprise) enterprise, business);
+    return new ClothFactoryWorkAreaManagementJPanel(userProcessContainer, account, (ClothFactoryStaffOrganization) organization, (clothFactoryEnterprise) enterprise, business);
 
     }
 
