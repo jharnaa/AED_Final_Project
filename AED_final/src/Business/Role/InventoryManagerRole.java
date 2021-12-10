@@ -7,6 +7,7 @@ package Business.Role;
 
 import Business.Enterprise.productionEnterprise;
 import Business.Organization.InventoryOrganization;
+import InventoryManagerWorkArea.InventoryManagerWorkAreaManagementJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
@@ -22,7 +23,7 @@ public class InventoryManagerRole extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
-        return new InventoryWorkAreaManagementJPanel(userProcessContainer, account, (InventoryOrganization) organization, (productionEnterprise) enterprise, business);
+        return new InventoryManagerWorkAreaManagementJPanel(userProcessContainer, account, (InventoryOrganization) organization, (productionEnterprise) enterprise, business);
     }
 
     @Override

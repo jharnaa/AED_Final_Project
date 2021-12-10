@@ -7,6 +7,7 @@ package Business.Role;
 
 import Business.Enterprise.productionEnterprise;
 import Business.Organization.ReportOrganization;
+import ReportManagerWorkArea.ReportManagerWorkAreaJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
@@ -22,7 +23,7 @@ public class ReportManagerRole extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
-        return new ReportingWorkAreaManagementJPanel(userProcessContainer, account, (ReportOrganization) organization, (productionEnterprise) enterprise, business);
+        return new ReportManagerWorkAreaJPanel(userProcessContainer, account, (ReportOrganization) organization, (productionEnterprise) enterprise, business);
 
     }
 

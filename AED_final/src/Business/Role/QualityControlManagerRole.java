@@ -7,6 +7,7 @@ package Business.Role;
 
 import Business.Enterprise.qualityControlEnterprise;
 import Business.Organization.QualityControlOrganization;
+import QualityControlManagerWorkArea.QualityControlManagerWorkAreaJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
@@ -20,9 +21,9 @@ import javax.swing.JPanel;
  */
 public class QualityControlManagerRole extends Role {
 
-    @Override
+    @Override 
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
-        return new QualityCheckWorkAreaJPanel(userProcessContainer, account, (QualityControlOrganization) organization, (qualityControlEnterprise) enterprise, business);
+        return new QualityControlManagerWorkAreaJPanel(userProcessContainer, account, (QualityControlOrganization) organization, (qualityControlEnterprise) enterprise, business);
     }
 
     @Override

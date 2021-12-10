@@ -2,10 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package DesignerWorkArea;
+package ProducerWorkArea;
 
-import Business.Enterprise.productionEnterprise;
-import Business.Organization.DesignOrganization;
+import Business.Organization.ManufacturingOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
@@ -16,22 +15,24 @@ import javax.swing.JPanel;
  *
  * @author saloni
  */
-public class DesignerWorkAreaManagementJPanel extends javax.swing.JPanel {
+public class ProducerWorkAreaManagementJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form DesignerWorkAreaManagementJPanel
+     * Creates new form ProducerWorkAreaManagementJPanel
      */
+    
     private JPanel userProcessContainer;
     private Enterprise enterprise;
-    private DesignOrganization organization;
+    private ManufacturingOrganization organization;
     private UserAccount userAccount;
     private Ecosystem business;
-    public DesignerWorkAreaManagementJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
+
+    public ProducerWorkAreaManagementJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
         initComponents();
-       this.userProcessContainer = userProcessContainer;
-        this.enterprise = (productionEnterprise) enterprise;
+        this.userProcessContainer = userProcessContainer;
+        this.enterprise = enterprise;
+        this.organization = (ManufacturingOrganization) organization;
         this.userAccount = account;
-        this.organization = (DesignOrganization) organization;
         this.business = business;
     }
 

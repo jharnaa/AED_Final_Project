@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package DesignerWorkArea;
+package ReportManagerWorkArea;
 
-import Business.Enterprise.productionEnterprise;
-import Business.Organization.DesignOrganization;
+import Business.Organization.ReportOrganization;
+import business.customer.MasterOrderList;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
@@ -16,23 +16,32 @@ import javax.swing.JPanel;
  *
  * @author saloni
  */
-public class DesignerWorkAreaManagementJPanel extends javax.swing.JPanel {
+public class ReportManagerWorkAreaJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form DesignerWorkAreaManagementJPanel
+     * Creates new form ReportManagerWorkAreaJPanel
      */
+    private MasterOrderList mod;
+    private CustomizedOrder customizedOrder;
+    private CustomizedOrderItem customizedOrderItem;
+    private OrderAtStore orderAtStore;
     private JPanel userProcessContainer;
+    private UserAccount account;
     private Enterprise enterprise;
-    private DesignOrganization organization;
-    private UserAccount userAccount;
     private Ecosystem business;
-    public DesignerWorkAreaManagementJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
+    private Organization organization;
+
+    final String applicationTitle = "Hazardous Content Chart";
+    final String chartTitle = "Hazardous Content Chart";
+    
+    public ReportManagerWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
         initComponents();
-       this.userProcessContainer = userProcessContainer;
-        this.enterprise = (productionEnterprise) enterprise;
-        this.userAccount = account;
-        this.organization = (DesignOrganization) organization;
+        this.userProcessContainer = userProcessContainer;
+        this.organization = (ReportOrganization) organization;
+        this.account = account;
+        this.enterprise = enterprise;
         this.business = business;
+
     }
 
     /**

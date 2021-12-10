@@ -5,6 +5,7 @@
  */
 package business.role;
 
+import SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
@@ -20,7 +21,7 @@ public class SystemAdminRole extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
-        return new SystemAdminNavigationJPanel(userProcessContainer, business);
+        return new SystemAdminWorkAreaJPanel(userProcessContainer, business);
     }
 
 }
