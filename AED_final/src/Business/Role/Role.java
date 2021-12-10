@@ -13,12 +13,35 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Mrunal
+ * @author mrunalbhalerao
  */
 public abstract class Role {
 
     public enum RoleType {
+        Admin("Admin"),
+        Designer("Designer"),
+        Producer("Producer"),
+        InventoryManager("Inventory Staff"),
+        Customer("Customer"),
+        ClothFactoryManager("Cloth Factory Manager"),
+        StoreManager("Store Manager"),
+        ReportManager("Report Manager"),
+        QualityControlManager("Quality Control Manager");
+
+        private String value;
         
+        private RoleType(String value) {
+            this.value = value;
+        }
+
+        public String getValue() {
+            return value;
+        }
+
+        @Override
+        public String toString() {
+            return value;
+        }
        
     }
 

@@ -10,7 +10,7 @@ import business.organization.OrganizationDirectory;
 
 /**
  *
- * @author Mrunal
+ * @author mrunalbhalerao
  */
 public abstract class Enterprise extends Organization {
 
@@ -24,10 +24,10 @@ public abstract class Enterprise extends Organization {
     }
 
     public enum EnterpriseType {
-        CarCooper("Counting Car"),
-        Car("Car"),
-        CustomerSupport("Customer Support"),
-        Regulatory("Regulatory");
+        Production("Production"),
+        ClothFactory("Cloth Factory"),
+        CustomerCare("Customer Care"),
+        QualityControl("Quality Control");
 
         private String value;
 

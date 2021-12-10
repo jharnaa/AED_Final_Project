@@ -3,24 +3,31 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package business.role;
+package Business.Role;
 
+import Business.Enterprise.productionEnterprise;
+import Business.Organization.InventoryOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
+import business.role.Role;
 import business.useraccount.UserAccount;
 import javax.swing.JPanel;
-import userinterface.systemadminworkarea.SystemAdminNavigationJPanel;
 
 /**
  *
  * @author mrunalbhalerao
  */
-public class SystemAdminRole extends Role {
+public class InventoryManagerRole extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
-        return new SystemAdminNavigationJPanel(userProcessContainer, business);
+        return new InventoryWorkAreaManagementJPanel(userProcessContainer, account, (InventoryOrganization) organization, (productionEnterprise) enterprise, business);
     }
 
+    @Override
+    public String toString() {
+        return "Inventory Staff"; //To change body of generated methods, choose Tools | Templates.
+    }
+    
 }
