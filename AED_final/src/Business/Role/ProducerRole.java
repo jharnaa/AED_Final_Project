@@ -7,6 +7,7 @@ package Business.Role;
 
 import Business.Enterprise.productionEnterprise;
 import Business.Organization.ManufacturingOrganization;
+import ProducerWorkArea.ProducerWorkAreaManagementJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
@@ -22,7 +23,7 @@ public class ProducerRole extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
-        return new ManufacturerWorkAreaManangementJPanel(userProcessContainer, account, (ManufacturingOrganization) organization, (productionEnterprise) enterprise, business);
+        return new ProducerWorkAreaManagementJPanel(userProcessContainer, account, (ManufacturingOrganization) organization, (productionEnterprise) enterprise, business);
     }
 
     @Override

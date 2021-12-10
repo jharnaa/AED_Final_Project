@@ -7,6 +7,7 @@ package Business.Role;
 
 import Business.Enterprise.customerCareEnterprise;
 import Business.Organization.StoreOrganization;
+import StoreManagerWorkArea.StoreManagerWorkAreaJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
@@ -22,7 +23,7 @@ public class StoreManagerRole extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
-        return new StoreStaffWorkAreaManagement(userProcessContainer, account, (StoreOrganization) organization, (customerCareEnterprise) enterprise, business);
+        return new StoreManagerWorkAreaJPanel(userProcessContainer, account, (StoreOrganization) organization, (customerCareEnterprise) enterprise, business);
     }
 
     @Override
