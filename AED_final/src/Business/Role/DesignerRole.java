@@ -7,6 +7,7 @@ package Business.Role;
 
 import Business.Enterprise.productionEnterprise;
 import Business.Organization.DesignOrganization;
+import DesignerWorkArea.DesignerWorkAreaManagementJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
