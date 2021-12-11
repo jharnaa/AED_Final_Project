@@ -28,7 +28,7 @@ public class InventoryManagerRole extends Role {
 
     @Override
     public String toString() {
-        return "Inventory Staff"; //To change body of generated methods, choose Tools | Templates.
+        return "Inventory Manager"; //To change body of generated methods, choose Tools | Templates.
     }
     
 }

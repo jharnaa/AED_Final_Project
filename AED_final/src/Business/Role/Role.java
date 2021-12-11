@@ -21,7 +21,7 @@ public abstract class Role {
         Admin("Admin"),
         Designer("Designer"),
         Producer("Producer"),
-        InventoryManager("Inventory Staff"),
+        InventoryManager("Inventory Manager"),
         Customer("Customer"),
         ClothFactoryManager("Cloth Factory Manager"),
         StoreManager("Store Manager"),
