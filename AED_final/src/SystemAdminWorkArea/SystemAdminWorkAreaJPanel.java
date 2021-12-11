@@ -64,7 +64,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(JTree);
 
-        manageNetworkJButton.setBackground(new java.awt.Color(255, 204, 204));
+        manageNetworkJButton.setBackground(new java.awt.Color(255, 255, 255));
         manageNetworkJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         manageNetworkJButton.setForeground(new java.awt.Color(102, 0, 51));
         manageNetworkJButton.setText("Manage Network");
@@ -74,7 +74,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        manageEnterpriseJButton.setBackground(new java.awt.Color(255, 204, 204));
+        manageEnterpriseJButton.setBackground(new java.awt.Color(255, 255, 255));
         manageEnterpriseJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         manageEnterpriseJButton.setForeground(new java.awt.Color(102, 0, 51));
         manageEnterpriseJButton.setText("Manage Enterprise");
@@ -84,7 +84,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        enterpriseAdminJButton.setBackground(new java.awt.Color(255, 204, 204));
+        enterpriseAdminJButton.setBackground(new java.awt.Color(255, 255, 255));
         enterpriseAdminJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         enterpriseAdminJButton.setForeground(new java.awt.Color(102, 0, 51));
         enterpriseAdminJButton.setText("Manage Enterprise Admin");
@@ -98,7 +98,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SystemAdminWorkArea/manager1.gif"))); // NOI18N
         jLabel2.setText("jLabel2");
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("The Cloth Factory");
 
