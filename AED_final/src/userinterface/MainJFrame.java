@@ -50,7 +50,7 @@ public class MainJFrame extends javax.swing.JFrame {
         btnSignOut = new javax.swing.JButton();
         btnSignIn = new javax.swing.JButton();
         WorkAreaJPanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        lblScreenSaver = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -100,7 +100,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jSplitPane1.setLeftComponent(ControlJPanel);
 
-        jLabel1.setText("FrontLabel");
+        lblScreenSaver.setText("FrontLabel");
 
         javax.swing.GroupLayout WorkAreaJPanelLayout = new javax.swing.GroupLayout(WorkAreaJPanel);
         WorkAreaJPanel.setLayout(WorkAreaJPanelLayout);
@@ -108,14 +108,14 @@ public class MainJFrame extends javax.swing.JFrame {
             WorkAreaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WorkAreaJPanelLayout.createSequentialGroup()
                 .addContainerGap(29, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblScreenSaver, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(46, 46, 46))
         );
         WorkAreaJPanelLayout.setVerticalGroup(
             WorkAreaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(WorkAreaJPanelLayout.createSequentialGroup()
                 .addGap(37, 37, 37)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblScreenSaver, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(44, Short.MAX_VALUE))
         );
 
@@ -207,7 +207,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         WorkAreaJPanel.removeAll();
 
-      WorkAreaJPanel.add("blank", frontLabel);
+      WorkAreaJPanel.add("blank", lblScreenSaver);
 
         CardLayout cardLayout = (CardLayout) WorkAreaJPanel.getLayout();
         cardLayout.next(WorkAreaJPanel);
@@ -254,8 +254,8 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel WorkAreaJPanel;
     private javax.swing.JButton btnSignIn;
     private javax.swing.JButton btnSignOut;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JSplitPane jSplitPane1;
+    private javax.swing.JLabel lblScreenSaver;
     private javax.swing.JTextField txtPassword;
     private javax.swing.JTextField txtUserName;
     // End of variables declaration//GEN-END:variables
