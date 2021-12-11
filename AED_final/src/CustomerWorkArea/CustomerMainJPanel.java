@@ -10,6 +10,7 @@ import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
 import business.useraccount.UserAccount;
+import java.awt.CardLayout;
 import javax.swing.JPanel;
 
 /**
@@ -44,19 +45,100 @@ public class CustomerMainJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        customizejBtn = new javax.swing.JButton();
+        buyAtStorejBtn = new javax.swing.JButton();
+        customerOrdersJButton = new javax.swing.JButton();
+
+        customizejBtn.setBackground(new java.awt.Color(204, 204, 255));
+        customizejBtn.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        customizejBtn.setText("CUSTOMIZE YOUR CAR ");
+        customizejBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customizejBtnActionPerformed(evt);
+            }
+        });
+
+        buyAtStorejBtn.setBackground(new java.awt.Color(204, 204, 255));
+        buyAtStorejBtn.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        buyAtStorejBtn.setText("BUY AT STORE");
+        buyAtStorejBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAtStorejBtnActionPerformed(evt);
+            }
+        });
+
+        customerOrdersJButton.setBackground(new java.awt.Color(204, 204, 255));
+        customerOrdersJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        customerOrdersJButton.setText("REQUESTED ORDERS");
+        customerOrdersJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customerOrdersJButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 610, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(buyAtStorejBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(customerOrdersJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(10, 10, 10)
+                    .addComponent(customizejBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(buyAtStorejBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(0, 0, 0)
+                            .addComponent(customerOrdersJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(customizejBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void customizejBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customizejBtnActionPerformed
+
+        // TODO add your handling code here:
+        System.out.println("reached here");
+        PersonalizeJPanel cjp = new PersonalizeJPanel(userProcessContainer, customerOrganization, account, enterprise, business);
+        userProcessContainer.add("CustomizeJPanel", cjp);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+        //System.out.println("reached here 2");
+
+    }//GEN-LAST:event_customizejBtnActionPerformed
+
+    private void buyAtStorejBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAtStorejBtnActionPerformed
+        //  TODO add your handling code here:
+        BuyOnlineJPanel cjp = new BuyOnlineJPanel(userProcessContainer, customerOrganization, account, enterprise, business);
+        userProcessContainer.add("BuyAtStoreJPanel", cjp);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_buyAtStorejBtnActionPerformed
+
+    private void customerOrdersJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerOrdersJButtonActionPerformed
+        //  TODO add your handling code here:
+        CustomerOrdersJPanel cjp = new CustomerOrdersJPanel(userProcessContainer, account, customerOrganization, enterprise, business);
+        userProcessContainer.add("CustomerOrdersJPanel", cjp);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_customerOrdersJButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton buyAtStorejBtn;
+    private javax.swing.JButton customerOrdersJButton;
+    private javax.swing.JButton customizejBtn;
     // End of variables declaration//GEN-END:variables
 }
