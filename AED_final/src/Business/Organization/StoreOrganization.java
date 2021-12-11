@@ -7,7 +7,7 @@ package Business.Organization;
 
 import Business.Role.StoreManagerRole;
 import Business.customer.ClothFactoryCatalog;
-import business.customer.MasterOrderList;
+import Business.customer.MasterOrderList;
 import business.organization.Organization;
 import business.role.Role;
 import java.util.ArrayList;
