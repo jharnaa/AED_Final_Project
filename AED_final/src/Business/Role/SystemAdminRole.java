@@ -11,7 +11,6 @@ import business.enterprise.Enterprise;
 import business.organization.Organization;
 import business.useraccount.UserAccount;
 import javax.swing.JPanel;
-import userinterface.systemadminworkarea.SystemAdminNavigationJPanel;
 
 /**
  *

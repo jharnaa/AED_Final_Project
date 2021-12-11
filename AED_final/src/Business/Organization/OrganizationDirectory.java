@@ -26,6 +26,34 @@ public class OrganizationDirectory {
 
     public Organization createOrganization(Type type) {
         Organization organization = null;
+        if (type.getValue().equals(Type.Admin.getValue())) {
+            organization = new AdminOrganization();
+            organizationList.add(organization);
+        }else if (type.getValue().equals(Type.Manufacturing.getValue())) {
+            organization = new ManufacturingOrganization();
+            organizationList.add(organization);
+        } else if (type.getValue().equals(Type.Inventory.getValue())) {
+            organization = new InventoryOrganization();
+            organizationList.add(organization);
+        } else if (type.getValue().equals(Type.Report.getValue())) {
+            organization = new ReportOrganization();
+            organizationList.add(organization);
+        }  else if (type.getValue().equals(Type.Store.getValue())) {
+            organization = new StoreOrganization();
+            organizationList.add(organization);
+        } else if (type.getValue().equals(Type.ClothFactoryStaff.getValue())) {
+            organization = new ClothFactoryStaffOrganization();
+            organizationList.add(organization);
+        } else if (type.getValue().equals(Type.Design.getValue())) {
+            organization = new DesignOrganization();
+            organizationList.add(organization);
+        } else if (type.getValue().equals(Type.Customer.getValue())) {
+            organization = new CustomerOrganization();
+            organizationList.add(organization);
+        } else if (type.getValue().equals(Type.QualityControl.getValue())) {
+            organization = new QualityControlOrganization();
+            organizationList.add(organization);
+        }
         
         return organization;
     }
