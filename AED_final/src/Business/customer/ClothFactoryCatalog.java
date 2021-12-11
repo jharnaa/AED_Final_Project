@@ -27,13 +27,13 @@ public class ClothFactoryCatalog {
         this.listOfClothFactoryProduct = listOfClothFactoryProduct;
     }
     
-    public ClothFactoryProduct addCompanyCar() {
+    public ClothFactoryProduct addClothFactoryProduct() {
         ClothFactoryProduct cfp = new ClothFactoryProduct();
         listOfClothFactoryProduct.add(cfp);
         return cfp;
     }
 
-    public void removeCompanyCar(ClothFactoryProduct ClothFactoryProduct) {
+    public void removeClothFactoryProduct(ClothFactoryProduct ClothFactoryProduct) {
         listOfClothFactoryProduct.remove(ClothFactoryProduct);
     }
 }
