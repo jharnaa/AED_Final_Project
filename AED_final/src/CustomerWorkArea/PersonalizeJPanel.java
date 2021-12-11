@@ -7,7 +7,6 @@ package CustomerWorkArea;
 
 import Business.Organization.CustomerOrganization;
 import Business.customer.MasterOrderList;
-import business.customer.CustomizedOrder;
 import Business.customer.PersonalisedOrder;
 import business.customer.CustomizedOrderItem;
 import business.ecosystem.Ecosystem;
