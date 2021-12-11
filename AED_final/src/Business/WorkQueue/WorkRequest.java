@@ -23,6 +23,21 @@ public abstract class WorkRequest {
 
     public enum WorkRequestType {
         
+        CustomerCustomized("Customer Customized"),
+        ClothFactoryProduct("Cloth Factory Product"),
+        Inventory("Inventory"),
+        OrderOnline("OrderOnline"),
+        QualityControl("QualityControl");
+        
+        private String value;
+
+        private WorkRequestType(String value) {
+            this.value = value;
+        }
+
+        public String getValue() {
+            return value;
+        }
 
     }
 
