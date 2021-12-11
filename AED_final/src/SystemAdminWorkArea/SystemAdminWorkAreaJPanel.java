@@ -5,9 +5,14 @@
 package SystemAdminWorkArea;
 
 import business.ecosystem.Ecosystem;
+import business.enterprise.Enterprise;
+import business.network.Network;
+import business.organization.Organization;
 import java.awt.CardLayout;
+import java.util.ArrayList;
 import javax.swing.JPanel;
 import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
 
 /**
  *
@@ -21,7 +26,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     JPanel userProcessContainer;
     Ecosystem system;
     
-    public SystemAdminWorkAreaJPanel(JPanel userProcessContainer,Ecosystem business) {
+    public SystemAdminWorkAreaJPanel(JPanel userProcessContainer,Ecosystem system) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.system = system;
@@ -160,6 +165,53 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         layout.next(userProcessContainer);
     }//GEN-LAST:event_enterpriseAdminJButtonActionPerformed
 
+    
+    public void populateTree() {
+
+        DefaultTreeModel model = (DefaultTreeModel) JTree.getModel();
+
+        ArrayList<Network> networkList = system.getNetworkList();
+        System.out.println("userinterface" + networkList.size());
+        ArrayList<Enterprise> enterpriseList;
+        ArrayList<Organization> organizationList;
+        Network network;
+        Enterprise enterprise;
+        Organization organization;
+
+        DefaultMutableTreeNode networks = new DefaultMutableTreeNode("Networks");
+        DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
+        root.removeAllChildren();
+        root.insert(networks, 0);
+
+        DefaultMutableTreeNode networkNode;
+        DefaultMutableTreeNode enterpriseNode;
+        DefaultMutableTreeNode organizationNode;
+        for (int i = 0; i < networkList.size(); i++) {
+            network = networkList.get(i);
+            networkNode = new DefaultMutableTreeNode(network.getName());
+            networks.insert(networkNode, i);
+
+            // if(network.getEnterpriseDirectory() != null)
+            enterpriseList = network.getEnterpriseDirectory().getEnterpriseList();
+
+            for (int j = 0; j < enterpriseList.size(); j++) {
+                enterprise = enterpriseList.get(j);
+                enterpriseNode = new DefaultMutableTreeNode(enterprise.getName());
+                networkNode.insert(enterpriseNode, j);
+
+                //   if(enterprise.getOrganizationDirectory() != null)
+                organizationList = enterprise.getOrganizationDirectory().getOrganizationList();
+
+                for (int k = 0; k < organizationList.size(); k++) {
+                    organization = organizationList.get(k);
+                    organizationNode = new DefaultMutableTreeNode(organization.getName());
+                    enterpriseNode.insert(organizationNode, k);
+                }
+            }
+        }
+
+        model.reload();
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTree JTree;
