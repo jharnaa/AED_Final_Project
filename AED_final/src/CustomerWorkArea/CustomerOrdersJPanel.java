@@ -1,12 +1,11 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
-package ReportManagerWorkArea;
+package CustomerWorkArea;
 
-import Business.Organization.ReportOrganization;
-import Business.customer.MasterOrderList;
-//import business.customer.MasterOrderList;
+import Business.Organization.CustomerOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
@@ -15,34 +14,27 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author saloni
+ * @author Your Name <your.name at your.org>
  */
-public class ReportManagerWorkAreaJPanel extends javax.swing.JPanel {
+public class CustomerOrdersJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form ReportManagerWorkAreaJPanel
+     * Creates new form CustomerOrdersJPanel
      */
-    private MasterOrderList mod;
-    //private CustomizedOrder customizedOrder;
-    //private CustomizedOrderItem customizedOrderItem;
-    //private OrderAtStore orderAtStore;
     private JPanel userProcessContainer;
+    private CustomerOrganization customerOrganization;
     private UserAccount account;
     private Enterprise enterprise;
     private Ecosystem business;
-    private Organization organization;
-
-    final String applicationTitle = "Hazardous Content Chart";
-    final String chartTitle = "Hazardous Content Chart";
     
-    public ReportManagerWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
+    public CustomerOrdersJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
         initComponents();
+        
         this.userProcessContainer = userProcessContainer;
-        this.organization = (ReportOrganization) organization;
+        this.customerOrganization = (CustomerOrganization) organization;
         this.account = account;
         this.enterprise = enterprise;
         this.business = business;
-
     }
 
     /**
