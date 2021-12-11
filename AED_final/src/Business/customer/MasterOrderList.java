@@ -13,56 +13,56 @@ import java.util.ArrayList;
  */
 public class MasterOrderList {
 
-    ArrayList<CustomizedOrder> listOfCustomisedOrders;
-    ArrayList<OrderAtStore> listOfStoreOrders;
+    ArrayList<PersonalisedOrder> listOfPersonalisedOrders;
+    ArrayList<OrderOnline> listOfOnlineOrders;
 
     public MasterOrderList() {
-        listOfCustomisedOrders = new ArrayList<>();
-        listOfStoreOrders = new ArrayList<>();
+        listOfPersonalisedOrders = new ArrayList<>();
+        listOfOnlineOrders = new ArrayList<>();
     }
 
-    public ArrayList<CustomizedOrder> getListOfCustomisedOrders() {
-        return listOfCustomisedOrders;
+    public ArrayList<PersonalisedOrder> getListOfPersonalisedOrders() {
+        return listOfPersonalisedOrders;
     }
 
-    public void setListOfCustomisedOrders(ArrayList<CustomizedOrder> listOfCustomisedOrders) {
-        this.listOfCustomisedOrders = listOfCustomisedOrders;
+    public void setListOfPersonalisedOrders(ArrayList<PersonalisedOrder> listOfPersonalisedOrders) {
+        this.listOfPersonalisedOrders = listOfPersonalisedOrders;
     }
 
-    public ArrayList<OrderAtStore> getListOfStoreOrders() {
-        return listOfStoreOrders;
+    public ArrayList<OrderOnline> getListOfOnlineOrders() {
+        return listOfOnlineOrders;
     }
 
-    public void setListOfStoreOrders(ArrayList<OrderAtStore> listOfStoreOrders) {
-        this.listOfStoreOrders = listOfStoreOrders;
+    public void setListOfOnlineOrders(ArrayList<OrderOnline> listOfOnlineOrders) {
+        this.listOfOnlineOrders = listOfOnlineOrders;
     }
 
-    public CustomizedOrder addOrder() {
-        CustomizedOrder order = new CustomizedOrder();
-        listOfCustomisedOrders.add(order);
+    public PersonalisedOrder addOrder() {
+        PersonalisedOrder order = new PersonalisedOrder();
+        listOfPersonalisedOrders.add(order);
         return order;
     }
 
-    public void addOrderFromInput(CustomizedOrder order) {
-        listOfCustomisedOrders.add(order);
+    public void addOrderFromInput(PersonalisedOrder order) {
+        listOfPersonalisedOrders.add(order);
     }
 
-    public void removeCustomisedOrder(CustomizedOrder order) {
-        listOfCustomisedOrders.remove(order);
+    public void removePersonalisedOrder(PersonalisedOrder order) {
+        listOfPersonalisedOrders.remove(order);
     }
 
-    public OrderAtStore addOrderAtStore() {
-        OrderAtStore oas = new OrderAtStore();
-        listOfStoreOrders.add(oas);
+    public OrderOnline addOrderOnline() {
+        OrderOnline oas = new OrderOnline();
+        listOfOnlineOrders.add(oas);
         return oas;
     }
 
-    public void addStoreOrder(OrderAtStore oas) {
-        listOfStoreOrders.add(oas);
+    public void addOnlineOrder(OrderOnline oas) {
+        listOfOnlineOrders.add(oas);
     }
 
-    public void removeOrderAtStore(OrderAtStore oas) {
-        listOfStoreOrders.remove(oas);
+    public void removeOrderOnline(OrderOnline oas) {
+        listOfOnlineOrders.remove(oas);
     }
 
 }
