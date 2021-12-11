@@ -5,13 +5,23 @@
  */
 package CustomerWorkArea;
 
+import Business.customer.ClothFactoryCatalog;
+import Business.customer.ClothFactoryOrderItem;
+import Business.customer.ClothFactoryProduct;
 import business.organization.CustomerOrganization;
 import Business.customer.MasterOrderList;
+import Business.customer.OrderOnline;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
+import business.enterprise.customerCareEnterprise;
+import business.network.Network;
 import business.organization.Organization;
+import business.organization.StoreOrganization;
 import business.useraccount.UserAccount;
+import java.awt.CardLayout;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -38,7 +48,9 @@ public class BuyOnlineJPanel extends javax.swing.JPanel {
         this.enterprise = enterprise;
         this.business = business;
     }
-
+    
+    OrderOnline oo = new OrderOnline();
+    ClothFactoryOrderItem cfo = new ClothFactoryOrderItem();
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -48,19 +60,156 @@ public class BuyOnlineJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        backJButton2 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblclothfactory = new javax.swing.JTable();
+        placeOrderJButton = new javax.swing.JButton();
+
+        backJButton2.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        backJButton2.setText("Back");
+        backJButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backJButton2ActionPerformed(evt);
+            }
+        });
+
+        tblclothfactory.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        tblclothfactory.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Cloth Id", "Brand", "ModelNumber", "Price"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(tblclothfactory);
+        if (tblclothfactory.getColumnModel().getColumnCount() > 0) {
+            tblclothfactory.getColumnModel().getColumn(0).setResizable(false);
+            tblclothfactory.getColumnModel().getColumn(1).setResizable(false);
+            tblclothfactory.getColumnModel().getColumn(2).setResizable(false);
+            tblclothfactory.getColumnModel().getColumn(3).setResizable(false);
+        }
+
+        placeOrderJButton.setBackground(new java.awt.Color(204, 204, 255));
+        placeOrderJButton.setFont(new java.awt.Font("Palatino", 1, 14)); // NOI18N
+        placeOrderJButton.setText("Place Order");
+        placeOrderJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                placeOrderJButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(placeOrderJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(307, 307, 307))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(backJButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(128, 128, 128)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 597, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(137, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(backJButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addComponent(placeOrderJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(59, 59, 59))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void populateTable() {
+        DefaultTableModel dtm = (DefaultTableModel) tblclothfactory.getModel();
+        dtm.setRowCount(0);
+        for (Organization storeOrganization : enterprise.getOrganizationDirectory().getOrganizationList()) {
+            if (storeOrganization instanceof StoreOrganization) {
+                ClothFactoryCatalog cccat = ((StoreOrganization) storeOrganization).getCfc();
+
+                for (ClothFactoryProduct cfp : cccat.getListOfClothFactoryProduct()) {
+                    Object[] row = new Object[4];
+                    row[0] = cfp;
+                    row[1] = cfp.getBrand();
+                    row[2] = cfp.getModelNumber();
+                    row[3] = cfp.getPrice();
+                    dtm.addRow(row);
+                }
+            }
+        }
+    }
+    
+    private void backJButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButton2ActionPerformed
+
+        userProcessContainer.remove(this);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_backJButton2ActionPerformed
+
+    private void placeOrderJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placeOrderJButtonActionPerformed
+        int selectedRow = tblclothfactory.getSelectedRow();
+        if (selectedRow < 0) {
+            JOptionPane.showMessageDialog(null, "Please select a row from table first to view data", "Warning", JOptionPane.WARNING_MESSAGE);
+        }
+        ClothFactoryProduct cc = (ClothFactoryProduct) tblclothfactory.getValueAt(selectedRow, 0);
+        for (Network network : business.getNetworkList()) {
+            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+                if (enterprise instanceof customerCareEnterprise) {
+                    for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
+                        if (organization instanceof StoreOrganization) {
+                            mod = ((StoreOrganization) organization).getMol();
+                        }
+
+                    }
+                }
+            }
+        }
+        
+        cfo = oo.addClothOrderItem();
+        cfo.setClothFactoryProduct(cc);
+        oo.setCustomer(account.getEmployee());
+
+        mod.addStoreOrder(oo);
+
+        OrderAtStoreWorkRequest orderAtStoreWR = new OrderAtStoreWorkRequest();
+        orderAtStoreWR.setOrderAtStore(oas);
+        orderAtStoreWR.setStatus("Placed");
+        orderAtStoreWR.setSender(account);
+        account.getWorkQueue().getWorkRequestList().add(orderAtStoreWR);
+
+        for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
+            if (organization instanceof StoreOrganization) {
+                organization.getWorkQueue().getWorkRequestList().add(orderAtStoreWR);
+            }
+        }
+
+        JOptionPane.showMessageDialog(null, "Order Placed Successfully", "Information!!", JOptionPane.WARNING_MESSAGE);
+
+    }//GEN-LAST:event_placeOrderJButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton backJButton2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton placeOrderJButton;
+    private javax.swing.JTable tblclothfactory;
     // End of variables declaration//GEN-END:variables
 }
