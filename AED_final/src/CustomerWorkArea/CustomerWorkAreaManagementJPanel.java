@@ -4,7 +4,7 @@
  */
 package CustomerWorkArea;
 
-import Business.Organization.CustomerOrganization;
+import business.organization.CustomerOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;

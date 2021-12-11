@@ -4,8 +4,8 @@
  */
 package DesignerWorkArea;
 
-import Business.Enterprise.productionEnterprise;
-import Business.Organization.DesignOrganization;
+import business.enterprise.productionEnterprise;
+import business.organization.DesignOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;

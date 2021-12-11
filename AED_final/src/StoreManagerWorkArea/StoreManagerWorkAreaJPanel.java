@@ -4,7 +4,7 @@
  */
 package StoreManagerWorkArea;
 
-import Business.Organization.StoreOrganization;
+import business.organization.StoreOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;

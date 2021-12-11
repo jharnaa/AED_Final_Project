@@ -5,8 +5,8 @@
  */
 package Business.Role;
 
-import Business.Enterprise.productionEnterprise;
-import Business.Organization.InventoryOrganization;
+import business.enterprise.productionEnterprise;
+import business.organization.InventoryOrganization;
 import InventoryManagerWorkArea.InventoryManagerWorkAreaManagementJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;

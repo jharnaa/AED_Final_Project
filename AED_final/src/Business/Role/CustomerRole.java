@@ -5,8 +5,8 @@
  */
 package Business.Role;
 
-import Business.Enterprise.customerCareEnterprise;
-import Business.Organization.CustomerOrganization;
+import business.enterprise.customerCareEnterprise;
+import business.organization.CustomerOrganization;
 import CustomerWorkArea.CustomerMainJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;

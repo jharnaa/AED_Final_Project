@@ -5,8 +5,8 @@
  */
 package Business.Role;
 
-import Business.Enterprise.clothFactoryEnterprise;
-import Business.Organization.ClothFactoryStaffOrganization;
+import business.enterprise.clothFactoryEnterprise;
+import business.organization.ClothFactoryStaffOrganization;
 import ClothFactoryStaffWorkArea.ClothFactoryWorkAreaManagementJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;

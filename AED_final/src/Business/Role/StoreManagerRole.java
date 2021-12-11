@@ -5,8 +5,8 @@
  */
 package Business.Role;
 
-import Business.Enterprise.customerCareEnterprise;
-import Business.Organization.StoreOrganization;
+import business.enterprise.customerCareEnterprise;
+import business.organization.StoreOrganization;
 import StoreManagerWorkArea.StoreManagerWorkAreaJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;

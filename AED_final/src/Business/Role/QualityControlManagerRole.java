@@ -5,8 +5,8 @@
  */
 package Business.Role;
 
-import Business.Enterprise.qualityControlEnterprise;
-import Business.Organization.QualityControlOrganization;
+import business.enterprise.qualityControlEnterprise;
+import business.organization.QualityControlOrganization;
 import QualityControlManagerWorkArea.QualityControlManagerWorkAreaJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
