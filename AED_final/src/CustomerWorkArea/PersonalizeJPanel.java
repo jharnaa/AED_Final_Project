@@ -5,10 +5,10 @@
  */
 package CustomerWorkArea;
 
-import Business.Organization.CustomerOrganization;
+import business.organization.CustomerOrganization;
 import Business.customer.MasterOrderList;
 import Business.customer.PersonalisedOrder;
-import business.customer.CustomizedOrderItem;
+//import business.customer.CustomizedOrderItem;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;

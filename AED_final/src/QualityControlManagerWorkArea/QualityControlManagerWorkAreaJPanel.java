@@ -4,7 +4,7 @@
  */
 package QualityControlManagerWorkArea;
 
-import Business.Organization.QualityControlOrganization;
+import business.organization.QualityControlOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;

@@ -5,7 +5,7 @@
 
 package ClothFactoryStaffWorkArea;
 
-import Business.Organization.ClothFactoryStaffOrganization;
+import business.organization.ClothFactoryStaffOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;

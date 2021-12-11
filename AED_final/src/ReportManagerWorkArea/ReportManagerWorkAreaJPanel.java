@@ -4,7 +4,7 @@
  */
 package ReportManagerWorkArea;
 
-import Business.Organization.ReportOrganization;
+import business.organization.ReportOrganization;
 import Business.customer.MasterOrderList;
 //import business.customer.MasterOrderList;
 import business.ecosystem.Ecosystem;

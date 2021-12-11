@@ -4,8 +4,8 @@
  */
 package InventoryManagerWorkArea;
 
-import Business.Enterprise.productionEnterprise;
-import Business.Organization.InventoryOrganization;
+import business.enterprise.productionEnterprise;
+import business.organization.InventoryOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;

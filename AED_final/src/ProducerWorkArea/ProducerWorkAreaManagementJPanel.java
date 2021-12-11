@@ -4,7 +4,7 @@
  */
 package ProducerWorkArea;
 
-import Business.Organization.ManufacturingOrganization;
+import business.organization.ManufacturingOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;

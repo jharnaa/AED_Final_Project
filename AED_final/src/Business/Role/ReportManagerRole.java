@@ -5,8 +5,8 @@
  */
 package Business.Role;
 
-import Business.Enterprise.productionEnterprise;
-import Business.Organization.ReportOrganization;
+import business.enterprise.productionEnterprise;
+import business.organization.ReportOrganization;
 import ReportManagerWorkArea.ReportManagerWorkAreaJPanel;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
