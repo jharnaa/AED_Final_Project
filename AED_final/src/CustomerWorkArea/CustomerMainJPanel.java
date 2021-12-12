@@ -46,7 +46,7 @@ public class CustomerMainJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         customizejBtn = new javax.swing.JButton();
-        buyAtStorejBtn = new javax.swing.JButton();
+        buyOnlinejBtn = new javax.swing.JButton();
         customerOrdersJButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -63,12 +63,12 @@ public class CustomerMainJPanel extends javax.swing.JPanel {
             }
         });
 
-        buyAtStorejBtn.setBackground(new java.awt.Color(255, 255, 255));
-        buyAtStorejBtn.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
-        buyAtStorejBtn.setText("Store");
-        buyAtStorejBtn.addActionListener(new java.awt.event.ActionListener() {
+        buyOnlinejBtn.setBackground(new java.awt.Color(255, 255, 255));
+        buyOnlinejBtn.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        buyOnlinejBtn.setText("Buy Online");
+        buyOnlinejBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buyAtStorejBtnActionPerformed(evt);
+                buyOnlinejBtnActionPerformed(evt);
             }
         });
 
@@ -107,7 +107,7 @@ public class CustomerMainJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(buyAtStorejBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(buyOnlinejBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(customizejBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(39, 39, 39))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -131,7 +131,7 @@ public class CustomerMainJPanel extends javax.swing.JPanel {
                                 .addGap(63, 63, 63)
                                 .addComponent(customizejBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(buyAtStorejBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(buyOnlinejBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(customerOrdersJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -154,13 +154,13 @@ public class CustomerMainJPanel extends javax.swing.JPanel {
 
     }//GEN-LAST:event_customizejBtnActionPerformed
 
-    private void buyAtStorejBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAtStorejBtnActionPerformed
+    private void buyOnlinejBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyOnlinejBtnActionPerformed
         //  TODO add your handling code here:
         BuyOnlineJPanel cjp = new BuyOnlineJPanel(userProcessContainer, customerOrganization, account, enterprise, business);
         userProcessContainer.add("BuyAtStoreJPanel", cjp);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_buyAtStorejBtnActionPerformed
+    }//GEN-LAST:event_buyOnlinejBtnActionPerformed
 
     private void customerOrdersJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerOrdersJButtonActionPerformed
         //  TODO add your handling code here:
@@ -172,7 +172,7 @@ public class CustomerMainJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton buyAtStorejBtn;
+    private javax.swing.JButton buyOnlinejBtn;
     private javax.swing.JButton customerOrdersJButton;
     private javax.swing.JButton customizejBtn;
     private javax.swing.JLabel jLabel1;
