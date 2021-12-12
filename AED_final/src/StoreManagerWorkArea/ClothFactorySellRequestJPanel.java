@@ -82,7 +82,7 @@ public class ClothFactorySellRequestJPanel extends javax.swing.JPanel {
         enterpriseLabel1 = new javax.swing.JLabel();
         valueLabel = new javax.swing.JLabel();
         orgValueLabel = new javax.swing.JLabel();
-        assignToMeJButton3 = new javax.swing.JButton();
+        assignToMeJButton = new javax.swing.JButton();
         refreshJButton = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         clothFactorySellWorkRequestJTable = new javax.swing.JTable();
@@ -121,13 +121,13 @@ public class ClothFactorySellRequestJPanel extends javax.swing.JPanel {
         orgValueLabel.setForeground(new java.awt.Color(102, 0, 51));
         orgValueLabel.setText("<value>");
 
-        assignToMeJButton3.setBackground(new java.awt.Color(255, 255, 255));
-        assignToMeJButton3.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
-        assignToMeJButton3.setForeground(new java.awt.Color(102, 0, 51));
-        assignToMeJButton3.setText("Accept Request");
-        assignToMeJButton3.addActionListener(new java.awt.event.ActionListener() {
+        assignToMeJButton.setBackground(new java.awt.Color(255, 255, 255));
+        assignToMeJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        assignToMeJButton.setForeground(new java.awt.Color(102, 0, 51));
+        assignToMeJButton.setText("Accept Request");
+        assignToMeJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                assignToMeJButton3ActionPerformed(evt);
+                assignToMeJButtonActionPerformed(evt);
             }
         });
 
@@ -142,6 +142,8 @@ public class ClothFactorySellRequestJPanel extends javax.swing.JPanel {
         });
 
         clothFactorySellWorkRequestJTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        clothFactorySellWorkRequestJTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
+        clothFactorySellWorkRequestJTable.setForeground(new java.awt.Color(102, 0, 51));
         clothFactorySellWorkRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -150,7 +152,7 @@ public class ClothFactorySellRequestJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null}
             },
             new String [] {
-                "ClothID", "Sender", "Receiver", "RequestDate", "Status"
+                "Cloth ID", "Sender", "Receiver", "Request Date", "Status"
             }
         ) {
             Class[] types = new Class [] {
@@ -184,7 +186,7 @@ public class ClothFactorySellRequestJPanel extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(assignToMeJButton3))
+                    .addComponent(assignToMeJButton))
                 .addGap(154, 154, 154)
                 .addComponent(jLabel2))
             .addGroup(layout.createSequentialGroup()
@@ -236,7 +238,7 @@ public class ClothFactorySellRequestJPanel extends javax.swing.JPanel {
                                 .addGap(24, 24, 24))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(assignToMeJButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(assignToMeJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(20, 20, 20)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 170, Short.MAX_VALUE)
@@ -252,7 +254,7 @@ public class ClothFactorySellRequestJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
 
-    private void assignToMeJButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignToMeJButton3ActionPerformed
+    private void assignToMeJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignToMeJButtonActionPerformed
         int selectedRow =clothFactorySellWorkRequestJTable.getSelectedRow();
 
         if (selectedRow < 0) {
@@ -269,7 +271,7 @@ public class ClothFactorySellRequestJPanel extends javax.swing.JPanel {
         populateStoreTable();
 
         // TODO add your handling code here:
-    }//GEN-LAST:event_assignToMeJButton3ActionPerformed
+    }//GEN-LAST:event_assignToMeJButtonActionPerformed
 
     private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
         populateStoreTable();
@@ -277,7 +279,7 @@ public class ClothFactorySellRequestJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton assignToMeJButton3;
+    private javax.swing.JButton assignToMeJButton;
     private javax.swing.JButton backJButton;
     private javax.swing.JTable clothFactorySellWorkRequestJTable;
     private javax.swing.JLabel enterpriseLabel;

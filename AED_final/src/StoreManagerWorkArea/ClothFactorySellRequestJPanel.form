@@ -25,7 +25,7 @@
               <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel1" min="-2" pref="220" max="-2" attributes="0"/>
-                  <Component id="assignToMeJButton3" min="-2" max="-2" attributes="0"/>
+                  <Component id="assignToMeJButton" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="154" max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
@@ -94,7 +94,7 @@
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="assignToMeJButton3" min="-2" pref="40" max="-2" attributes="0"/>
+                              <Component id="assignToMeJButton" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -182,7 +182,7 @@
         <Property name="text" type="java.lang.String" value="&lt;value&gt;"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="assignToMeJButton3">
+    <Component class="javax.swing.JButton" name="assignToMeJButton">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -196,7 +196,7 @@
         <Property name="text" type="java.lang.String" value="Accept Request"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="assignToMeJButton3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="assignToMeJButtonActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="refreshJButton">
@@ -230,12 +230,18 @@
                 <LineBorder thickness="2"/>
               </Border>
             </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Lucida Grande" size="12" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="0" red="66" type="rgb"/>
+            </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="5" rowCount="4">
-                <Column editable="false" title="ClothID" type="java.lang.String"/>
+                <Column editable="false" title="Cloth ID" type="java.lang.String"/>
                 <Column editable="false" title="Sender" type="java.lang.String"/>
                 <Column editable="false" title="Receiver" type="java.lang.String"/>
-                <Column editable="false" title="RequestDate" type="java.lang.String"/>
+                <Column editable="false" title="Request Date" type="java.lang.String"/>
                 <Column editable="false" title="Status" type="java.lang.String"/>
               </Table>
             </Property>

@@ -33,11 +33,11 @@
                       <EmptySpace min="-2" pref="389" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="sendToCustomerJButton" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnSendToCustomer" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="399" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="assignToMeJButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnAccept" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="467" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -102,9 +102,9 @@
               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
               <Component id="jScrollPane2" min="-2" pref="111" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-              <Component id="assignToMeJButton1" min="-2" pref="40" max="-2" attributes="0"/>
+              <Component id="btnAccept" min="-2" pref="40" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="sendToCustomerJButton" min="-2" pref="43" max="-2" attributes="0"/>
+              <Component id="btnSendToCustomer" min="-2" pref="43" max="-2" attributes="0"/>
               <EmptySpace pref="87" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -125,7 +125,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backJButtonActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="assignToMeJButton1">
+    <Component class="javax.swing.JButton" name="btnAccept">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="cc" red="cc" type="rgb"/>
@@ -139,10 +139,10 @@
         <Property name="text" type="java.lang.String" value="Accept Request"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="assignToMeJButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAcceptActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="sendToCustomerJButton">
+    <Component class="javax.swing.JButton" name="btnSendToCustomer">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="cc" red="cc" type="rgb"/>
@@ -156,7 +156,7 @@
         <Property name="text" type="java.lang.String" value="Send Confirmation to Customer"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sendToCustomerJButtonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSendToCustomerActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="refreshJButton">
@@ -191,21 +191,56 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTable" name="workRequestJTable">
+        <Component class="javax.swing.JTable" name="tblworkRequest">
           <Properties>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder thickness="2"/>
               </Border>
             </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Lucida Grande" size="12" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="0" red="66" type="rgb"/>
+            </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="5" rowCount="4">
-                <Column editable="false" title="OrderID" type="java.lang.String"/>
+                <Column editable="false" title="Order ID" type="java.lang.String"/>
                 <Column editable="false" title="Sender" type="java.lang.String"/>
                 <Column editable="false" title="Receiver" type="java.lang.String"/>
-                <Column editable="false" title="RequestDate" type="java.lang.String"/>
+                <Column editable="false" title="Request Date" type="java.lang.String"/>
                 <Column editable="false" title="Status" type="java.lang.String"/>
               </Table>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
             </Property>
             <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
               <TableHeader reorderingAllowed="true" resizingAllowed="true"/>

@@ -50,7 +50,7 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
     }
         
         public void populateStoreTable() {
-        DefaultTableModel model = (DefaultTableModel) workRequestJTable.getModel();
+        DefaultTableModel model = (DefaultTableModel) tblworkRequest.getModel();
 
         model.setRowCount(0);
         {
@@ -80,12 +80,12 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         backJButton = new javax.swing.JButton();
-        assignToMeJButton1 = new javax.swing.JButton();
-        sendToCustomerJButton = new javax.swing.JButton();
+        btnAccept = new javax.swing.JButton();
+        btnSendToCustomer = new javax.swing.JButton();
         refreshJButton = new javax.swing.JButton();
         enterpriseLabel3 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        workRequestJTable = new javax.swing.JTable();
+        tblworkRequest = new javax.swing.JTable();
         enterpriseLabel = new javax.swing.JLabel();
         valueLabel = new javax.swing.JLabel();
         orgValueLabel = new javax.swing.JLabel();
@@ -103,23 +103,23 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        assignToMeJButton1.setBackground(new java.awt.Color(204, 204, 255));
-        assignToMeJButton1.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
-        assignToMeJButton1.setForeground(new java.awt.Color(102, 0, 51));
-        assignToMeJButton1.setText("Accept Request");
-        assignToMeJButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnAccept.setBackground(new java.awt.Color(204, 204, 255));
+        btnAccept.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        btnAccept.setForeground(new java.awt.Color(102, 0, 51));
+        btnAccept.setText("Accept Request");
+        btnAccept.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                assignToMeJButton1ActionPerformed(evt);
+                btnAcceptActionPerformed(evt);
             }
         });
 
-        sendToCustomerJButton.setBackground(new java.awt.Color(204, 204, 255));
-        sendToCustomerJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
-        sendToCustomerJButton.setForeground(new java.awt.Color(102, 0, 51));
-        sendToCustomerJButton.setText("Send Confirmation to Customer");
-        sendToCustomerJButton.addActionListener(new java.awt.event.ActionListener() {
+        btnSendToCustomer.setBackground(new java.awt.Color(204, 204, 255));
+        btnSendToCustomer.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        btnSendToCustomer.setForeground(new java.awt.Color(102, 0, 51));
+        btnSendToCustomer.setText("Send Confirmation to Customer");
+        btnSendToCustomer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sendToCustomerJButtonActionPerformed(evt);
+                btnSendToCustomerActionPerformed(evt);
             }
         });
 
@@ -136,8 +136,10 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
         enterpriseLabel3.setForeground(new java.awt.Color(102, 0, 51));
         enterpriseLabel3.setText("Store Order Requests");
 
-        workRequestJTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
+        tblworkRequest.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        tblworkRequest.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
+        tblworkRequest.setForeground(new java.awt.Color(102, 0, 51));
+        tblworkRequest.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -145,7 +147,7 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null}
             },
             new String [] {
-                "OrderID", "Sender", "Receiver", "RequestDate", "Status"
+                "Order ID", "Sender", "Receiver", "Request Date", "Status"
             }
         ) {
             Class[] types = new Class [] {
@@ -163,7 +165,7 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane2.setViewportView(workRequestJTable);
+        jScrollPane2.setViewportView(tblworkRequest);
 
         enterpriseLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(102, 0, 51));
@@ -198,10 +200,10 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
                         .addComponent(enterpriseLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(389, 389, 389))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(sendToCustomerJButton)
+                        .addComponent(btnSendToCustomer)
                         .addGap(399, 399, 399))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(assignToMeJButton1)
+                        .addComponent(btnAccept)
                         .addGap(467, 467, 467))))
             .addGroup(layout.createSequentialGroup()
                 .addGap(18, 18, 18)
@@ -250,9 +252,9 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
                 .addGap(33, 33, 33)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
-                .addComponent(assignToMeJButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnAccept, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(sendToCustomerJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSendToCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(87, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -264,8 +266,8 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
 
-    private void assignToMeJButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignToMeJButton1ActionPerformed
-        int selectedRow = workRequestJTable.getSelectedRow();
+    private void btnAcceptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcceptActionPerformed
+        int selectedRow = tblworkRequest.getSelectedRow();
 
         if (selectedRow < 0) {
             JOptionPane.showMessageDialog(null, "Please select a row from table first ", "Warning", JOptionPane.WARNING_MESSAGE);
@@ -273,7 +275,7 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
             return;
         }
 
-        OrderOnlineWorkRequest request = (OrderOnlineWorkRequest) workRequestJTable.getValueAt(selectedRow, 0);
+        OrderOnlineWorkRequest request = (OrderOnlineWorkRequest) tblworkRequest.getValueAt(selectedRow, 0);
 
         request.setReceiver(userAccount);
         request.setStatus("Pending");
@@ -281,18 +283,18 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
         populateStoreTable();
 
         // TODO add your handling code here:
-    }//GEN-LAST:event_assignToMeJButton1ActionPerformed
+    }//GEN-LAST:event_btnAcceptActionPerformed
 
-    private void sendToCustomerJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sendToCustomerJButtonActionPerformed
+    private void btnSendToCustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendToCustomerActionPerformed
 
-        int selectedRow = workRequestJTable.getSelectedRow();
+        int selectedRow = tblworkRequest.getSelectedRow();
 
         if (selectedRow < 0) {
             JOptionPane.showMessageDialog(null, "Please select a row from table first ", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
 
-        OrderOnlineWorkRequest request = (OrderOnlineWorkRequest) workRequestJTable.getValueAt(selectedRow, 0);
+        OrderOnlineWorkRequest request = (OrderOnlineWorkRequest) tblworkRequest.getValueAt(selectedRow, 0);
 
         request.setStatus("Order Processed");
         request.setSender(userAccount);
@@ -306,7 +308,7 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
         JOptionPane.showMessageDialog(null, "Order sent to Customer", "Info", JOptionPane.INFORMATION_MESSAGE);
 
         populateStoreTable();
-    }//GEN-LAST:event_sendToCustomerJButtonActionPerformed
+    }//GEN-LAST:event_btnSendToCustomerActionPerformed
 
     private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
         populateStoreTable();
@@ -314,8 +316,9 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton assignToMeJButton1;
     private javax.swing.JButton backJButton;
+    private javax.swing.JButton btnAccept;
+    private javax.swing.JButton btnSendToCustomer;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel enterpriseLabel1;
     private javax.swing.JLabel enterpriseLabel3;
@@ -323,8 +326,7 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel orgValueLabel;
     private javax.swing.JButton refreshJButton;
-    private javax.swing.JButton sendToCustomerJButton;
+    private javax.swing.JTable tblworkRequest;
     private javax.swing.JLabel valueLabel;
-    private javax.swing.JTable workRequestJTable;
     // End of variables declaration//GEN-END:variables
 }
