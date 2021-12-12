@@ -247,7 +247,7 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
             return;
         }
         
-        mod.addOrderFromInput(order);
+        //mod.addOrderFromInput(order);
 
         CustomerCustomizedWorkRequest cworkrequest = new CustomerCustomizedWorkRequest();
         cworkrequest.setOrder(order);
@@ -271,6 +271,7 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
         JOptionPane.showMessageDialog(null, "Order Placed Successfully", "Information!!", JOptionPane.WARNING_MESSAGE);
     }//GEN-LAST:event_placeOrderjBtnActionPerformed
 
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
