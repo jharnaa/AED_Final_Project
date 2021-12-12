@@ -107,7 +107,7 @@ public class BuyOnlineJPanel extends javax.swing.JPanel {
             tblclothfactory.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        placeOrderJButton.setBackground(new java.awt.Color(204, 204, 255));
+        placeOrderJButton.setBackground(new java.awt.Color(255, 255, 255));
         placeOrderJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         placeOrderJButton.setForeground(new java.awt.Color(102, 0, 51));
         placeOrderJButton.setText("Place Order");
