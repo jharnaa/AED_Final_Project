@@ -188,9 +188,9 @@ public class QualityControlManagerWorkAreaJPanel extends javax.swing.JPanel {
                     for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
                         if (organization instanceof ReportOrganization) {
 
-                           // content1 = ((ReportOrganization) organization).getReport().getCumCarbonMContent();
-                            //content2 = ((ReportOrganization) organization).getReport().getCumFMDHContent();
-                            //content3 = ((ReportOrganization) organization).getReport().getCumleadContent();
+                           content1 = ((ReportOrganization) organization).getReport().getCumCarbonEmission();
+                           content2 = ((ReportOrganization) organization).getReport().getCumWaterToxin();
+                           content3 = ((ReportOrganization) organization).getReport().getCumWaste();
 
                         }
                     }
@@ -198,7 +198,8 @@ public class QualityControlManagerWorkAreaJPanel extends javax.swing.JPanel {
             }
         }
 
-        String content = "Hazardous Components Reports is as follows:" + "||" + "Carbon Mono-oxide Content:" + " " + content1 + " " + "Formaldehyde Content:" + " " + content2 + " " + "Lead Content:" + " " + content3;
+        String content = "Hazardous Components Reports is as follows:" + 
+                "Carbon Emmision Content:" + " " + content1 + " " + "Water Toxin Content:" + " " + content2 + " " + "Waste Content:" + " " + content3;
 
         try (FileOutputStream fop = new FileOutputStream(file)) {
 
