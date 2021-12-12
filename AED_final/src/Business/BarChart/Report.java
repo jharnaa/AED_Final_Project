@@ -10,143 +10,117 @@ package Business.BarChart;
  * @author mrunalbhalerao
  */
 public class Report {
- private float leadAirFilter;
-    private float cmAirFilter;
-    private float fmdhAirFilter;
+ private float carbonEmissionFabricType;
+    private float waterToxinFabricType;
+    private float wasteFabricType;
 
-    private float leadPaint;
-    private float cmPaint;
-    private float fmdhPaint;
+    private float carbonEmissionDesignTechnique;
+    private float waterToxinDesignTechnque;
+    private float wasteDesignTechnique;
 
-    private float leadEngine;
-    private float cmEngine;
-    private float fmdhEngine;
+    private float carbonEmissionManufacturingProcess;
+    private float waterToxinManufacturingProcess;
+    private float wasteManufacturingProcess;
 
-    private float leadFuel;
-    private float cmFuel;
-    private float fmdhFuel;
+    private float cumCarbonEmission;
+    private float cumWaterToxin;
+    private float cumWaste;
 
-    private float cumleadContent;
-    private float cumCarbonMContent;
-    private float cumFMDHContent;
-
-    public float getLeadAirFilter() {
-        return leadAirFilter;
+    public float getCarbonEmissionFabricType() {
+        return carbonEmissionFabricType;
     }
 
-    public void setLeadAirFilter(float leadAirFilter) {
-        this.leadAirFilter = leadAirFilter;
+    public void setCarbonEmissionFabricType(float carbonEmissionFabricType) {
+        this.carbonEmissionFabricType = carbonEmissionFabricType;
     }
 
-    public float getCmAirFilter() {
-        return cmAirFilter;
+    public float getWaterToxinFabricType() {
+        return waterToxinFabricType;
     }
 
-    public void setCmAirFilter(float cmAirFilter) {
-        this.cmAirFilter = cmAirFilter;
+    public void setWaterToxinFabricType(float waterToxinFabricType) {
+        this.waterToxinFabricType = waterToxinFabricType;
     }
 
-    public float getFmdhAirFilter() {
-        return fmdhAirFilter;
+    public float getWasteFabricType() {
+        return wasteFabricType;
     }
 
-    public void setFmdhAirFilter(float fmdhAirFilter) {
-        this.fmdhAirFilter = fmdhAirFilter;
+    public void setWasteFabricType(float wasteFabricType) {
+        this.wasteFabricType = wasteFabricType;
     }
 
-    public float getLeadPaint() {
-        return leadPaint;
+    public float getCarbonEmissionDesignTechnique() {
+        return carbonEmissionDesignTechnique;
     }
 
-    public void setLeadPaint(float leadPaint) {
-        this.leadPaint = leadPaint;
+    public void setCarbonEmissionDesignTechnique(float carbonEmissionDesignTechnique) {
+        this.carbonEmissionDesignTechnique = carbonEmissionDesignTechnique;
     }
 
-    public float getCmPaint() {
-        return cmPaint;
+    public float getWaterToxinDesignTechnque() {
+        return waterToxinDesignTechnque;
     }
 
-    public void setCmPaint(float cmPaint) {
-        this.cmPaint = cmPaint;
+    public void setWaterToxinDesignTechnque(float waterToxinDesignTechnque) {
+        this.waterToxinDesignTechnque = waterToxinDesignTechnque;
     }
 
-    public float getFmdhPaint() {
-        return fmdhPaint;
+    public float getWasteDesignTechnique() {
+        return wasteDesignTechnique;
     }
 
-    public void setFmdhPaint(float fmdhPaint) {
-        this.fmdhPaint = fmdhPaint;
+    public void setWasteDesignTechnique(float wasteDesignTechnique) {
+        this.wasteDesignTechnique = wasteDesignTechnique;
     }
 
-    public float getLeadEngine() {
-        return leadEngine;
+    public float getCarbonEmissionManufacturingProcess() {
+        return carbonEmissionManufacturingProcess;
     }
 
-    public void setLeadEngine(float leadEngine) {
-        this.leadEngine = leadEngine;
+    public void setCarbonEmissionManufacturingProcess(float carbonEmissionManufacturingProcess) {
+        this.carbonEmissionManufacturingProcess = carbonEmissionManufacturingProcess;
     }
 
-    public float getCmEngine() {
-        return cmEngine;
+    public float getWaterToxinManufacturingProcess() {
+        return waterToxinManufacturingProcess;
     }
 
-    public void setCmEngine(float cmEngine) {
-        this.cmEngine = cmEngine;
+    public void setWaterToxinManufacturingProcess(float waterToxinManufacturingProcess) {
+        this.waterToxinManufacturingProcess = waterToxinManufacturingProcess;
     }
 
-    public float getFmdhEngine() {
-        return fmdhEngine;
+    public float getWasteManufacturingProcess() {
+        return wasteManufacturingProcess;
     }
 
-    public void setFmdhEngine(float fmdhEngine) {
-        this.fmdhEngine = fmdhEngine;
+    public void setWasteManufacturingProcess(float wasteManufacturingProcess) {
+        this.wasteManufacturingProcess = wasteManufacturingProcess;
     }
 
-    public float getLeadFuel() {
-        return leadFuel;
+    public float getCumCarbonEmission() {
+        return cumCarbonEmission;
     }
 
-    public void setLeadFuel(float leadFuel) {
-        this.leadFuel = leadFuel;
+    public void setCumCarbonEmission(float cumCarbonEmission) {
+        this.cumCarbonEmission = cumCarbonEmission;
     }
 
-    public float getCmFuel() {
-        return cmFuel;
+    public float getCumWaterToxin() {
+        return cumWaterToxin;
     }
 
-    public void setCmFuel(float cmFuel) {
-        this.cmFuel = cmFuel;
+    public void setCumWaterToxin(float cumWaterToxin) {
+        this.cumWaterToxin = cumWaterToxin;
     }
 
-    public float getFmdhFuel() {
-        return fmdhFuel;
+    public float getCumWaste() {
+        return cumWaste;
     }
 
-    public void setFmdhFuel(float fmdhFuel) {
-        this.fmdhFuel = fmdhFuel;
+    public void setCumWaste(float cumWaste) {
+        this.cumWaste = cumWaste;
     }
 
-    public float getCumleadContent() {
-        return cumleadContent;
-    }
-
-    public void setCumleadContent(float cumleadContent) {
-        this.cumleadContent = cumleadContent;
-    }
-
-    public float getCumCarbonMContent() {
-        return cumCarbonMContent;
-    }
-
-    public void setCumCarbonMContent(float cumCarbonMContent) {
-        this.cumCarbonMContent = cumCarbonMContent;
-    }
-
-    public float getCumFMDHContent() {
-        return cumFMDHContent;
-    }
-
-    public void setCumFMDHContent(float cumFMDHContent) {
-        this.cumFMDHContent = cumFMDHContent;
-    }   
+    
 }
