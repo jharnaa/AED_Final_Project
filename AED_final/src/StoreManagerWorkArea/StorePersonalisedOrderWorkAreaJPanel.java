@@ -67,6 +67,8 @@ public class StorePersonalisedOrderWorkAreaJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 204, 204));
 
         customerWorkRequestJTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        customerWorkRequestJTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
+        customerWorkRequestJTable.setForeground(new java.awt.Color(102, 0, 51));
         customerWorkRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -75,7 +77,7 @@ public class StorePersonalisedOrderWorkAreaJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null}
             },
             new String [] {
-                "OrderID", "Sender", "Receiver", "RequestDate", "Status"
+                "Order ID", "Sender", "Receiver", "Request Date", "Status"
             }
         ) {
             Class[] types = new Class [] {

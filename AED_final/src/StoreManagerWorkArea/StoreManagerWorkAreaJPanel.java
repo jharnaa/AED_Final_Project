@@ -50,10 +50,9 @@ public class StoreManagerWorkAreaJPanel extends javax.swing.JPanel {
         enterpriseLabel = new javax.swing.JLabel();
         enterpriseLabel1 = new javax.swing.JLabel();
         orgValueLabel = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        carCompanyRequestsJButton = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnCustomizedOrders = new javax.swing.JButton();
+        btnOnlineOrders = new javax.swing.JButton();
+        tblManuRequest = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -84,44 +83,34 @@ public class StoreManagerWorkAreaJPanel extends javax.swing.JPanel {
         orgValueLabel.setForeground(new java.awt.Color(102, 0, 51));
         orgValueLabel.setText("<value>");
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(102, 0, 51));
-        jButton1.setText("Customized Orders");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnCustomizedOrders.setBackground(new java.awt.Color(255, 255, 255));
+        btnCustomizedOrders.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        btnCustomizedOrders.setForeground(new java.awt.Color(102, 0, 51));
+        btnCustomizedOrders.setText("Customized Orders");
+        btnCustomizedOrders.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnCustomizedOrdersActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
-        jButton2.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(102, 0, 51));
-        jButton2.setText("Showroom Orders");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnOnlineOrders.setBackground(new java.awt.Color(255, 255, 255));
+        btnOnlineOrders.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        btnOnlineOrders.setForeground(new java.awt.Color(102, 0, 51));
+        btnOnlineOrders.setText("Online Orders");
+        btnOnlineOrders.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnOnlineOrdersActionPerformed(evt);
             }
         });
 
-        carCompanyRequestsJButton.setBackground(new java.awt.Color(255, 255, 255));
-        carCompanyRequestsJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
-        carCompanyRequestsJButton.setForeground(new java.awt.Color(102, 0, 51));
-        carCompanyRequestsJButton.setText("Car Company Sell Requests");
-        carCompanyRequestsJButton.addActionListener(new java.awt.event.ActionListener() {
+        tblManuRequest.setBackground(new java.awt.Color(255, 255, 255));
+        tblManuRequest.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        tblManuRequest.setForeground(new java.awt.Color(102, 0, 51));
+        tblManuRequest.setText("Manufacturer's Work Requests");
+        tblManuRequest.setToolTipText("");
+        tblManuRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                carCompanyRequestsJButtonActionPerformed(evt);
-            }
-        });
-
-        jButton3.setBackground(new java.awt.Color(255, 255, 255));
-        jButton3.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(102, 0, 51));
-        jButton3.setText("Manufacturer's Work Requests");
-        jButton3.setToolTipText("");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                tblManuRequestActionPerformed(evt);
             }
         });
 
@@ -153,19 +142,18 @@ public class StoreManagerWorkAreaJPanel extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(carCompanyRequestsJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(392, 392, 392))
-                                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(59, 59, 59)
+                                    .addComponent(tblManuRequest, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
+                                    .addComponent(btnCustomizedOrders, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnOnlineOrders, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(48, 48, 48)
                                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(127, Short.MAX_VALUE))
+                .addContainerGap(138, Short.MAX_VALUE))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {carCompanyRequestsJButton, jButton1, jButton2, jButton3});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnCustomizedOrders, btnOnlineOrders, tblManuRequest});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -174,36 +162,30 @@ public class StoreManagerWorkAreaJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
+                .addGap(28, 28, 28)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(2, 2, 2)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(carCompanyRequestsJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(26, 26, 26)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(28, 28, 28)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(2, 2, 2)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(160, 160, 160))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(117, 117, 117)
+                        .addGap(63, 63, 63)
+                        .addComponent(btnCustomizedOrders, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(btnOnlineOrders, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(39, 39, 39)
+                        .addComponent(tblManuRequest, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                        .addGap(116, 116, 116))))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {carCompanyRequestsJButton, jButton1, jButton2, jButton3});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnCustomizedOrders, btnOnlineOrders, tblManuRequest});
 
     }// </editor-fold>//GEN-END:initComponents
 
@@ -214,46 +196,38 @@ public class StoreManagerWorkAreaJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnCustomizedOrdersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCustomizedOrdersActionPerformed
         StorePersonalisedOrderWorkAreaJPanel vjp = new StorePersonalisedOrderWorkAreaJPanel(userProcessContainer, userAccount, organization, enterprise, business);
         userProcessContainer.add("ShowroomCustomizedOrdersWorkAreaJPanel", vjp);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnCustomizedOrdersActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnOnlineOrdersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOnlineOrdersActionPerformed
         StoreOrdersWorkAreaJPanel vjp = new StoreOrdersWorkAreaJPanel(userProcessContainer, userAccount, organization, enterprise, business);
         userProcessContainer.add("ShowroomOrdersWorkAreaJPanel", vjp);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnOnlineOrdersActionPerformed
 
-    private void carCompanyRequestsJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_carCompanyRequestsJButtonActionPerformed
-        ClothFactorySellRequestJPanel vjp = new ClothFactorySellRequestJPanel(userProcessContainer, userAccount, organization, enterprise, business);
-        userProcessContainer.add("CarCompanySellRequestsJPanel", vjp);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
-    }//GEN-LAST:event_carCompanyRequestsJButtonActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void tblManuRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tblManuRequestActionPerformed
         ProducerWorkRequestsJPanel mjp = new ProducerWorkRequestsJPanel(userProcessContainer, userAccount, organization, enterprise, business);
         userProcessContainer.add("ManufacturerWorkRequestsJPanel", mjp);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_tblManuRequestActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
-    private javax.swing.JButton carCompanyRequestsJButton;
+    private javax.swing.JButton btnCustomizedOrders;
+    private javax.swing.JButton btnOnlineOrders;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel enterpriseLabel1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel orgValueLabel;
+    private javax.swing.JButton tblManuRequest;
     private javax.swing.JLabel valueLabel;
     // End of variables declaration//GEN-END:variables
 }

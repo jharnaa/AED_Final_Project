@@ -138,6 +138,8 @@ public class ProducerWorkRequestsJPanel extends javax.swing.JPanel {
         orgValueLabel.setText("<value>");
 
         producerWorkRequestJTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        producerWorkRequestJTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
+        producerWorkRequestJTable.setForeground(new java.awt.Color(102, 0, 51));
         producerWorkRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -146,7 +148,7 @@ public class ProducerWorkRequestsJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null}
             },
             new String [] {
-                "OrderID", "Sender", "Receiver", "RequestDate", "Status"
+                "Order ID", "Sender", "Receiver", "Request Date", "Status"
             }
         ) {
             Class[] types = new Class [] {
