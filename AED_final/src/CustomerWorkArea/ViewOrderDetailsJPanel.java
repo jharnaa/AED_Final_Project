@@ -5,7 +5,9 @@
  */
 package CustomerWorkArea;
 
+import Business.customer.CustomerApparel;
 import Business.customer.PersonalisedOrderItem;
+import java.awt.CardLayout;
 import javax.swing.JPanel;
 
 /**
@@ -26,7 +28,18 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
         this.userProcessContainer = userProcessContainer;
         this.orderItem = orderItem;
         
+        CustomerApparel customizeApparel = orderItem.getPersonaliseProduct();
         
+        txtCategory.setText(customizeApparel.getCategory());
+        txtStyle.setText(customizeApparel.getStyle());
+        txtSize.setText(customizeApparel.getColor());
+        txtDesignType.setText(customizeApparel.getSize());
+        txtTextLocation.setText(customizeApparel.getFabricType());
+        txtText.setText(customizeApparel.getPrintText());
+        txtQuantity.setText(customizeApparel.getTextLocation());
+        txtFabricType.setText(customizeApparel.getDesignTechnique());
+        txtColor.setText(customizeApparel.getQuantity());
+        txtQuantity.setText(String.valueOf(customizeApparel.getPrice()));
     }
 
     /**
@@ -38,19 +51,246 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        txtQuantity = new javax.swing.JTextField();
+        txtCategory = new javax.swing.JTextField();
+        txtStyle = new javax.swing.JTextField();
+        txtColor = new javax.swing.JTextField();
+        txtSize = new javax.swing.JTextField();
+        txtFabricType = new javax.swing.JTextField();
+        txtText = new javax.swing.JTextField();
+        txtTextLocation = new javax.swing.JTextField();
+        txtDesignType = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        interiorTypejTextField1 = new javax.swing.JTextField();
+        backJButton = new javax.swing.JButton();
+
+        jLabel2.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        jLabel2.setText("Category");
+
+        jLabel3.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        jLabel3.setText("Color");
+
+        jLabel4.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        jLabel4.setText("Size");
+
+        jLabel5.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        jLabel5.setText("Fabric Type");
+
+        jLabel6.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        jLabel6.setText("Text");
+
+        jLabel7.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        jLabel7.setText("Text Location");
+
+        jLabel9.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        jLabel9.setText("Design Type");
+
+        jLabel10.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        jLabel10.setText("Quantity");
+
+        jLabel11.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        jLabel11.setText("Style");
+
+        txtQuantity.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        txtQuantity.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        txtQuantity.setEnabled(false);
+
+        txtCategory.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        txtCategory.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        txtCategory.setEnabled(false);
+
+        txtStyle.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        txtStyle.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        txtStyle.setEnabled(false);
+
+        txtColor.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        txtColor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        txtColor.setEnabled(false);
+
+        txtSize.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        txtSize.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        txtSize.setEnabled(false);
+
+        txtFabricType.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        txtFabricType.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        txtFabricType.setEnabled(false);
+
+        txtText.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        txtText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        txtText.setEnabled(false);
+
+        txtTextLocation.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        txtTextLocation.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        txtTextLocation.setEnabled(false);
+
+        txtDesignType.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        txtDesignType.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        txtDesignType.setEnabled(false);
+
+        jLabel12.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        jLabel12.setText("Interior Type");
+
+        interiorTypejTextField1.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
+        interiorTypejTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        interiorTypejTextField1.setEnabled(false);
+
+        backJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        backJButton.setText("Back");
+        backJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backJButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(190, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40)
+                        .addComponent(txtCategory, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel11)
+                        .addGap(59, 59, 59)
+                        .addComponent(txtStyle, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(40, 40, 40)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtColor, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtSize, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(19, 19, 19)
+                        .addComponent(txtFabricType, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addGap(82, 82, 82)
+                        .addComponent(txtText, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addGap(48, 48, 48)
+                        .addComponent(txtTextLocation, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel9)
+                        .addGap(41, 41, 41)
+                        .addComponent(txtDesignType, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel12)
+                        .addGap(39, 39, 39)
+                        .addComponent(interiorTypejTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel10)
+                        .addGap(89, 89, 89)
+                        .addComponent(txtQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(205, 205, 205))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCategory, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel11))
+                    .addComponent(txtStyle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(8, 8, 8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jLabel3)
+                        .addGap(8, 8, 8)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtColor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14)
+                        .addComponent(txtSize, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtFabricType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6)
+                    .addComponent(txtText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(14, 14, 14)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7)
+                    .addComponent(txtTextLocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(14, 14, 14)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel9)
+                    .addComponent(txtDesignType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(14, 14, 14)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel12)
+                    .addComponent(interiorTypejTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(14, 14, 14)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel10)
+                    .addComponent(txtQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
+
+        userProcessContainer.remove(this);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_backJButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton backJButton;
+    private javax.swing.JTextField interiorTypejTextField1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField txtCategory;
+    private javax.swing.JTextField txtColor;
+    private javax.swing.JTextField txtDesignType;
+    private javax.swing.JTextField txtFabricType;
+    private javax.swing.JTextField txtQuantity;
+    private javax.swing.JTextField txtSize;
+    private javax.swing.JTextField txtStyle;
+    private javax.swing.JTextField txtText;
+    private javax.swing.JTextField txtTextLocation;
     // End of variables declaration//GEN-END:variables
 }
