@@ -34,7 +34,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="buyAtStorejBtn" min="-2" pref="210" max="-2" attributes="0"/>
+                                  <Component id="buyOnlinejBtn" min="-2" pref="210" max="-2" attributes="0"/>
                                   <Component id="customizejBtn" min="-2" pref="210" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
@@ -67,7 +67,7 @@
                               <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                               <Component id="customizejBtn" min="-2" pref="52" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="buyAtStorejBtn" min="-2" pref="53" max="-2" attributes="0"/>
+                              <Component id="buyOnlinejBtn" min="-2" pref="53" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="customerOrdersJButton" min="-2" pref="59" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
@@ -99,7 +99,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="customizejBtnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="buyAtStorejBtn">
+    <Component class="javax.swing.JButton" name="buyOnlinejBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -107,10 +107,10 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Palatino" size="18" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Store"/>
+        <Property name="text" type="java.lang.String" value="Buy Online"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buyAtStorejBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buyOnlinejBtnActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="customerOrdersJButton">

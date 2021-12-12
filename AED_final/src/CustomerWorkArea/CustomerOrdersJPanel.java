@@ -41,8 +41,8 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
         this.account = account;
         this.enterprise = enterprise;
         this.business = business;
-        
-        customerTextField.setText(account.getUsername());
+       
+        customerName.setText(account.getUsername());
 
         populateCustomerTable();
         populateStoreOrdersTable();
@@ -68,7 +68,7 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
     }
 
     public void populateStoreOrdersTable() {
-        DefaultTableModel model = (DefaultTableModel) storeOrdersJTable.getModel();
+        DefaultTableModel model = (DefaultTableModel) onlineOrdersJTable.getModel();
 
         model.setRowCount(0);
         {
@@ -97,7 +97,6 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         backJButton = new javax.swing.JButton();
-        customerTextField = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         refreshJButton = new javax.swing.JButton();
         customerOrdersjProgressBar = new javax.swing.JProgressBar();
@@ -107,8 +106,9 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
         customisedOrderJTable = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        storeOrdersJTable = new javax.swing.JTable();
+        onlineOrdersJTable = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
+        customerName = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
         setForeground(new java.awt.Color(102, 0, 51));
@@ -119,14 +119,6 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
-            }
-        });
-
-        customerTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        customerTextField.setEnabled(false);
-        customerTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                customerTextFieldActionPerformed(evt);
             }
         });
 
@@ -161,6 +153,7 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
         jLabel2.setForeground(new java.awt.Color(102, 0, 51));
         jLabel2.setText("Customized Orders");
 
+        customisedOrderJTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
         customisedOrderJTable.setForeground(new java.awt.Color(102, 0, 51));
         customisedOrderJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -170,7 +163,7 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
                 {null, null, null, null}
             },
             new String [] {
-                "OrderID", "Sender", "RequestDate", "Status"
+                "Order ID", "Sender", "Request Date", "Status"
             }
         ) {
             Class[] types = new Class [] {
@@ -192,10 +185,11 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
 
         jLabel3.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 51));
-        jLabel3.setText("Store Orders");
+        jLabel3.setText("Online Orders");
 
-        storeOrdersJTable.setForeground(new java.awt.Color(102, 0, 51));
-        storeOrdersJTable.setModel(new javax.swing.table.DefaultTableModel(
+        onlineOrdersJTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
+        onlineOrdersJTable.setForeground(new java.awt.Color(102, 0, 51));
+        onlineOrdersJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -203,7 +197,7 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
                 {null, null, null, null}
             },
             new String [] {
-                "OrderID", "Sender", "RequestDate", "Status"
+                "Order ID", "Sender", "Request Date", "Status"
             }
         ) {
             Class[] types = new Class [] {
@@ -221,7 +215,7 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane3.setViewportView(storeOrdersJTable);
+        jScrollPane3.setViewportView(onlineOrdersJTable);
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel1.setText("The Cloth Factory");
@@ -238,9 +232,9 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(29, 29, 29)
                         .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(customerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(113, 113, 113)
+                        .addGap(18, 18, 18)
+                        .addComponent(customerName, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(120, 120, 120)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(checkOrderStatusJButton))
@@ -286,15 +280,14 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(checkOrderStatusJButton))
+                    .addGroup(layout.createSequentialGroup()
                         .addGap(26, 26, 26)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(customerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(checkOrderStatusJButton)))
-                .addGap(19, 19, 19)
+                            .addComponent(jLabel8)
+                            .addComponent(customerName, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -310,10 +303,6 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
-
-    private void customerTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerTextFieldActionPerformed
-
-    }//GEN-LAST:event_customerTextFieldActionPerformed
 
     private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
         populateCustomerTable();
@@ -350,8 +339,8 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
     private javax.swing.JButton checkOrderStatusJButton;
+    private javax.swing.JLabel customerName;
     private javax.swing.JProgressBar customerOrdersjProgressBar;
-    private javax.swing.JTextField customerTextField;
     private javax.swing.JTable customisedOrderJTable;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -359,7 +348,7 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTable onlineOrdersJTable;
     private javax.swing.JButton refreshJButton;
-    private javax.swing.JTable storeOrdersJTable;
     // End of variables declaration//GEN-END:variables
 }

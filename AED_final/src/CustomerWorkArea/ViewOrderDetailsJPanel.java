@@ -140,6 +140,11 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
         txtText.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtText.setEnabled(false);
+        txtText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTextActionPerformed(evt);
+            }
+        });
 
         txtTextLocation.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtTextLocation.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
@@ -281,6 +286,10 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
+
+    private void txtTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTextActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

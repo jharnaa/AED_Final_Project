@@ -89,7 +89,7 @@ public class BuyOnlineJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Cloth Id", "Brand", "ModelNumber", "Price"
+                "Apparel ID", "Brand", "Model Number", "Price"
             }
         ) {
             boolean[] canEdit = new boolean [] {
