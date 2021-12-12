@@ -74,19 +74,19 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        carColorjComboBox = new javax.swing.JComboBox<>();
-        carTypejComboBox = new javax.swing.JComboBox();
-        engineTypejComboBox = new javax.swing.JComboBox();
-        airFilterjComboBox = new javax.swing.JComboBox<>();
-        carbodyjComboBox = new javax.swing.JComboBox<>();
+        cmbQuantity = new javax.swing.JComboBox<>();
+        cmbCategory = new javax.swing.JComboBox();
+        cmbColor = new javax.swing.JComboBox();
+        cmbSize = new javax.swing.JComboBox<>();
+        cmbFabricType = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
-        wheelTypejComboBox = new javax.swing.JComboBox<>();
+        cmbText = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
-        batteryjComboBox = new javax.swing.JComboBox<>();
+        cmbTextLocation = new javax.swing.JComboBox<>();
         jLabel10 = new javax.swing.JLabel();
-        interiorjComboBox = new javax.swing.JComboBox<>();
+        cmbDesignTechnique = new javax.swing.JComboBox<>();
         jLabel11 = new javax.swing.JLabel();
-        fuelTypejComboBox = new javax.swing.JComboBox<>();
+        cmbStyle = new javax.swing.JComboBox<>();
 
         backJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         backJButton.setText("Back");
@@ -121,59 +121,59 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel2.setText("Car Type :");
+        jLabel2.setText("Category :");
 
-        jLabel3.setText("Engine Type :");
+        jLabel3.setText("Color :");
 
-        jLabel4.setText("Air Filter :");
+        jLabel4.setText("Size :");
 
-        jLabel5.setText("Body:");
+        jLabel5.setText("Fabric Type:");
 
-        jLabel6.setText("Color :");
+        jLabel6.setText("Quantity :");
 
-        carColorjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pearl White", "Black", "Mettalic Grey", "Gold", "Red", "Silver", "Brown" }));
+        cmbQuantity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten" }));
 
-        carTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SUV", "Sedan", "Hatchback" }));
-        carTypejComboBox.addActionListener(new java.awt.event.ActionListener() {
+        cmbCategory.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Men", "Women", "Kids", "Baby" }));
+        cmbCategory.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                carTypejComboBoxActionPerformed(evt);
+                cmbCategoryActionPerformed(evt);
             }
         });
 
-        engineTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Diesel V6", "V-8s", "Three 4-cyl. turbos", "Two 2-cyl. turbos" }));
-        engineTypejComboBox.addActionListener(new java.awt.event.ActionListener() {
+        cmbColor.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Basic Black", "Basic White", "Beige", "Red", "Blue", "Lemon Yellow", "Pink", " " }));
+        cmbColor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                engineTypejComboBoxActionPerformed(evt);
+                cmbColorActionPerformed(evt);
             }
         });
 
-        airFilterjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Paper", "Foam", "Cotton", "Stainless Steel", "Mesh" }));
+        cmbSize.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "XL", "L", "M", "S", "XS", "6 Months", "12 Months", "18 Months", "New Born" }));
 
-        carbodyjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aluminium", "Magnesium", "Advanced composite materials", "Glass-fibre composites", "Steel", "Light Weight" }));
+        cmbFabricType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cotton", "Polyester", "Cotton Polyester", "Satin", "Jersey", "Linen", "Fleece" }));
 
-        jLabel7.setText("Wheel Type :");
+        jLabel7.setText("Text :");
 
-        wheelTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Alloy ", "Chrome", "Aluminium", "Lead", " " }));
+        cmbText.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "No Text", "Text" }));
 
-        jLabel9.setText("Battery Type:");
+        jLabel9.setText("Text Location:");
 
-        batteryjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lead ", "Nickel Hydride" }));
+        cmbTextLocation.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Front", "Back", "Sleeve Right", "Sleeve Left", "Both Sleeves" }));
 
-        jLabel10.setText("Interior Type:");
+        jLabel10.setText("Design Technique:");
 
-        interiorjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "PVC", "Polyurethane", "Ploypropylene" }));
-        interiorjComboBox.addActionListener(new java.awt.event.ActionListener() {
+        cmbDesignTechnique.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Printing", "Embroidery" }));
+        cmbDesignTechnique.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                interiorjComboBoxActionPerformed(evt);
+                cmbDesignTechniqueActionPerformed(evt);
             }
         });
 
-        jLabel11.setText("Fuel Type:");
+        jLabel11.setText("Style :");
 
-        fuelTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "FFV", "EV", "PHEV", "CNG", "FCV" }));
-        fuelTypejComboBox.addActionListener(new java.awt.event.ActionListener() {
+        cmbStyle.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tshirt", "Shirt", "Hoodies", "Sweatshirts", "Jackets", "Tank Tops", "Baby Bodysuits" }));
+        cmbStyle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fuelTypejComboBoxActionPerformed(evt);
+                cmbStyleActionPerformed(evt);
             }
         });
 
@@ -198,49 +198,54 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
                             .addComponent(btnNext)
                             .addComponent(customerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
+                        .addGap(37, 37, 37)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(30, 30, 30)
-                                .addComponent(carTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(220, 220, 220)
-                                .addComponent(jLabel6)
-                                .addGap(28, 28, 28)
-                                .addComponent(carColorjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(jLabel11)
-                                .addGap(46, 46, 46)
-                                .addComponent(fuelTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(210, 210, 210)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel9))
-                                .addGap(9, 9, 9)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(wheelTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(batteryjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jLabel5)
+                                .addGap(76, 76, 76)
+                                .addComponent(cmbFabricType, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel3)
-                                .addGap(46, 46, 46)
-                                .addComponent(engineTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(210, 210, 210)
-                                .addComponent(jLabel10)
-                                .addGap(16, 16, 16)
-                                .addComponent(interiorjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(26, 26, 26)
+                                .addComponent(cmbColor, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(343, 343, 343)
+                                .addComponent(cmbDesignTechnique, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
                                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(30, 30, 30)
-                                .addComponent(airFilterjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(cmbSize, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(50, 50, 50)
-                                .addComponent(jLabel5)
-                                .addGap(46, 46, 46)
-                                .addComponent(carbodyjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(17, Short.MAX_VALUE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel11)
+                                        .addGap(46, 46, 46)
+                                        .addComponent(cmbStyle, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(30, 30, 30)
+                                        .addComponent(cmbCategory, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(184, 184, 184)
+                                        .addComponent(jLabel6)
+                                        .addGap(28, 28, 28)
+                                        .addComponent(cmbQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(184, 184, 184)
+                                                .addComponent(jLabel7)
+                                                .addGap(63, 63, 63))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel10)
+                                                    .addComponent(jLabel9))
+                                                .addGap(10, 10, 10)))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(cmbText, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(cmbTextLocation, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))))))))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -257,47 +262,51 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
                     .addComponent(btnNext))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(carColorjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(cmbQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(carTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(cmbCategory, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(3, 3, 3)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cmbText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(wheelTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(13, 13, 13)
-                        .addComponent(batteryjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cmbTextLocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fuelTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(cmbStyle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(3, 3, 3)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(engineTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jLabel10))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(cmbColor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
-                        .addComponent(interiorjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cmbDesignTechnique, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel10))))
                 .addGap(3, 3, 3)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
-                        .addComponent(airFilterjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(20, 20, 20)
+                        .addComponent(cmbSize, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(carbodyjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(cmbFabricType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(98, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -335,115 +344,152 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
         order.setOrderNumber(count);
 
         float price = 0;
-        oi.getPersonaliseProduct().setCarType(carTypejComboBox.getSelectedItem().toString());
-        oi.getPersonaliseProduct().setEngineType(engineTypejComboBox.getSelectedItem().toString());
-        oi.getPersonaliseProduct().setAirFilters(airFilterjComboBox.getSelectedItem().toString());
-        oi.getPersonaliseProduct().setCarBody(carbodyjComboBox.getSelectedItem().toString());
-        oi.getPersonaliseProduct().setFuelType(fuelTypejComboBox.getSelectedItem().toString());
-        oi.getPersonaliseProduct().setWheelType(wheelTypejComboBox.getSelectedItem().toString());
-        oi.getPersonaliseProduct().setCarColor(carColorjComboBox.getSelectedItem().toString());
-        oi.getPersonaliseProduct().setInteriorType(interiorjComboBox.getSelectedItem().toString());
-        oi.getPersonaliseProduct().setBatteryType(batteryjComboBox.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setCategory(cmbCategory.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setStyle(cmbColor.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setColor(cmbSize.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setSize(cmbFabricType.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setFabricType(cmbStyle.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setQuantity(cmbText.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setPrintText(cmbQuantity.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setTextLocation(cmbDesignTechnique.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setDesignTechnique(cmbTextLocation.getSelectedItem().toString());
 
-        if (oi.getPersonaliseProduct().getCarType().equalsIgnoreCase("Hatchback")) {
+        if (oi.getPersonaliseProduct().getCategory().equalsIgnoreCase("Men")) {
             price = price + 1400;
-        } else if (oi.getPersonaliseProduct().getCarType().equalsIgnoreCase("Sedan")) {
+        } else if (oi.getPersonaliseProduct().getCategory().equalsIgnoreCase("Women")) {
             price = price + 2500;
         } else {
             price = price + 30000;
         }
 
         //
-        if (oi.getPersonaliseProduct().getCarType().equalsIgnoreCase("EV")) {
+        if (oi.getPersonaliseProduct().getCategory().equalsIgnoreCase("Kids")) {
             price = price + 400;
-        } else if (oi.getPersonaliseProduct().getCarType().equalsIgnoreCase("PHEV")) {
+        } else if (oi.getPersonaliseProduct().getCategory().equalsIgnoreCase("Baby")) {
             price = price + 500;
 
-        } else if (oi.getPersonaliseProduct().getCarType().equalsIgnoreCase("CNG")) {
-            price = price + 200;
-
-        } else if (oi.getPersonaliseProduct().getCarType().equalsIgnoreCase("FCV")) {
-            price = price + 300;
-
-        }
+        } 
         //
 
-        if (oi.getPersonaliseProduct().getEngineType().equalsIgnoreCase("Diesel V6")) {
+        if (oi.getPersonaliseProduct().getStyle().equalsIgnoreCase("T-shirts")) {
             price = price + 1000;
-        } else if (oi.getPersonaliseProduct().getEngineType().equalsIgnoreCase("V-8s")) {
+        } else if (oi.getPersonaliseProduct().getStyle().equalsIgnoreCase("Shirts")) {
             price = price + 600;
-        } else if (oi.getPersonaliseProduct().getEngineType().equalsIgnoreCase("Three 4-cyl. turbos")) {
+        } else if (oi.getPersonaliseProduct().getStyle().equalsIgnoreCase("Hoodies")) {
             price = price + 500;
-        } else if (oi.getPersonaliseProduct().getEngineType().equalsIgnoreCase("Two 2-cyl. turbos")) {
+        } else if (oi.getPersonaliseProduct().getStyle().equalsIgnoreCase("Sweatshirts")) {
+            price = price + 700;
+        }
+        else if (oi.getPersonaliseProduct().getStyle().equalsIgnoreCase("Jackets")) {
+            price = price + 700;
+        }else if (oi.getPersonaliseProduct().getStyle().equalsIgnoreCase("Tank Tops")) {
+            price = price + 700;
+        }else if (oi.getPersonaliseProduct().getStyle().equalsIgnoreCase("Baby Bodysuits")) {
             price = price + 700;
         }
 
         //
-        if (oi.getPersonaliseProduct().getAirFilters().equalsIgnoreCase("Paper")) {
+        if (oi.getPersonaliseProduct().getColor().equalsIgnoreCase("Basic Black")) {
             price = price + 100;
-        } else if (oi.getPersonaliseProduct().getAirFilters().equalsIgnoreCase("Foam")) {
+        } else if (oi.getPersonaliseProduct().getColor().equalsIgnoreCase("Basic White")) {
             price = price + 200;
-        } else if (oi.getPersonaliseProduct().getAirFilters().equalsIgnoreCase("Cotton")) {
+        } else if (oi.getPersonaliseProduct().getColor().equalsIgnoreCase("Beige")) {
             price = price + 300;
-        } else if (oi.getPersonaliseProduct().getAirFilters().equalsIgnoreCase("Stainless Steel")) {
+        } else if (oi.getPersonaliseProduct().getColor().equalsIgnoreCase("Blue")) {
             price = price + 400;
-        } else if (oi.getPersonaliseProduct().getAirFilters().equalsIgnoreCase("Mesh")) {
+        } else if (oi.getPersonaliseProduct().getColor().equalsIgnoreCase("Red")) {
+            price = price + 500;
+        }else if (oi.getPersonaliseProduct().getColor().equalsIgnoreCase("Lemon Yellow")) {
+            price = price + 500;
+        }else if (oi.getPersonaliseProduct().getColor().equalsIgnoreCase("Pink")) {
             price = price + 500;
         }
 
         //
-        if (oi.getPersonaliseProduct().getCarBody().equalsIgnoreCase("Aluminium")) {
+        if (oi.getPersonaliseProduct().getSize().equalsIgnoreCase("XL")) {
             price = price + 100;
-        } else if (oi.getPersonaliseProduct().getCarBody().equalsIgnoreCase("Magnesium")) {
+        } else if (oi.getPersonaliseProduct().getSize().equalsIgnoreCase("L")) {
             price = price + 200;
-        } else if (oi.getPersonaliseProduct().getCarBody().equalsIgnoreCase("Advanced composite materials")) {
+        } else if (oi.getPersonaliseProduct().getSize().equalsIgnoreCase("M")) {
             price = price + 300;
-        } else if (oi.getPersonaliseProduct().getCarBody().equalsIgnoreCase("Glass-fibre composites")) {
+        } else if (oi.getPersonaliseProduct().getSize().equalsIgnoreCase("S")) {
             price = price + 400;
-        } else if (oi.getPersonaliseProduct().getCarBody().equalsIgnoreCase("Steel")) {
+        } else if (oi.getPersonaliseProduct().getSize().equalsIgnoreCase("XS")) {
             price = price + 500;
-        } else if (oi.getPersonaliseProduct().getCarBody().equalsIgnoreCase("Light Weight")) {
+        } else if (oi.getPersonaliseProduct().getSize().equalsIgnoreCase("6 months")) {
+            price = price + 600;
+        }else if (oi.getPersonaliseProduct().getSize().equalsIgnoreCase("12 months")) {
+            price = price + 600;
+        }else if (oi.getPersonaliseProduct().getSize().equalsIgnoreCase("18 months")) {
+            price = price + 600;
+        }else if (oi.getPersonaliseProduct().getSize().equalsIgnoreCase("24 months")) {
+            price = price + 600;
+        }else if (oi.getPersonaliseProduct().getSize().equalsIgnoreCase("New Born")) {
             price = price + 600;
         }
 
         //
-        if (oi.getPersonaliseProduct().getCarColor().equalsIgnoreCase("Pearl White")) {
+        if (oi.getPersonaliseProduct().getFabricType().equalsIgnoreCase("Cotton")) {
             price = price + 100;
-        } else if (oi.getPersonaliseProduct().getCarColor().equalsIgnoreCase("Black")) {
+        } else if (oi.getPersonaliseProduct().getFabricType().equalsIgnoreCase("Polyester")) {
             price = price + 200;
-        } else if (oi.getPersonaliseProduct().getCarColor().equalsIgnoreCase("Mettalic Grey")) {
+        } else if (oi.getPersonaliseProduct().getFabricType().equalsIgnoreCase("Cotton Polyester")) {
             price = price + 300;
-        } else if (oi.getPersonaliseProduct().getCarColor().equalsIgnoreCase("Gold")) {
+        } else if (oi.getPersonaliseProduct().getFabricType().equalsIgnoreCase("Satin")) {
             price = price + 400;
-        } else if (oi.getPersonaliseProduct().getCarColor().equalsIgnoreCase("Red")) {
+        } else if (oi.getPersonaliseProduct().getFabricType().equalsIgnoreCase("Jersy")) {
             price = price + 500;
-        } else if (oi.getPersonaliseProduct().getCarColor().equalsIgnoreCase("Silver")) {
+        } else if (oi.getPersonaliseProduct().getFabricType().equalsIgnoreCase("Linen")) {
             price = price + 600;
-        } else if (oi.getPersonaliseProduct().getCarColor().equalsIgnoreCase("Brown")) {
+        } else if (oi.getPersonaliseProduct().getFabricType().equalsIgnoreCase("Fleece")) {
             price = price + 700;
         }
         //
-        if (oi.getPersonaliseProduct().getWheelType().equalsIgnoreCase("Alloy")) {
+        
+        if (oi.getPersonaliseProduct().getQuantity().equalsIgnoreCase("One")) {
             price = price + 100;
-        } else if (oi.getPersonaliseProduct().getWheelType().equalsIgnoreCase("Chrome")) {
+        } else if (oi.getPersonaliseProduct().getQuantity().equalsIgnoreCase("Two")) {
             price = price + 200;
-        } else if (oi.getPersonaliseProduct().getWheelType().equalsIgnoreCase("Aluminium")) {
+        } else if (oi.getPersonaliseProduct().getQuantity().equalsIgnoreCase("Three")) {
             price = price + 300;
-        } else if (oi.getPersonaliseProduct().getWheelType().equalsIgnoreCase("Lead")) {
+        } else if (oi.getPersonaliseProduct().getQuantity().equalsIgnoreCase("Four")) {
+            price = price + 400;
+        }else if (oi.getPersonaliseProduct().getQuantity().equalsIgnoreCase("Five")) {
+            price = price + 400;
+        }else if (oi.getPersonaliseProduct().getQuantity().equalsIgnoreCase("Six")) {
+            price = price + 400;
+        }else if (oi.getPersonaliseProduct().getQuantity().equalsIgnoreCase("Seven")) {
+            price = price + 400;
+        }else if (oi.getPersonaliseProduct().getQuantity().equalsIgnoreCase("Eight")) {
+            price = price + 400;
+        }else if (oi.getPersonaliseProduct().getQuantity().equalsIgnoreCase("Nine")) {
+            price = price + 400;
+        }else if (oi.getPersonaliseProduct().getQuantity().equalsIgnoreCase("Ten")) {
             price = price + 400;
         }
+        
         //
-        if (oi.getPersonaliseProduct().getBatteryType().equalsIgnoreCase("Lead")) {
+        if (oi.getPersonaliseProduct().getPrintText().equalsIgnoreCase("No Text")) {
             price = price + 100;
-        } else if (oi.getPersonaliseProduct().getWheelType().equalsIgnoreCase("Nickel Hydride")) {
+        } else if (oi.getPersonaliseProduct().getPrintText().equalsIgnoreCase("Text")) {
             price = price + 200;
         }
         //
-        if (oi.getPersonaliseProduct().getInteriorType().equalsIgnoreCase("PVC")) {
+        if (oi.getPersonaliseProduct().getTextLocation().equalsIgnoreCase("Front Print")) {
             price = price + 100;
-        } else if (oi.getPersonaliseProduct().getInteriorType().equalsIgnoreCase("Polyurethane")) {
+        } else if (oi.getPersonaliseProduct().getTextLocation().equalsIgnoreCase("Back Print")) {
             price = price + 200;
-        } else if (oi.getPersonaliseProduct().getInteriorType().equalsIgnoreCase("Ploypropylene")) {
+        } else if (oi.getPersonaliseProduct().getTextLocation().equalsIgnoreCase("Sleeve left")) {
+            price = price + 200;
+        }else if (oi.getPersonaliseProduct().getTextLocation().equalsIgnoreCase("Sleeve Right")) {
+            price = price + 200;
+        }else if (oi.getPersonaliseProduct().getTextLocation().equalsIgnoreCase("Both Sleeves")) {
+            price = price + 200;
+        }
+        
+        else if (oi.getPersonaliseProduct().getDesignTechnique().equalsIgnoreCase("Embroidery")) {
+            price = price + 200;
+        }else if (oi.getPersonaliseProduct().getDesignTechnique().equalsIgnoreCase("Print")) {
             price = price + 200;
         }
 
@@ -459,36 +505,37 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
         layout.next(userProcessContainer);
     }//GEN-LAST:event_btnNextActionPerformed
 
-    private void carTypejComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_carTypejComboBoxActionPerformed
+    private void cmbCategoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbCategoryActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_carTypejComboBoxActionPerformed
+    }//GEN-LAST:event_cmbCategoryActionPerformed
 
-    private void engineTypejComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_engineTypejComboBoxActionPerformed
+    private void cmbColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbColorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_engineTypejComboBoxActionPerformed
+    }//GEN-LAST:event_cmbColorActionPerformed
 
-    private void interiorjComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_interiorjComboBoxActionPerformed
+    private void cmbDesignTechniqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbDesignTechniqueActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_interiorjComboBoxActionPerformed
+    }//GEN-LAST:event_cmbDesignTechniqueActionPerformed
 
-    private void fuelTypejComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fuelTypejComboBoxActionPerformed
+    private void cmbStyleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbStyleActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fuelTypejComboBoxActionPerformed
+    }//GEN-LAST:event_cmbStyleActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> airFilterjComboBox;
     private javax.swing.JButton backJButton;
-    private javax.swing.JComboBox<String> batteryjComboBox;
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnNext;
-    private javax.swing.JComboBox<String> carColorjComboBox;
-    private javax.swing.JComboBox carTypejComboBox;
-    private javax.swing.JComboBox<String> carbodyjComboBox;
+    private javax.swing.JComboBox cmbCategory;
+    private javax.swing.JComboBox cmbColor;
+    private javax.swing.JComboBox<String> cmbDesignTechnique;
+    private javax.swing.JComboBox<String> cmbFabricType;
+    private javax.swing.JComboBox<String> cmbQuantity;
+    private javax.swing.JComboBox<String> cmbSize;
+    private javax.swing.JComboBox<String> cmbStyle;
+    private javax.swing.JComboBox<String> cmbText;
+    private javax.swing.JComboBox<String> cmbTextLocation;
     private javax.swing.JTextField customerTextField;
-    private javax.swing.JComboBox engineTypejComboBox;
-    private javax.swing.JComboBox<String> fuelTypejComboBox;
-    private javax.swing.JComboBox<String> interiorjComboBox;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
@@ -499,6 +546,5 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JComboBox<String> wheelTypejComboBox;
     // End of variables declaration//GEN-END:variables
 }

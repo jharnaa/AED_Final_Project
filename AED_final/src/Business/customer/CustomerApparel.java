@@ -11,23 +11,86 @@ package Business.customer;
  */
 public class CustomerApparel {
     private int customizeProductId;
-    private String carType;
-    private String engineType;
-    private String airFilters;
-    private String carBody;
-    private String carColor;
-    private String wheelType;
-    private String batteryType;
-    private String interiorType;
-    private String fuelType;
-    
     private String category;
     private String style;
+
+    public String getPrintText() {
+        return PrintText;
+    }
+
+    public void setPrintText(String PrintText) {
+        this.PrintText = PrintText;
+    }
     private String color;
     private String size;
     private String fabricType;
     private String quantity;
-    private String text;
+    private String PrintText;
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getStyle() {
+        return style;
+    }
+
+    public void setStyle(String style) {
+        this.style = style;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public String getFabricType() {
+        return fabricType;
+    }
+
+    public void setFabricType(String fabricType) {
+        this.fabricType = fabricType;
+    }
+
+    public String getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(String quantity) {
+        this.quantity = quantity;
+    }
+
+
+    public String getTextLocation() {
+        return textLocation;
+    }
+
+    public void setTextLocation(String textLocation) {
+        this.textLocation = textLocation;
+    }
+
+    public String getDesignTechnique() {
+        return designTechnique;
+    }
+
+    public void setDesignTechnique(String designTechnique) {
+        this.designTechnique = designTechnique;
+    }
     private String textLocation;
     private String designTechnique;
     private float price;
@@ -37,14 +100,6 @@ public class CustomerApparel {
     public CustomerApparel() {
         count++;
         customizeProductId = count;
-    }
-
-    public String getFuelType() {
-        return fuelType;
-    }
-
-    public void setFuelType(String fuelType) {
-        this.fuelType = fuelType;
     }
 
     public float getPrice() {
@@ -69,70 +124,6 @@ public class CustomerApparel {
 
     public void setCustomizeProductId(int customizeProductId) {
         this.customizeProductId = customizeProductId;
-    }
-
-    public String getCarType() {
-        return carType;
-    }
-
-    public void setCarType(String carType) {
-        this.carType = carType;
-    }
-
-    public String getEngineType() {
-        return engineType;
-    }
-
-    public void setEngineType(String engineType) {
-        this.engineType = engineType;
-    }
-
-    public String getAirFilters() {
-        return airFilters;
-    }
-
-    public void setAirFilters(String airFilters) {
-        this.airFilters = airFilters;
-    }
-
-    public String getCarBody() {
-        return carBody;
-    }
-
-    public void setCarBody(String carBody) {
-        this.carBody = carBody;
-    }
-
-    public String getCarColor() {
-        return carColor;
-    }
-
-    public void setCarColor(String carColor) {
-        this.carColor = carColor;
-    }
-
-    public String getWheelType() {
-        return wheelType;
-    }
-
-    public void setWheelType(String wheelType) {
-        this.wheelType = wheelType;
-    }
-
-    public String getBatteryType() {
-        return batteryType;
-    }
-
-    public void setBatteryType(String batteryType) {
-        this.batteryType = batteryType;
-    }
-
-    public String getInteriorType() {
-        return interiorType;
-    }
-
-    public void setInteriorType(String interiorType) {
-        this.interiorType = interiorType;
     }
 
     @Override
