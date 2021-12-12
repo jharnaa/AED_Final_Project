@@ -36,15 +36,11 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="96" max="32767" attributes="0"/>
-                  <Component id="designProductJButton" min="-2" pref="600" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
-              </Group>
+              <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="287" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="273" max="-2" attributes="0"/>
+                  <Component id="designProductJButton" min="-2" pref="600" max="-2" attributes="0"/>
+                  <EmptySpace pref="274" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -53,9 +49,9 @@
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="62" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="173" max="-2" attributes="0"/>
                   <Component id="designProductJButton" min="-2" pref="150" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
+                  <EmptySpace pref="211" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -80,6 +76,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Malayalam MN" size="24" style="1"/>
             </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="The Cloth Factory"/>
           </Properties>
         </Component>

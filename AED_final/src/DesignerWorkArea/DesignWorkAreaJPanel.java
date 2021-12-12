@@ -84,13 +84,13 @@ public class DesignWorkAreaJPanel extends javax.swing.JPanel {
         enterpriseLabel1 = new javax.swing.JLabel();
         orgValueLabel = new javax.swing.JLabel();
         designCompleteJButton = new javax.swing.JButton();
-        assignToMeJButton = new javax.swing.JButton();
-        requestManufacturertJButton = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        workRequestJTable = new javax.swing.JTable();
+        requestProducerJButton = new javax.swing.JButton();
         backJButton = new javax.swing.JButton();
         refreshTestJButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        assignToMeJButton = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        workRequestJTable = new javax.swing.JTable();
 
         setBackground(new java.awt.Color(255, 204, 204));
         setForeground(new java.awt.Color(102, 0, 51));
@@ -123,99 +123,57 @@ public class DesignWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        assignToMeJButton.setBackground(new java.awt.Color(204, 204, 255));
-        assignToMeJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
-        assignToMeJButton.setForeground(new java.awt.Color(102, 0, 51));
-        assignToMeJButton.setText("Accept Request");
-        assignToMeJButton.addActionListener(new java.awt.event.ActionListener() {
+        requestProducerJButton.setBackground(new java.awt.Color(204, 204, 255));
+        requestProducerJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        requestProducerJButton.setForeground(new java.awt.Color(102, 0, 51));
+        requestProducerJButton.setText("Request Production Team");
+        requestProducerJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                assignToMeJButtonActionPerformed(evt);
+                requestProducerJButtonActionPerformed(evt);
             }
         });
-
-        requestManufacturertJButton.setBackground(new java.awt.Color(204, 204, 255));
-        requestManufacturertJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
-        requestManufacturertJButton.setForeground(new java.awt.Color(102, 0, 51));
-        requestManufacturertJButton.setText("Request Manufacturing Team");
-        requestManufacturertJButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                requestManufacturertJButtonActionPerformed(evt);
-            }
-        });
-
-        workRequestJTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        workRequestJTable.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
-        workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "OrderID", "Sender", "Receiver", "RequestDate", "Status"
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, true
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        jScrollPane1.setViewportView(workRequestJTable);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(enterpriseLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(enterpriseLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(requestProducerJButton)
+                .addGap(38, 38, 38)
+                .addComponent(designCompleteJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(153, 153, 153)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 780, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(19, 19, 19)
+                        .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(assignToMeJButton)
-                        .addGap(40, 40, 40)
-                        .addComponent(requestManufacturertJButton)
-                        .addGap(48, 48, 48)
-                        .addComponent(designCompleteJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(12, Short.MAX_VALUE))
+                        .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 203, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(valueLabel)
-                    .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(requestManufacturertJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(assignToMeJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(designCompleteJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(designCompleteJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(requestProducerJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(2, 2, 2)
+                                .addComponent(valueLabel)))
+                        .addGap(6, 6, 6)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(144, Short.MAX_VALUE))
         );
 
         backJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -237,37 +195,93 @@ public class DesignWorkAreaJPanel extends javax.swing.JPanel {
         });
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("The Cloth Factory");
+
+        assignToMeJButton.setBackground(new java.awt.Color(204, 204, 255));
+        assignToMeJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        assignToMeJButton.setForeground(new java.awt.Color(102, 0, 51));
+        assignToMeJButton.setText("Accept Request");
+        assignToMeJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                assignToMeJButtonActionPerformed(evt);
+            }
+        });
+
+        workRequestJTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        workRequestJTable.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        workRequestJTable.setForeground(new java.awt.Color(102, 0, 5));
+        workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Order ID", "Sender", "Receiver", "Request Date", "Status"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, true
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(workRequestJTable);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(113, 113, 113)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 998, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(refreshTestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 780, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1)
-                        .addGap(167, 167, 167)
-                        .addComponent(refreshTestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(assignToMeJButton)
+                        .addGap(12, 12, 12)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(refreshTestJButton)
-                    .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(refreshTestJButton))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(assignToMeJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(104, 104, 104))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -311,7 +325,7 @@ public class DesignWorkAreaJPanel extends javax.swing.JPanel {
         populateDesignTable();
     }//GEN-LAST:event_assignToMeJButtonActionPerformed
 
-    private void requestManufacturertJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestManufacturertJButtonActionPerformed
+    private void requestProducerJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestProducerJButtonActionPerformed
         int selectedRow = workRequestJTable.getSelectedRow();
 
         if (selectedRow < 0) {
@@ -343,7 +357,7 @@ public class DesignWorkAreaJPanel extends javax.swing.JPanel {
 
         }
 
-    }//GEN-LAST:event_requestManufacturertJButtonActionPerformed
+    }//GEN-LAST:event_requestProducerJButtonActionPerformed
 
     private void refreshTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshTestJButtonActionPerformed
 
@@ -362,7 +376,7 @@ public class DesignWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel orgValueLabel;
     private javax.swing.JButton refreshTestJButton;
-    private javax.swing.JButton requestManufacturertJButton;
+    private javax.swing.JButton requestProducerJButton;
     private javax.swing.JLabel valueLabel;
     private javax.swing.JTable workRequestJTable;
     // End of variables declaration//GEN-END:variables
