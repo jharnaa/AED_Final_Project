@@ -95,16 +95,16 @@ private JPanel userProcessContainer;
                 CreateApparelJButtonActionPerformed(evt);
             }
         });
-        add(CreateApparelJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(373, 244, 404, 150));
+        add(CreateApparelJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 404, 150));
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(442, 15, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 20, -1, -1));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ClothFactoryStaffWorkArea/frock.gif"))); // NOI18N
         jLabel2.setText("jLabel2");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(969, 95, 172, 197));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 50, 172, 197));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ClothFactoryStaffWorkArea/frock2.gif"))); // NOI18N
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 368, 284, 249));

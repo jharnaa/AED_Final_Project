@@ -76,66 +76,82 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
         jLabel8 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 0, 51));
         jLabel2.setText("Category");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 127, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 51));
         jLabel3.setText("Color");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(416, 203, 49, -1));
 
         jLabel4.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 0, 51));
         jLabel4.setText("Size");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(424, 235, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(102, 0, 51));
         jLabel5.setText("Fabric Type");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(367, 267, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(102, 0, 51));
         jLabel6.setText("Text");
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(429, 299, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(102, 0, 51));
         jLabel7.setText("Text Location");
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(353, 335, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(102, 0, 51));
         jLabel9.setText("Design Type");
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(359, 377, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 51));
         jLabel10.setText("Quantity");
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 445, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(102, 0, 51));
         jLabel11.setText("Style");
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(423, 165, -1, -1));
 
         txtQuantity.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtQuantity.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtQuantity.setEnabled(false);
+        add(txtQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 443, 150, -1));
 
         txtCategory.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtCategory.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtCategory.setEnabled(false);
+        add(txtCategory, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 125, 150, -1));
 
         txtStyle.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtStyle.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtStyle.setEnabled(false);
+        add(txtStyle, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 163, 150, -1));
 
         txtColor.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtColor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtColor.setEnabled(false);
+        add(txtColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 201, 150, -1));
 
         txtSize.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtSize.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtSize.setEnabled(false);
+        add(txtSize, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 233, 150, -1));
 
         txtFabricType.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtFabricType.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtFabricType.setEnabled(false);
+        add(txtFabricType, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 265, 150, -1));
 
         txtText.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
@@ -145,22 +161,27 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
                 txtTextActionPerformed(evt);
             }
         });
+        add(txtText, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 297, 150, -1));
 
         txtTextLocation.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtTextLocation.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtTextLocation.setEnabled(false);
+        add(txtTextLocation, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 333, 150, -1));
 
         txtDesignType.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtDesignType.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtDesignType.setEnabled(false);
+        add(txtDesignType, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 371, 150, -1));
 
         jLabel12.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(102, 0, 51));
         jLabel12.setText("Interior Type");
+        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 407, -1, -1));
 
         interiorTypejTextField1.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         interiorTypejTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         interiorTypejTextField1.setEnabled(false);
+        add(interiorTypejTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 405, 150, -1));
 
         backJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         backJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -170,114 +191,15 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel1.setText("The Cloth Factory");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 29, -1, -1));
 
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CustomerWorkArea/confirm.gif"))); // NOI18N
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(backJButton)
-                        .addGap(132, 132, 132))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel11)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addGap(6, 6, 6))
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtStyle, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCategory, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtDesignType, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(interiorTypejTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtColor, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtSize, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtFabricType, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtText, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtTextLocation, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(59, 59, 59)
-                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(71, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(backJButton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(jLabel1)))
-                .addGap(60, 60, 60)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtCategory, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtStyle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel11))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(txtColor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtSize, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtFabricType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6))
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(txtTextLocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(12, 12, 12)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(txtDesignType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(8, 8, 8)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(interiorTypejTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(txtQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(95, Short.MAX_VALUE))
-        );
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(726, 163, 186, 219));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

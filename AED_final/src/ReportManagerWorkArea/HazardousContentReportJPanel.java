@@ -111,6 +111,7 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         backJButton7.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         backJButton7.setForeground(new java.awt.Color(102, 0, 51));
@@ -120,19 +121,24 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
                 backJButton7ActionPerformed(evt);
             }
         });
+        add(backJButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 15, 80, 40));
 
         reportDisplayjPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         reportDisplayjPanel.setLayout(new java.awt.BorderLayout());
+        add(reportDisplayjPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 223, 500, 400));
 
         jLabel7.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(102, 0, 51));
         jLabel7.setText("Fabric Type");
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 128, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(102, 0, 51));
         jLabel8.setText("Design Technique");
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(485, 128, -1, -1));
 
         airFilterjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cotton", "Polyester", "Polyester-Cotton", "Satin", "Jersey", "Linen", "Fleece" }));
+        add(airFilterjComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 128, 140, 30));
 
         engineTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Printing", "Embroidery" }));
         engineTypejComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -140,6 +146,7 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
                 engineTypejComboBoxActionPerformed(evt);
             }
         });
+        add(engineTypejComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 130, 140, -1));
 
         generatePieChartjButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         generatePieChartjButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -149,8 +156,10 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
                 generatePieChartjButtonActionPerformed(evt);
             }
         });
+        add(generatePieChartjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(738, 171, -1, 40));
 
         pieReportjPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        add(pieReportjPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(576, 223, 680, 400));
 
         generateGraphjButton1.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         generateGraphjButton1.setForeground(new java.awt.Color(102, 0, 51));
@@ -160,86 +169,19 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
                 generateGraphjButton1ActionPerformed(evt);
             }
         });
+        add(generateGraphjButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 176, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(102, 0, 51));
         jLabel9.setText("Manufacturing Process");
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 129, -1, -1));
 
         manufacturingProcessjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bleaching", "Dyeing" }));
+        add(manufacturingProcessjComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(1122, 129, 140, 30));
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(182, 182, 182)
-                .addComponent(generateGraphjButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(generatePieChartjButton)
-                .addGap(227, 227, 227))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(101, 101, 101)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(airFilterjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(135, 135, 135)
-                .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(engineTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(115, 115, 115)
-                .addComponent(jLabel9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(manufacturingProcessjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 32, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(reportDisplayjPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(pieReportjPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 680, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(backJButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(420, 420, 420)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(backJButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1))
-                        .addGap(156, 156, 156))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(airFilterjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel8)
-                                    .addComponent(engineTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addComponent(generateGraphjButton1))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(manufacturingProcessjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel9))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(generatePieChartjButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(pieReportjPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(reportDisplayjPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 15, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButton7ActionPerformed
