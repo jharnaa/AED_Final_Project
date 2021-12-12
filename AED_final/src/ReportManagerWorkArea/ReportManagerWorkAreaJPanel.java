@@ -68,8 +68,14 @@ public class ReportManagerWorkAreaJPanel extends javax.swing.JPanel {
         revenueJButton5 = new javax.swing.JButton();
         workREquestJButton = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
-        backJButton7.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        setBackground(new java.awt.Color(255, 204, 204));
+
+        backJButton7.setBackground(new java.awt.Color(255, 255, 255));
+        backJButton7.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        backJButton7.setForeground(new java.awt.Color(102, 0, 51));
         backJButton7.setText("Back");
         backJButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,20 +83,27 @@ public class ReportManagerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        enterpriseLabel.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        enterpriseLabel.setBackground(new java.awt.Color(255, 255, 255));
+        enterpriseLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        enterpriseLabel.setForeground(new java.awt.Color(102, 0, 51));
         enterpriseLabel.setText("Enterprise :");
 
-        enterpriseLabel2.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        enterpriseLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        enterpriseLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        enterpriseLabel2.setForeground(new java.awt.Color(102, 0, 51));
         enterpriseLabel2.setText("Organization:");
 
-        orgValueLabel.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        orgValueLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        orgValueLabel.setForeground(new java.awt.Color(102, 0, 51));
         orgValueLabel.setText("<value>");
 
-        valueLabel.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        valueLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        valueLabel.setForeground(new java.awt.Color(102, 0, 51));
         valueLabel.setText("<value>");
 
-        hazardousContentjBtn.setBackground(new java.awt.Color(204, 204, 255));
-        hazardousContentjBtn.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 18)); // NOI18N
+        hazardousContentjBtn.setBackground(new java.awt.Color(255, 255, 255));
+        hazardousContentjBtn.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        hazardousContentjBtn.setForeground(new java.awt.Color(102, 0, 51));
         hazardousContentjBtn.setText("Level of Hazardous Content");
         hazardousContentjBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,8 +111,9 @@ public class ReportManagerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        revenueJButton5.setBackground(new java.awt.Color(204, 204, 255));
-        revenueJButton5.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 18)); // NOI18N
+        revenueJButton5.setBackground(new java.awt.Color(255, 255, 255));
+        revenueJButton5.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        revenueJButton5.setForeground(new java.awt.Color(102, 0, 51));
         revenueJButton5.setText("Revenue ");
         revenueJButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -107,8 +121,9 @@ public class ReportManagerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        workREquestJButton.setBackground(new java.awt.Color(204, 204, 255));
-        workREquestJButton.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 18)); // NOI18N
+        workREquestJButton.setBackground(new java.awt.Color(255, 255, 255));
+        workREquestJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        workREquestJButton.setForeground(new java.awt.Color(102, 0, 51));
         workREquestJButton.setText("Work Requests");
         workREquestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,8 +131,9 @@ public class ReportManagerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(204, 204, 255));
-        jButton1.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 18)); // NOI18N
+        jButton1.setBackground(new java.awt.Color(255, 255, 255));
+        jButton1.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(102, 0, 51));
         jButton1.setText("Organization");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,60 +141,82 @@ public class ReportManagerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ReportManagerWorkArea/reporting.gif"))); // NOI18N
+
+        jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel2.setText("The Cloth Factory");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(enterpriseLabel2)
                         .addGap(16, 16, 16)
-                        .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(backJButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(backJButton7)
+                                .addGap(322, 322, 322)
+                                .addComponent(jLabel2))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(enterpriseLabel2))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(2, 2, 2)
+                                        .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(181, 181, 181)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(workREquestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hazardousContentjBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(revenueJButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(73, 73, 73)
+                        .addComponent(jLabel1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(199, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hazardousContentjBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(workREquestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addComponent(revenueJButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(102, 102, 102))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {hazardousContentjBtn, jButton1, revenueJButton5, workREquestJButton});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(backJButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(backJButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addGap(58, 58, 58)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(4, 4, 4)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(enterpriseLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(63, 63, 63)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(hazardousContentjBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(workREquestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(revenueJButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(revenueJButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(37, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel1)))
+                .addGap(35, 35, 35))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {hazardousContentjBtn, jButton1, revenueJButton5, workREquestJButton});
+
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButton7ActionPerformed
@@ -230,6 +268,8 @@ public class ReportManagerWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel enterpriseLabel2;
     private javax.swing.JButton hazardousContentjBtn;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel orgValueLabel;
     private javax.swing.JButton revenueJButton5;
     private javax.swing.JLabel valueLabel;
