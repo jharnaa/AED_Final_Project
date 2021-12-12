@@ -61,7 +61,7 @@ public class ManageEmployeeAccountJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 204, 204));
 
-        backJButton.setFont(new java.awt.Font("Palatino Linotype", 0, 18)); // NOI18N
+        backJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         backJButton.setForeground(new java.awt.Color(102, 0, 51));
         backJButton.setText("Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -85,11 +85,12 @@ public class ManageEmployeeAccountJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 51));
         jLabel3.setText("Organization");
 
         organizationJTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        organizationJTable.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         organizationJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
@@ -118,8 +119,8 @@ public class ManageEmployeeAccountJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(organizationJTable);
 
-        addJButton.setBackground(new java.awt.Color(204, 204, 255));
-        addJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        addJButton.setBackground(new java.awt.Color(255, 204, 204));
+        addJButton.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
         addJButton.setForeground(new java.awt.Color(102, 0, 51));
         addJButton.setText("Create Person");
         addJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -128,14 +129,14 @@ public class ManageEmployeeAccountJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 0, 51));
         jLabel2.setText("Person Name");
 
         nameJTextField.setFont(new java.awt.Font("Palatino Linotype", 0, 12)); // NOI18N
         nameJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
-        jLabel1.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 0, 51));
         jLabel1.setText("Organization");
 
@@ -148,7 +149,7 @@ public class ManageEmployeeAccountJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel4.setText("The Cloth Factory");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -174,7 +175,7 @@ public class ManageEmployeeAccountJPanel extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addGap(18, 18, 18)
-                                .addComponent(organizationEmpJComboBox, 0, 147, Short.MAX_VALUE))
+                                .addComponent(organizationEmpJComboBox, 0, 154, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(18, 18, 18)
@@ -186,13 +187,12 @@ public class ManageEmployeeAccountJPanel extends javax.swing.JPanel {
                         .addGap(215, 215, 215))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(173, 173, 173))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(addJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(287, 287, 287))))))
+                        .addComponent(addJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(287, 287, 287))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(150, 150, 150))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -224,7 +224,7 @@ public class ManageEmployeeAccountJPanel extends javax.swing.JPanel {
                 .addComponent(addJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(47, Short.MAX_VALUE))
+                .addContainerGap(57, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
