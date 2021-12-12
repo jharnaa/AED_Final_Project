@@ -13,6 +13,22 @@ public class CustomerApparel {
     private int customizeProductId;
     private String category;
     private String style;
+    private String color;
+    private String size;
+    private String fabricType;
+    private String quantity;
+    private String PrintText;
+    
+    private String textLocation;
+    private String designTechnique;
+    private float price;
+    private static int count = 0;
+    
+    public CustomerApparel() {
+        count++;
+        customizeProductId = count;
+    }
+    
 
     public String getPrintText() {
         return PrintText;
@@ -21,11 +37,6 @@ public class CustomerApparel {
     public void setPrintText(String PrintText) {
         this.PrintText = PrintText;
     }
-    private String color;
-    private String size;
-    private String fabricType;
-    private String quantity;
-    private String PrintText;
 
     public String getCategory() {
         return category;
@@ -91,17 +102,7 @@ public class CustomerApparel {
     public void setDesignTechnique(String designTechnique) {
         this.designTechnique = designTechnique;
     }
-    private String textLocation;
-    private String designTechnique;
-    private float price;
     
-    private static int count = 0;
-
-    public CustomerApparel() {
-        count++;
-        customizeProductId = count;
-    }
-
     public float getPrice() {
         return price;
     }

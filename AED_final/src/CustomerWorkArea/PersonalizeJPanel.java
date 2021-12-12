@@ -339,11 +339,12 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
 
         // add customised order item to the order
         count++;
-        PersonalisedOrderItem oi = order.addCustomizedOrderItem();
+        PersonalisedOrderItem oi = order.addPersonalisedOrderItem();
         order.setCustomer(account.getEmployee());
         order.setOrderNumber(count);
 
         float price = 0;
+        System.out.println("reached here setcategory");
         oi.getPersonaliseProduct().setCategory(cmbCategory.getSelectedItem().toString());
         oi.getPersonaliseProduct().setStyle(cmbColor.getSelectedItem().toString());
         oi.getPersonaliseProduct().setColor(cmbSize.getSelectedItem().toString());

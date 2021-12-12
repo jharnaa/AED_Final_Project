@@ -52,7 +52,7 @@ public class PersonalisedOrder {
         this.customer = customer;
     }
 
-    public PersonalisedOrderItem addCustomizedOrderItem() {
+    public PersonalisedOrderItem addPersonalisedOrderItem() {
         PersonalisedOrderItem co = new PersonalisedOrderItem();
         orderItemList.add(co);
         return co;
