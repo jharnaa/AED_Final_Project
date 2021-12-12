@@ -84,9 +84,11 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
         placeOrderjBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         customerName = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
         setForeground(new java.awt.Color(102, 0, 51));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         backJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         backJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -96,10 +98,12 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 20, 101, -1));
 
         jLabel8.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(102, 0, 51));
         jLabel8.setText("Hello!");
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 90, -1, 30));
 
         customerCartjTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         customerCartjTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
@@ -122,6 +126,8 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(customerCartjTable);
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(278, 163, 530, 204));
+
         viewDetailjBtn.setBackground(new java.awt.Color(204, 204, 255));
         viewDetailjBtn.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         viewDetailjBtn.setForeground(new java.awt.Color(102, 0, 51));
@@ -131,6 +137,7 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
                 viewDetailjBtnActionPerformed(evt);
             }
         });
+        add(viewDetailjBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(278, 410, -1, -1));
 
         deletejButton.setBackground(new java.awt.Color(204, 204, 255));
         deletejButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -141,6 +148,7 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
                 deletejButtonActionPerformed(evt);
             }
         });
+        add(deletejButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(471, 410, 160, -1));
 
         placeOrderjBtn.setBackground(new java.awt.Color(204, 204, 255));
         placeOrderjBtn.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -151,56 +159,15 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
                 placeOrderjBtnActionPerformed(evt);
             }
         });
+        add(placeOrderjBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(678, 410, 130, -1));
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel1.setText("The Cloth Factory");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(411, 17, -1, -1));
+        add(customerName, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 90, 107, 31));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(203, 203, 203)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(97, 97, 97)
-                        .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(viewDetailjBtn)
-                                .addGap(48, 48, 48)
-                                .addComponent(deletejButton, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(34, 34, 34)
-                                .addComponent(placeOrderjBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(customerName, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(152, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(backJButton)
-                    .addComponent(jLabel1))
-                .addGap(35, 35, 35)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(customerName, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(viewDetailjBtn)
-                    .addComponent(deletejButton)
-                    .addComponent(placeOrderjBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(73, Short.MAX_VALUE))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/StoreManagerWorkArea/blossoms.gif"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(847, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -278,6 +245,7 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel customerName;
     private javax.swing.JButton deletejButton;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton placeOrderjBtn;

@@ -79,7 +79,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 manageOrganizationJButtonActionPerformed(evt);
             }
         });
-        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(72, 282, 242, 50));
+        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 242, 50));
 
         userJButton.setBackground(new java.awt.Color(204, 204, 255));
         userJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -90,7 +90,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 userJButtonActionPerformed(evt);
             }
         });
-        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(72, 135, 242, 47));
+        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 242, 47));
 
         manageEmployeeJButton.setBackground(new java.awt.Color(204, 204, 255));
         manageEmployeeJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -101,7 +101,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 manageEmployeeJButtonActionPerformed(evt);
             }
         });
-        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(72, 200, 242, 52));
+        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 242, 52));
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel1.setText("The Cloth Factory");
@@ -109,7 +109,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/admin/peace.gif"))); // NOI18N
         jLabel3.setText("jLabel3");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, 460, 310));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 100, 460, 310));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backjButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backjButton1ActionPerformed

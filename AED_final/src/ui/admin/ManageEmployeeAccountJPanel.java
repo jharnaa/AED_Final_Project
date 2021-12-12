@@ -163,9 +163,9 @@ public class ManageEmployeeAccountJPanel extends javax.swing.JPanel {
         });
         add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 154, -1));
 
-        jLabel4.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel4.setText("The Cloth Factory");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 250, 70));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 40, 250, 70));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
