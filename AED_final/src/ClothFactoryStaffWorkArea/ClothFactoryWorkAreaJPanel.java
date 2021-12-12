@@ -107,6 +107,7 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         backJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         backJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -116,22 +117,27 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 93, 37));
 
         valueLabel.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         valueLabel.setForeground(new java.awt.Color(102, 0, 51));
         valueLabel.setText("<value>");
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 90, 84, 30));
 
         enterpriseLabel2.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         enterpriseLabel2.setForeground(new java.awt.Color(102, 0, 51));
         enterpriseLabel2.setText("Enterprise :");
+        add(enterpriseLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 90, -1, 30));
 
         valueLabel1.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         valueLabel1.setForeground(new java.awt.Color(102, 0, 51));
         valueLabel1.setText("<value>");
+        add(valueLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 121, 84, 30));
 
         enterpriseLabel3.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         enterpriseLabel3.setForeground(new java.awt.Color(102, 0, 51));
         enterpriseLabel3.setText("Organization:");
+        add(enterpriseLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 116, -1, 40));
 
         refreshTestJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         refreshTestJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -141,6 +147,7 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
                 refreshTestJButtonActionPerformed(evt);
             }
         });
+        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 10, 130, 37));
 
         createClothModelJButton.setBackground(new java.awt.Color(255, 255, 255));
         createClothModelJButton.setFont(new java.awt.Font("Palatino", 1, 14)); // NOI18N
@@ -152,6 +159,7 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
                 createClothModelJButtonActionPerformed(evt);
             }
         });
+        add(createClothModelJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(478, 314, 107, 30));
 
         brandJComboBox.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         brandJComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Zara", "H&M" }));
@@ -161,14 +169,17 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
                 brandJComboBoxActionPerformed(evt);
             }
         });
+        add(brandJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(513, 196, 150, -1));
 
         jLabel1.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 0, 51));
         jLabel1.setText("Brand");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(451, 200, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 51));
         jLabel3.setText("Model Number");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(373, 237, -1, -1));
 
         modelNumberJComboBox.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         modelNumberJComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Zara Tshirt", "Zara Shirt", "Zara Hoodies", "Zara Sweat Shirts", "Zara Jackets", "Zara Tank Tops", "Zara Baby Bodysuits", "H&M Tshirt", "H&M Shirt", "H&M Hoodies", "H&M Sweat Shirts", "H&M Jackets", "H&M Tank Tops", "H&M Baby Bodysuits" }));
@@ -178,21 +189,26 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
                 modelNumberJComboBoxActionPerformed(evt);
             }
         });
+        add(modelNumberJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(513, 233, 150, -1));
 
         jLabel4.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 0, 51));
         jLabel4.setText("Quantity");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(427, 272, -1, -1));
 
         quantityJTextField.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         quantityJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        add(quantityJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(513, 270, 150, -1));
 
         workRequestJTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        workRequestJTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
+        workRequestJTable.setForeground(new java.awt.Color(102, 0, 51));
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "ClothID", "Brand", "Model Number", "Quantity", "Price"
+                "Apparel ID", "Brand", "Model Number", "Quantity", "Price"
             }
         ) {
             Class[] types = new Class [] {
@@ -212,107 +228,14 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(workRequestJTable);
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 690, 160));
+
         jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel2.setText("The Cloth Factory");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ClothFactoryStaffWorkArea/jacket1.gif"))); // NOI18N
-        jLabel5.setText("jLabel5");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(enterpriseLabel2)
-                            .addComponent(enterpriseLabel3))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(valueLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2)
-                        .addGap(207, 207, 207)
-                        .addComponent(refreshTestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(16, 16, 16)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel1)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(brandJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel4)
-                                            .addComponent(jLabel3))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(modelNumberJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(quantityJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(createClothModelJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(131, 131, 131)))
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(95, 95, 95))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 92, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 690, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(95, 95, 95))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(refreshTestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel2))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(brandJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel1))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(modelNumberJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel3))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(quantityJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel4))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(createClothModelJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(enterpriseLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(valueLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(enterpriseLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(36, 36, 36)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24))
-        );
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 140, -1, 224));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -352,49 +275,49 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
                             clothFactoryProduct.setQuantity(Integer.parseInt(quantityJTextField.getText()));
 
                             if (clothFactoryProduct.getBrand().equalsIgnoreCase("Zara")) {
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Tshirt")) {
-                                    price = price + 24780;
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Zara Tshirt")) {
+                                    price = price + 25;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Shirt")) {
-                                    price = price + 15700;
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Zara Shirt")) {
+                                    price = price + 23;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Hoodies")) {
-                                    price = price +43009;
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Zara Hoodies")) {
+                                    price = price + 60;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Sweat Shirts")) {
-                                    price = price + 22000;
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Zara Sweat Shirts")) {
+                                    price = price + 55;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Jackets")) {
-                                    price = price + 16150;
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Zara Jackets")) {
+                                    price = price + 70;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Tank Tops")) {
-                                    price = price + 36000;
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Zara Tank Tops")) {
+                                    price = price + 15;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Baby Bodysuits")) {
-                                    price = price + 61600;
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Zara Baby Bodysuits")) {
+                                    price = price + 20;
                                 }
                             }
                             if (clothFactoryProduct.getBrand().equalsIgnoreCase("H&M")) {
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Tshirt")) {
-                                    price = price + 14000;
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("H&M Tshirt")) {
+                                    price = price + 19;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Shirt")) {
-                                    price = price + 23500;
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("H&M Shirt")) {
+                                    price = price + 24;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Hoodies")) {
-                                    price = price + 36000;
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("H&M Hoodies")) {
+                                    price = price + 36;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Sweat Shirts")) {
-                                    price = price + 15000;
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("H&M Sweat Shirts")) {
+                                    price = price + 45;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Jackets")) {
-                                    price = price + 25000;
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("H&M Jackets")) {
+                                    price = price + 50;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Tank Tops")) {
-                                    price = price + 32000;
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("H&M Tank Tops")) {
+                                    price = price + 32;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Baby Bodysuits")) {
-                                    price = price + 61600;
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("H&M Baby Bodysuits")) {
+                                    price = price + 16;
                                 }
                             }
 
