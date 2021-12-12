@@ -54,7 +54,7 @@ public class CustomerMainJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 204, 204));
 
-        customizejBtn.setBackground(new java.awt.Color(204, 204, 255));
+        customizejBtn.setBackground(new java.awt.Color(255, 255, 255));
         customizejBtn.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         customizejBtn.setText("Customize");
         customizejBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -63,7 +63,7 @@ public class CustomerMainJPanel extends javax.swing.JPanel {
             }
         });
 
-        buyAtStorejBtn.setBackground(new java.awt.Color(204, 204, 255));
+        buyAtStorejBtn.setBackground(new java.awt.Color(255, 255, 255));
         buyAtStorejBtn.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         buyAtStorejBtn.setText("Store");
         buyAtStorejBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -72,7 +72,7 @@ public class CustomerMainJPanel extends javax.swing.JPanel {
             }
         });
 
-        customerOrdersJButton.setBackground(new java.awt.Color(204, 204, 255));
+        customerOrdersJButton.setBackground(new java.awt.Color(255, 255, 255));
         customerOrdersJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         customerOrdersJButton.setText("Requested Orders");
         customerOrdersJButton.addActionListener(new java.awt.event.ActionListener() {
