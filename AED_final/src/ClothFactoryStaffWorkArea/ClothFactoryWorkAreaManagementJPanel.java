@@ -10,6 +10,7 @@ import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
 import business.useraccount.UserAccount;
+import java.awt.CardLayout;
 import javax.swing.JPanel;
 
 /**
@@ -41,20 +42,108 @@ private JPanel userProcessContainer;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        backJButton = new javax.swing.JButton();
+        enterpriseLabel = new javax.swing.JLabel();
+        enterpriseLabel1 = new javax.swing.JLabel();
+        valueLabel = new javax.swing.JLabel();
+        orgValueLabel = new javax.swing.JLabel();
+        CreateCrsJButton = new javax.swing.JButton();
+
+        backJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        backJButton.setText("Back");
+        backJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backJButtonActionPerformed(evt);
+            }
+        });
+
+        enterpriseLabel.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        enterpriseLabel.setText("Enterprise :");
+
+        enterpriseLabel1.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        enterpriseLabel1.setText("Organization:");
+
+        valueLabel.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        valueLabel.setText("<value>");
+
+        orgValueLabel.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        orgValueLabel.setText("<value>");
+
+        CreateCrsJButton.setBackground(new java.awt.Color(204, 204, 255));
+        CreateCrsJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        CreateCrsJButton.setText("Place Car Requests");
+        CreateCrsJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CreateCrsJButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(enterpriseLabel)
+                                .addGap(45, 45, 45)
+                                .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(enterpriseLabel1)
+                                .addGap(26, 26, 26)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(CreateCrsJButton, javax.swing.GroupLayout.DEFAULT_SIZE, 398, Short.MAX_VALUE)
+                                    .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                .addGap(76, 76, 76))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
+                .addComponent(CreateCrsJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(111, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
+
+        userProcessContainer.remove(this);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_backJButtonActionPerformed
+
+    private void CreateCrsJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateCrsJButtonActionPerformed
+        // TODO add your handling code here:
+        ClothFactoryWorkAreaJPanel designJPanel = new ClothFactoryWorkAreaJPanel(userProcessContainer, userAccount, organization, enterprise, business);
+        userProcessContainer.add("designJPanel", designJPanel);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_CreateCrsJButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton CreateCrsJButton;
+    private javax.swing.JButton backJButton;
+    private javax.swing.JLabel enterpriseLabel;
+    private javax.swing.JLabel enterpriseLabel1;
+    private javax.swing.JLabel orgValueLabel;
+    private javax.swing.JLabel valueLabel;
     // End of variables declaration//GEN-END:variables
 
 }
