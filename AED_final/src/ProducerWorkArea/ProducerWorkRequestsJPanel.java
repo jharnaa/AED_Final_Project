@@ -123,12 +123,14 @@ public class ProducerWorkRequestsJPanel extends javax.swing.JPanel {
         });
 
         designerWorkRequestJTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        designerWorkRequestJTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
+        designerWorkRequestJTable.setForeground(new java.awt.Color(102, 0, 51));
         designerWorkRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "OrderID", "Sender", "Receiver", "RequestDate", "Status"
+                "Order ID", "Sender", "Receiver", "Request Date", "Status"
             }
         ) {
             Class[] types = new Class [] {
@@ -151,7 +153,7 @@ public class ProducerWorkRequestsJPanel extends javax.swing.JPanel {
         showroomRequestJButton.setBackground(new java.awt.Color(204, 204, 255));
         showroomRequestJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         showroomRequestJButton.setForeground(new java.awt.Color(102, 0, 51));
-        showroomRequestJButton.setText("<< Send the Order to Showroom");
+        showroomRequestJButton.setText("<< Send the Order to Online Store");
         showroomRequestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 showroomRequestJButtonActionPerformed(evt);
