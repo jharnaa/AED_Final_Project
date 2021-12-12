@@ -78,7 +78,7 @@ public class RequestsFromInventoryWRJPanel extends javax.swing.JPanel {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         inventoryWorkRequestJTable = new javax.swing.JTable();
-        assignToMeJButton = new javax.swing.JButton();
+        acceptRequestJButton = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
@@ -90,12 +90,14 @@ public class RequestsFromInventoryWRJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 204, 204));
 
+        inventoryWorkRequestJTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
+        inventoryWorkRequestJTable.setForeground(new java.awt.Color(102, 0, 51));
         inventoryWorkRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "ItemName", "ItemCount", "Sender", "Receiver", "RequestDate", "Status"
+                "Item Name", "Item Count", "Sender", "Receiver", "Request Date", "Status"
             }
         ) {
             Class[] types = new Class [] {
@@ -115,13 +117,13 @@ public class RequestsFromInventoryWRJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(inventoryWorkRequestJTable);
 
-        assignToMeJButton.setBackground(new java.awt.Color(204, 204, 255));
-        assignToMeJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
-        assignToMeJButton.setForeground(new java.awt.Color(102, 0, 51));
-        assignToMeJButton.setText("Accept Request");
-        assignToMeJButton.addActionListener(new java.awt.event.ActionListener() {
+        acceptRequestJButton.setBackground(new java.awt.Color(204, 204, 255));
+        acceptRequestJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        acceptRequestJButton.setForeground(new java.awt.Color(102, 0, 51));
+        acceptRequestJButton.setText("Accept Request");
+        acceptRequestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                assignToMeJButtonActionPerformed(evt);
+                acceptRequestJButtonActionPerformed(evt);
             }
         });
 
@@ -164,40 +166,38 @@ public class RequestsFromInventoryWRJPanel extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(19, 19, 19)
-                                .addComponent(enterpriseLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(107, 107, 107)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(enterpriseLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(473, 473, 473)
-                        .addComponent(assignToMeJButton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(238, 238, 238)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(39, 278, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(24, 24, 24))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(19, 19, 19)
+                                        .addComponent(enterpriseLabel)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(107, 107, 107)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel1)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(enterpriseLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(473, 473, 473)
+                        .addComponent(acceptRequestJButton))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(238, 238, 238)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -225,7 +225,7 @@ public class RequestsFromInventoryWRJPanel extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
-                .addComponent(assignToMeJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(acceptRequestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(175, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
@@ -234,7 +234,7 @@ public class RequestsFromInventoryWRJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void assignToMeJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignToMeJButtonActionPerformed
+    private void acceptRequestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptRequestJButtonActionPerformed
         // TODO add your handling code here:
         int selectedRow = inventoryWorkRequestJTable.getSelectedRow();
 
@@ -248,7 +248,7 @@ public class RequestsFromInventoryWRJPanel extends javax.swing.JPanel {
         request.setManufacturerReceiverInv(userAccount);
         request.setStatus("Accepted");
         populateInventoryWorkRequestTable();
-    }//GEN-LAST:event_assignToMeJButtonActionPerformed
+    }//GEN-LAST:event_acceptRequestJButtonActionPerformed
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
 
@@ -259,7 +259,7 @@ public class RequestsFromInventoryWRJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton assignToMeJButton;
+    private javax.swing.JButton acceptRequestJButton;
     private javax.swing.JButton backJButton;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel enterpriseLabel1;
