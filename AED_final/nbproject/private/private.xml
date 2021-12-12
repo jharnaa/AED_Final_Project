@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/mrunalbhalerao/NetBeansProjects/AED_Final_Project/AED_final/src/CustomerWorkArea/PersonalizeJPanel.java</file>
-            <file>file:/Users/mrunalbhalerao/NetBeansProjects/AED_Final_Project/AED_final/src/Business/BarChart/Report.java</file>
+            <file>file:/Users/saloni/NetBeansProjects/AED_Final_Project/AED_final/src/ProducerWorkArea/ProducerWorkRequestsJPanel.java</file>
+            <file>file:/Users/saloni/NetBeansProjects/AED_Final_Project/AED_final/src/ProducerWorkArea/ProducerWorkAreaManagementJPanel.java</file>
+            <file>file:/Users/saloni/NetBeansProjects/AED_Final_Project/AED_final/src/ProducerWorkArea/RequestInventoryJPanel.java</file>
+            <file>file:/Users/saloni/NetBeansProjects/AED_Final_Project/AED_final/src/SystemAdminWorkArea/ManageEnterpriseAdminJPanel.java</file>
         </group>
     </open-files>
 </project-private>
