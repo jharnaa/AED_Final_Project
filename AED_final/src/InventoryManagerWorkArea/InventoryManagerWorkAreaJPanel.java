@@ -45,7 +45,7 @@ public class InventoryManagerWorkAreaJPanel extends javax.swing.JPanel {
     }
     
     public void populateInventoryTable() {
-        DefaultTableModel model = (DefaultTableModel) workRequestJTable.getModel();
+        DefaultTableModel model = (DefaultTableModel) tblworkRequest.getModel();
 
         model.setRowCount(0);
 
@@ -82,33 +82,39 @@ public class InventoryManagerWorkAreaJPanel extends javax.swing.JPanel {
         refreshTestJButton = new javax.swing.JButton();
         backJButton = new javax.swing.JButton();
         assignToMeJButton = new javax.swing.JButton();
-        manufacturerRequestJButton = new javax.swing.JButton();
+        btnRequestProducer = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        workRequestJTable = new javax.swing.JTable();
+        tblworkRequest = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 51));
         jLabel3.setText("Inventory Management");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(463, 195, 215, 38));
 
         valueLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         valueLabel.setForeground(new java.awt.Color(102, 0, 51));
         valueLabel.setText("<value>");
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 84, 230, 26));
 
         enterpriseLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(102, 0, 51));
         enterpriseLabel.setText("Enterprise :");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 82, -1, 30));
 
         enterpriseLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         enterpriseLabel1.setForeground(new java.awt.Color(102, 0, 51));
         enterpriseLabel1.setText("Organization:");
+        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 118, -1, 26));
 
         orgValueLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         orgValueLabel.setForeground(new java.awt.Color(102, 0, 51));
         orgValueLabel.setText("<value>");
+        add(orgValueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 118, 290, 26));
 
         refreshTestJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         refreshTestJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -118,6 +124,7 @@ public class InventoryManagerWorkAreaJPanel extends javax.swing.JPanel {
                 refreshTestJButtonActionPerformed(evt);
             }
         });
+        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1009, 19, 123, -1));
 
         backJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         backJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -127,6 +134,7 @@ public class InventoryManagerWorkAreaJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 19, 95, -1));
 
         assignToMeJButton.setBackground(new java.awt.Color(204, 204, 255));
         assignToMeJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -137,23 +145,25 @@ public class InventoryManagerWorkAreaJPanel extends javax.swing.JPanel {
                 assignToMeJButtonActionPerformed(evt);
             }
         });
+        add(assignToMeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(326, 582, 166, -1));
 
-        manufacturerRequestJButton.setBackground(new java.awt.Color(204, 204, 255));
-        manufacturerRequestJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
-        manufacturerRequestJButton.setForeground(new java.awt.Color(102, 0, 51));
-        manufacturerRequestJButton.setText("Send Inventory to Manufacturer");
-        manufacturerRequestJButton.addActionListener(new java.awt.event.ActionListener() {
+        btnRequestProducer.setBackground(new java.awt.Color(204, 204, 255));
+        btnRequestProducer.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        btnRequestProducer.setForeground(new java.awt.Color(102, 0, 51));
+        btnRequestProducer.setText("Send Inventory to Producer");
+        btnRequestProducer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                manufacturerRequestJButtonActionPerformed(evt);
+                btnRequestProducerActionPerformed(evt);
             }
         });
+        add(btnRequestProducer, new org.netbeans.lib.awtextra.AbsoluteConstraints(521, 582, 346, -1));
 
-        workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
+        tblworkRequest.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "ItemName", "ItemCount", "Sender", "Receiver", "RequestDate", "Status"
+                "Item Name", "Item Count", "Sender", "Receiver", "Request Date", "Status"
             }
         ) {
             Class[] types = new Class [] {
@@ -171,87 +181,16 @@ public class InventoryManagerWorkAreaJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(workRequestJTable);
+        jScrollPane1.setViewportView(tblworkRequest);
+
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(116, 265, 930, 260));
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel1.setText("The Cloth Factory");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(463, 28, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InventoryManagerWorkArea/inventory (1).gif"))); // NOI18N
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(175, 175, 175)
-                .addComponent(assignToMeJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(80, 80, 80)
-                .addComponent(manufacturerRequestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(enterpriseLabel)
-                            .addComponent(enterpriseLabel1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1)))
-                .addGap(147, 147, 147)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(refreshTestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(15, 15, 15))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 930, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(refreshTestJButton)
-                            .addComponent(backJButton))
-                        .addGap(18, 18, 18))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(5, 5, 5)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(25, 25, 25))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)))
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(assignToMeJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(manufacturerRequestJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(897, 82, 208, 107));
     }// </editor-fold>//GEN-END:initComponents
 
     private void refreshTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshTestJButtonActionPerformed
@@ -268,30 +207,30 @@ public class InventoryManagerWorkAreaJPanel extends javax.swing.JPanel {
 
     private void assignToMeJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignToMeJButtonActionPerformed
         // TODO add your handling code here:
-        int selectedRow = workRequestJTable.getSelectedRow();
+        int selectedRow = tblworkRequest.getSelectedRow();
 
         if (selectedRow < 0) {
             JOptionPane.showMessageDialog(null, "Please select a row from table first ", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
 
-        InventoryWorkRequest request = (InventoryWorkRequest) workRequestJTable.getValueAt(selectedRow, 0);
+        InventoryWorkRequest request = (InventoryWorkRequest) tblworkRequest.getValueAt(selectedRow, 0);
         request.setInventoryReceiverInv(userAccount);
         request.setStatus("Pending");
         populateInventoryTable();
     }//GEN-LAST:event_assignToMeJButtonActionPerformed
 
-    private void manufacturerRequestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manufacturerRequestJButtonActionPerformed
+    private void btnRequestProducerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequestProducerActionPerformed
         // TODO add your handling code here:
 
-        int selectedRow = workRequestJTable.getSelectedRow();
+        int selectedRow = tblworkRequest.getSelectedRow();
 
         if (selectedRow < 0) {
             JOptionPane.showMessageDialog(null, "Please select a row from table first ", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
 
-        InventoryWorkRequest request = (InventoryWorkRequest) workRequestJTable.getValueAt(selectedRow, 0);
+        InventoryWorkRequest request = (InventoryWorkRequest) tblworkRequest.getValueAt(selectedRow, 0);
         request.setStatus("Stocked");
         request.setInventorySenderInv(userAccount);
         userAccount.getWorkQueue().getWorkRequestList().add(request);
@@ -305,22 +244,22 @@ public class InventoryManagerWorkAreaJPanel extends javax.swing.JPanel {
         populateInventoryTable();
         JOptionPane.showMessageDialog(null, "Order sent to Manufacturer", "Info", JOptionPane.INFORMATION_MESSAGE);
 
-    }//GEN-LAST:event_manufacturerRequestJButtonActionPerformed
+    }//GEN-LAST:event_btnRequestProducerActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton assignToMeJButton;
     private javax.swing.JButton backJButton;
+    private javax.swing.JButton btnRequestProducer;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel enterpriseLabel1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JButton manufacturerRequestJButton;
     private javax.swing.JLabel orgValueLabel;
     private javax.swing.JButton refreshTestJButton;
+    private javax.swing.JTable tblworkRequest;
     private javax.swing.JLabel valueLabel;
-    private javax.swing.JTable workRequestJTable;
     // End of variables declaration//GEN-END:variables
 }
