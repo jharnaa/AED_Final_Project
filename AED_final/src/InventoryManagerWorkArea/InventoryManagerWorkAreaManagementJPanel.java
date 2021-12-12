@@ -52,7 +52,7 @@ public class InventoryManagerWorkAreaManagementJPanel extends javax.swing.JPanel
         enterpriseLabel = new javax.swing.JLabel();
         enterpriseLabel1 = new javax.swing.JLabel();
         orgValueLabel = new javax.swing.JLabel();
-        manufacturerWorkRequestButton = new javax.swing.JButton();
+        btnProducersWR = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 204));
@@ -82,13 +82,13 @@ public class InventoryManagerWorkAreaManagementJPanel extends javax.swing.JPanel
         orgValueLabel.setForeground(new java.awt.Color(102, 0, 51));
         orgValueLabel.setText("<value>");
 
-        manufacturerWorkRequestButton.setBackground(new java.awt.Color(204, 204, 255));
-        manufacturerWorkRequestButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
-        manufacturerWorkRequestButton.setForeground(new java.awt.Color(102, 0, 51));
-        manufacturerWorkRequestButton.setText("Manufacturer's Work Requests");
-        manufacturerWorkRequestButton.addActionListener(new java.awt.event.ActionListener() {
+        btnProducersWR.setBackground(new java.awt.Color(204, 204, 255));
+        btnProducersWR.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        btnProducersWR.setForeground(new java.awt.Color(102, 0, 51));
+        btnProducersWR.setText("Producer's Work Requests");
+        btnProducersWR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                manufacturerWorkRequestButtonActionPerformed(evt);
+                btnProducersWRActionPerformed(evt);
             }
         });
 
@@ -110,26 +110,29 @@ public class InventoryManagerWorkAreaManagementJPanel extends javax.swing.JPanel
                         .addComponent(enterpriseLabel1)
                         .addGap(18, 18, 18)
                         .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 380, Short.MAX_VALUE))
+                .addGap(0, 912, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(124, 124, 124)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(396, 396, 396))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(manufacturerWorkRequestButton)
-                .addGap(153, 153, 153))
+                .addComponent(btnProducersWR, javax.swing.GroupLayout.PREFERRED_SIZE, 537, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(215, 215, 215))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(backJButton)
-                    .addComponent(jLabel1))
-                .addGap(57, 57, 57)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(9, 9, 9)
+                        .addComponent(backJButton))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabel1)))
+                .addGap(43, 43, 43)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(enterpriseLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -137,9 +140,9 @@ public class InventoryManagerWorkAreaManagementJPanel extends javax.swing.JPanel
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(orgValueLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(31, 31, 31)
-                .addComponent(manufacturerWorkRequestButton, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(93, Short.MAX_VALUE))
+                .addGap(98, 98, 98)
+                .addComponent(btnProducersWR, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(81, 81, 81))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -160,22 +163,22 @@ public class InventoryManagerWorkAreaManagementJPanel extends javax.swing.JPanel
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
 
-    private void manufacturerWorkRequestButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manufacturerWorkRequestButtonActionPerformed
+    private void btnProducersWRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProducersWRActionPerformed
         // TODO add your handling code here:
         InventoryManagerWorkAreaJPanel invJPanel = new InventoryManagerWorkAreaJPanel(userProcessContainer, userAccount, organization, enterprise, business);
         userProcessContainer.add("invJPanel", invJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_manufacturerWorkRequestButtonActionPerformed
+    }//GEN-LAST:event_btnProducersWRActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
+    private javax.swing.JButton btnProducersWR;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel enterpriseLabel1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton manufacturerWorkRequestButton;
     private javax.swing.JLabel orgValueLabel;
     private javax.swing.JLabel valueLabel;
     // End of variables declaration//GEN-END:variables
