@@ -6,6 +6,7 @@
 package CustomerWorkArea;
 
 import Business.WorkQueue.CustomerCustomizedWorkRequest;
+import Business.WorkQueue.OrderOnlineWorkRequest;
 import business.organization.CustomerOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
@@ -40,6 +41,50 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
         this.account = account;
         this.enterprise = enterprise;
         this.business = business;
+        
+        customerTextField.setText(account.getUsername());
+
+        populateCustomerTable();
+        populateStoreOrdersTable();
+    }
+    
+    public void populateCustomerTable() {
+        DefaultTableModel model = (DefaultTableModel) customisedOrderJTable.getModel();
+
+        model.setRowCount(0);
+
+        for (WorkRequest wr : account.getWorkQueue().getWorkRequestList()) {
+            if (wr instanceof CustomerCustomizedWorkRequest) {
+                Object[] row = new Object[4];
+                CustomerCustomizedWorkRequest cw = (CustomerCustomizedWorkRequest) wr;
+                row[0] = cw;
+                row[1] = cw.getStoreSender() == null ? null : cw.getStoreSender().getEmployee().getName();
+                row[2] = cw.getRequestDate();
+                row[3] = cw.getStatus();
+                model.addRow(row);
+            }
+
+        }
+    }
+
+    public void populateStoreOrdersTable() {
+        DefaultTableModel model = (DefaultTableModel) storeOrdersJTable.getModel();
+
+        model.setRowCount(0);
+        {
+            for (WorkRequest wr : account.getWorkQueue().getWorkRequestList()) {
+                if (wr instanceof OrderOnlineWorkRequest) {
+                    Object[] row = new Object[4];
+                    OrderOnlineWorkRequest oas = (OrderOnlineWorkRequest) wr;
+                    row[0] = oas;
+                    row[1] = oas.getSender().getEmployee().getName();
+                    row[2] = oas.getRequestDate();
+                    row[3] = oas.getStatus();
+                    model.addRow(row);
+
+                }
+            }
+        }
     }
 
     /**
@@ -274,25 +319,6 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
         populateCustomerTable();
     }//GEN-LAST:event_refreshJButtonActionPerformed
 
-    public void populateCustomerTable() {
-        DefaultTableModel model = (DefaultTableModel) customisedOrderJTable.getModel();
-
-        model.setRowCount(0);
-
-        for (WorkRequest wr : account.getWorkQueue().getWorkRequestList()) {
-            if (wr instanceof CustomerCustomizedWorkRequest) {
-                Object[] row = new Object[4];
-                CustomerCustomizedWorkRequest cw = (CustomerCustomizedWorkRequest) wr;
-                row[0] = cw;
-                row[1] = cw.getStoreSender() == null ? null : cw.getStoreSender().getEmployee().getName();
-                row[2] = cw.getRequestDate();
-                row[3] = cw.getStatus();
-                model.addRow(row);
-            }
-
-        }
-    }
-    
     private void checkOrderStatusJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkOrderStatusJButtonActionPerformed
         //  progress bar used to check the order status
         int selectedRow = customisedOrderJTable.getSelectedRow();

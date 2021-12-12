@@ -48,6 +48,7 @@ public class BuyOnlineJPanel extends javax.swing.JPanel {
         this.account = account;
         this.enterprise = enterprise;
         this.business = business;
+        populateTable();
     }
     
     OrderOnline oo = new OrderOnline();
@@ -193,6 +194,7 @@ public class BuyOnlineJPanel extends javax.swing.JPanel {
                     row[2] = cfp.getModelNumber();
                     row[3] = cfp.getPrice();
                     dtm.addRow(row);
+                    System.out.println(cfp.getBrand());
                 }
             }
         }
