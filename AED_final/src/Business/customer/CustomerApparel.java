@@ -20,7 +20,18 @@ public class CustomerApparel {
     private String batteryType;
     private String interiorType;
     private String fuelType;
+    
+    private String category;
+    private String style;
+    private String color;
+    private String size;
+    private String fabricType;
+    private String quantity;
+    private String text;
+    private String textLocation;
+    private String designTechnique;
     private float price;
+    
     private static int count = 0;
 
     public CustomerApparel() {

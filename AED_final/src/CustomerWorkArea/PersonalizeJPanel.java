@@ -8,11 +8,17 @@ package CustomerWorkArea;
 import business.organization.CustomerOrganization;
 import Business.customer.MasterOrderList;
 import Business.customer.PersonalisedOrder;
+import Business.customer.PersonalisedOrderItem;
 //import business.customer.CustomizedOrderItem;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
+import business.enterprise.customerCareEnterprise;
+import business.network.Network;
 import business.organization.Organization;
+import business.organization.StoreOrganization;
 import business.useraccount.UserAccount;
+import java.awt.CardLayout;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
@@ -41,10 +47,13 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
         this.enterprise = enterprise;
         this.business = business;
         
-        PersonalisedOrder order = new PersonalisedOrder();
-    //CustomizedOrderItem oi = new CustomizedOrderItem();
+        customerTextField.setText(account.getUsername());
         
     }
+    
+        PersonalisedOrder order = new PersonalisedOrder();
+        PersonalisedOrderItem oi = new PersonalisedOrderItem();
+        
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -55,19 +64,441 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        backJButton = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        customerTextField = new javax.swing.JTextField();
+        btnAdd = new javax.swing.JButton();
+        btnNext = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        carColorjComboBox = new javax.swing.JComboBox<>();
+        carTypejComboBox = new javax.swing.JComboBox();
+        engineTypejComboBox = new javax.swing.JComboBox();
+        airFilterjComboBox = new javax.swing.JComboBox<>();
+        carbodyjComboBox = new javax.swing.JComboBox<>();
+        jLabel7 = new javax.swing.JLabel();
+        wheelTypejComboBox = new javax.swing.JComboBox<>();
+        jLabel9 = new javax.swing.JLabel();
+        batteryjComboBox = new javax.swing.JComboBox<>();
+        jLabel10 = new javax.swing.JLabel();
+        interiorjComboBox = new javax.swing.JComboBox<>();
+        jLabel11 = new javax.swing.JLabel();
+        fuelTypejComboBox = new javax.swing.JComboBox<>();
+
+        backJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        backJButton.setText("Back");
+        backJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backJButtonActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        jLabel8.setText("Hello!");
+
+        customerTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        customerTextField.setEnabled(false);
+        customerTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customerTextFieldActionPerformed(evt);
+            }
+        });
+
+        btnAdd.setText("Add");
+        btnAdd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddActionPerformed(evt);
+            }
+        });
+
+        btnNext.setText("next");
+        btnNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNextActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setText("Car Type :");
+
+        jLabel3.setText("Engine Type :");
+
+        jLabel4.setText("Air Filter :");
+
+        jLabel5.setText("Body:");
+
+        jLabel6.setText("Color :");
+
+        carColorjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pearl White", "Black", "Mettalic Grey", "Gold", "Red", "Silver", "Brown" }));
+
+        carTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SUV", "Sedan", "Hatchback" }));
+        carTypejComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                carTypejComboBoxActionPerformed(evt);
+            }
+        });
+
+        engineTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Diesel V6", "V-8s", "Three 4-cyl. turbos", "Two 2-cyl. turbos" }));
+        engineTypejComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                engineTypejComboBoxActionPerformed(evt);
+            }
+        });
+
+        airFilterjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Paper", "Foam", "Cotton", "Stainless Steel", "Mesh" }));
+
+        carbodyjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aluminium", "Magnesium", "Advanced composite materials", "Glass-fibre composites", "Steel", "Light Weight" }));
+
+        jLabel7.setText("Wheel Type :");
+
+        wheelTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Alloy ", "Chrome", "Aluminium", "Lead", " " }));
+
+        jLabel9.setText("Battery Type:");
+
+        batteryjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lead ", "Nickel Hydride" }));
+
+        jLabel10.setText("Interior Type:");
+
+        interiorjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "PVC", "Polyurethane", "Ploypropylene" }));
+        interiorjComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                interiorjComboBoxActionPerformed(evt);
+            }
+        });
+
+        jLabel11.setText("Fuel Type:");
+
+        fuelTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "FFV", "EV", "PHEV", "CNG", "FCV" }));
+        fuelTypejComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fuelTypejComboBoxActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(17, 17, 17)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(backJButton, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(31, 31, 31)
+                                .addComponent(btnAdd)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnNext)
+                            .addComponent(customerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(30, 30, 30)
+                                .addComponent(carTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(220, 220, 220)
+                                .addComponent(jLabel6)
+                                .addGap(28, 28, 28)
+                                .addComponent(carColorjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addComponent(jLabel11)
+                                .addGap(46, 46, 46)
+                                .addComponent(fuelTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(210, 210, 210)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel9))
+                                .addGap(9, 9, 9)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(wheelTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(batteryjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addGap(46, 46, 46)
+                                .addComponent(engineTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(210, 210, 210)
+                                .addComponent(jLabel10)
+                                .addGap(16, 16, 16)
+                                .addComponent(interiorjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(30, 30, 30)
+                                .addComponent(airFilterjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(50, 50, 50)
+                                .addComponent(jLabel5)
+                                .addGap(46, 46, 46)
+                                .addComponent(carbodyjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(53, 53, 53)
+                .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(customerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(67, 67, 67)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnAdd)
+                    .addComponent(btnNext))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(carColorjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(carTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(3, 3, 3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(wheelTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(13, 13, 13)
+                        .addComponent(batteryjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fuelTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(engineTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jLabel10))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(interiorjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(3, 3, 3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(airFilterjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(carbodyjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(98, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
+
+        userProcessContainer.remove(this);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_backJButtonActionPerformed
+
+    private void customerTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerTextFieldActionPerformed
+
+    }//GEN-LAST:event_customerTextFieldActionPerformed
+
+    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        // TODO add your handling code here:
+        for (Network network : business.getNetworkList()) {
+            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+                if (enterprise instanceof customerCareEnterprise) {
+                    for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
+                        if (organization instanceof StoreOrganization) {
+                            mod = ((StoreOrganization) organization).getMol();
+                        }
+
+                    }
+                }
+            }
+        }
+
+        // add customised order item to the order
+        count++;
+        PersonalisedOrderItem oi = order.addCustomizedOrderItem();
+        order.setCustomer(account.getEmployee());
+        order.setOrderNumber(count);
+
+        float price = 0;
+        oi.getPersonaliseProduct().setCarType(carTypejComboBox.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setEngineType(engineTypejComboBox.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setAirFilters(airFilterjComboBox.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setCarBody(carbodyjComboBox.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setFuelType(fuelTypejComboBox.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setWheelType(wheelTypejComboBox.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setCarColor(carColorjComboBox.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setInteriorType(interiorjComboBox.getSelectedItem().toString());
+        oi.getPersonaliseProduct().setBatteryType(batteryjComboBox.getSelectedItem().toString());
+
+        if (oi.getPersonaliseProduct().getCarType().equalsIgnoreCase("Hatchback")) {
+            price = price + 1400;
+        } else if (oi.getPersonaliseProduct().getCarType().equalsIgnoreCase("Sedan")) {
+            price = price + 2500;
+        } else {
+            price = price + 30000;
+        }
+
+        //
+        if (oi.getPersonaliseProduct().getCarType().equalsIgnoreCase("EV")) {
+            price = price + 400;
+        } else if (oi.getPersonaliseProduct().getCarType().equalsIgnoreCase("PHEV")) {
+            price = price + 500;
+
+        } else if (oi.getPersonaliseProduct().getCarType().equalsIgnoreCase("CNG")) {
+            price = price + 200;
+
+        } else if (oi.getPersonaliseProduct().getCarType().equalsIgnoreCase("FCV")) {
+            price = price + 300;
+
+        }
+        //
+
+        if (oi.getPersonaliseProduct().getEngineType().equalsIgnoreCase("Diesel V6")) {
+            price = price + 1000;
+        } else if (oi.getPersonaliseProduct().getEngineType().equalsIgnoreCase("V-8s")) {
+            price = price + 600;
+        } else if (oi.getPersonaliseProduct().getEngineType().equalsIgnoreCase("Three 4-cyl. turbos")) {
+            price = price + 500;
+        } else if (oi.getPersonaliseProduct().getEngineType().equalsIgnoreCase("Two 2-cyl. turbos")) {
+            price = price + 700;
+        }
+
+        //
+        if (oi.getPersonaliseProduct().getAirFilters().equalsIgnoreCase("Paper")) {
+            price = price + 100;
+        } else if (oi.getPersonaliseProduct().getAirFilters().equalsIgnoreCase("Foam")) {
+            price = price + 200;
+        } else if (oi.getPersonaliseProduct().getAirFilters().equalsIgnoreCase("Cotton")) {
+            price = price + 300;
+        } else if (oi.getPersonaliseProduct().getAirFilters().equalsIgnoreCase("Stainless Steel")) {
+            price = price + 400;
+        } else if (oi.getPersonaliseProduct().getAirFilters().equalsIgnoreCase("Mesh")) {
+            price = price + 500;
+        }
+
+        //
+        if (oi.getPersonaliseProduct().getCarBody().equalsIgnoreCase("Aluminium")) {
+            price = price + 100;
+        } else if (oi.getPersonaliseProduct().getCarBody().equalsIgnoreCase("Magnesium")) {
+            price = price + 200;
+        } else if (oi.getPersonaliseProduct().getCarBody().equalsIgnoreCase("Advanced composite materials")) {
+            price = price + 300;
+        } else if (oi.getPersonaliseProduct().getCarBody().equalsIgnoreCase("Glass-fibre composites")) {
+            price = price + 400;
+        } else if (oi.getPersonaliseProduct().getCarBody().equalsIgnoreCase("Steel")) {
+            price = price + 500;
+        } else if (oi.getPersonaliseProduct().getCarBody().equalsIgnoreCase("Light Weight")) {
+            price = price + 600;
+        }
+
+        //
+        if (oi.getPersonaliseProduct().getCarColor().equalsIgnoreCase("Pearl White")) {
+            price = price + 100;
+        } else if (oi.getPersonaliseProduct().getCarColor().equalsIgnoreCase("Black")) {
+            price = price + 200;
+        } else if (oi.getPersonaliseProduct().getCarColor().equalsIgnoreCase("Mettalic Grey")) {
+            price = price + 300;
+        } else if (oi.getPersonaliseProduct().getCarColor().equalsIgnoreCase("Gold")) {
+            price = price + 400;
+        } else if (oi.getPersonaliseProduct().getCarColor().equalsIgnoreCase("Red")) {
+            price = price + 500;
+        } else if (oi.getPersonaliseProduct().getCarColor().equalsIgnoreCase("Silver")) {
+            price = price + 600;
+        } else if (oi.getPersonaliseProduct().getCarColor().equalsIgnoreCase("Brown")) {
+            price = price + 700;
+        }
+        //
+        if (oi.getPersonaliseProduct().getWheelType().equalsIgnoreCase("Alloy")) {
+            price = price + 100;
+        } else if (oi.getPersonaliseProduct().getWheelType().equalsIgnoreCase("Chrome")) {
+            price = price + 200;
+        } else if (oi.getPersonaliseProduct().getWheelType().equalsIgnoreCase("Aluminium")) {
+            price = price + 300;
+        } else if (oi.getPersonaliseProduct().getWheelType().equalsIgnoreCase("Lead")) {
+            price = price + 400;
+        }
+        //
+        if (oi.getPersonaliseProduct().getBatteryType().equalsIgnoreCase("Lead")) {
+            price = price + 100;
+        } else if (oi.getPersonaliseProduct().getWheelType().equalsIgnoreCase("Nickel Hydride")) {
+            price = price + 200;
+        }
+        //
+        if (oi.getPersonaliseProduct().getInteriorType().equalsIgnoreCase("PVC")) {
+            price = price + 100;
+        } else if (oi.getPersonaliseProduct().getInteriorType().equalsIgnoreCase("Polyurethane")) {
+            price = price + 200;
+        } else if (oi.getPersonaliseProduct().getInteriorType().equalsIgnoreCase("Ploypropylene")) {
+            price = price + 200;
+        }
+
+        oi.getPersonaliseProduct().setPrice(price);
+        JOptionPane.showMessageDialog(null, "Product added!", "Info", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_btnAddActionPerformed
+
+    private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed
+        // TODO add your handling code here:
+        CustomerWorkAreaManagementJPanel vjp = new CustomerWorkAreaManagementJPanel(userProcessContainer, mod, order,account,customerOrganization, enterprise, business);
+        userProcessContainer.add("ManageOrderJPanel", vjp);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_btnNextActionPerformed
+
+    private void carTypejComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_carTypejComboBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_carTypejComboBoxActionPerformed
+
+    private void engineTypejComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_engineTypejComboBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_engineTypejComboBoxActionPerformed
+
+    private void interiorjComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_interiorjComboBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_interiorjComboBoxActionPerformed
+
+    private void fuelTypejComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fuelTypejComboBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fuelTypejComboBoxActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> airFilterjComboBox;
+    private javax.swing.JButton backJButton;
+    private javax.swing.JComboBox<String> batteryjComboBox;
+    private javax.swing.JButton btnAdd;
+    private javax.swing.JButton btnNext;
+    private javax.swing.JComboBox<String> carColorjComboBox;
+    private javax.swing.JComboBox carTypejComboBox;
+    private javax.swing.JComboBox<String> carbodyjComboBox;
+    private javax.swing.JTextField customerTextField;
+    private javax.swing.JComboBox engineTypejComboBox;
+    private javax.swing.JComboBox<String> fuelTypejComboBox;
+    private javax.swing.JComboBox<String> interiorjComboBox;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JComboBox<String> wheelTypejComboBox;
     // End of variables declaration//GEN-END:variables
 }

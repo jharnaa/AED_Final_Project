@@ -4,11 +4,14 @@
  */
 package CustomerWorkArea;
 
+import Business.customer.MasterOrderList;
+import Business.customer.PersonalisedOrder;
 import business.organization.CustomerOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
 import business.organization.Organization;
 import business.useraccount.UserAccount;
+import java.awt.CardLayout;
 import javax.swing.JPanel;
 
 /**
@@ -21,17 +24,23 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
      * Creates new form CustomerWorkAreaManagementJPanel
      */
     private JPanel userProcessContainer;
+    private MasterOrderList mod;
+    private PersonalisedOrder order;
     private CustomerOrganization customerOrganization;
-    private UserAccount account;
+    private UserAccount userAccount;
     private Enterprise enterprise;
     private Ecosystem business;
-    public CustomerWorkAreaManagementJPanel(JPanel userProcessContainer,UserAccount account,Organization organization, Enterprise enterprise, Ecosystem business) {
+    
+    public CustomerWorkAreaManagementJPanel(JPanel userProcessContainer, MasterOrderList mod, PersonalisedOrder order, UserAccount userAccount, Organization organization, Enterprise enterprise, Ecosystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
+        this.mod = mod;
+        this.order = order;
         this.customerOrganization = (CustomerOrganization) organization;
-        this.account = account;
+        this.userAccount = userAccount;
         this.enterprise = enterprise;
         this.business = business;
+        customerTextField.setText(userAccount.getUsername());
     }
 
     /**
@@ -43,19 +52,71 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        customerTextField = new javax.swing.JTextField();
+        backJButton = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+
+        customerTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        customerTextField.setEnabled(false);
+        customerTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customerTextFieldActionPerformed(evt);
+            }
+        });
+
+        backJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        backJButton.setText("Back");
+        backJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backJButtonActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        jLabel8.setText("Hello!");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(customerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(203, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(customerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(182, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void customerTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerTextFieldActionPerformed
+
+    }//GEN-LAST:event_customerTextFieldActionPerformed
+
+    private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
+
+        userProcessContainer.remove(this);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_backJButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton backJButton;
+    private javax.swing.JTextField customerTextField;
+    private javax.swing.JLabel jLabel8;
     // End of variables declaration//GEN-END:variables
 }
