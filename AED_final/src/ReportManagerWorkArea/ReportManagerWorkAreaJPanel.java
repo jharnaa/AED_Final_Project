@@ -209,7 +209,7 @@ public class ReportManagerWorkAreaJPanel extends javax.swing.JPanel {
 
     private void workREquestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_workREquestJButtonActionPerformed
 
-        RegulatoryWorkRequestJPanel ojp = new RegulatoryWorkRequestJPanel(userProcessContainer,account,organization,enterprise, business);
+        QualityControlJPanel ojp = new QualityControlJPanel(userProcessContainer,account,organization,enterprise, business);
         userProcessContainer.add("RegulatoryWorkRequests", ojp);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
@@ -217,7 +217,7 @@ public class ReportManagerWorkAreaJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_workREquestJButtonActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        OrganisationReportJPanel ojp = new OrganisationReportJPanel(userProcessContainer, mod, business);
+        ReportOfOrganizationJPanel ojp = new ReportOfOrganizationJPanel(userProcessContainer, mod, business);
         userProcessContainer.add("OrganizationReportJPanel", ojp);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
