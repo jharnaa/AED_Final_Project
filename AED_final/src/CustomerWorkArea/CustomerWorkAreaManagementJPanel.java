@@ -4,15 +4,20 @@
  */
 package CustomerWorkArea;
 
+import Business.WorkQueue.CustomerCustomizedWorkRequest;
 import Business.customer.MasterOrderList;
 import Business.customer.PersonalisedOrder;
 import Business.customer.PersonalisedOrderItem;
 import business.organization.CustomerOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
+import business.enterprise.customerCareEnterprise;
+import business.network.Network;
 import business.organization.Organization;
+import business.organization.StoreOrganization;
 import business.useraccount.UserAccount;
 import java.awt.CardLayout;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
@@ -75,6 +80,9 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
         jLabel8 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         customerCartjTable = new javax.swing.JTable();
+        viewDetailjBtn = new javax.swing.JButton();
+        deletejButton = new javax.swing.JButton();
+        placeOrderjBtn = new javax.swing.JButton();
 
         customerTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         customerTextField.setEnabled(false);
@@ -114,6 +122,33 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(customerCartjTable);
 
+        viewDetailjBtn.setBackground(new java.awt.Color(204, 204, 255));
+        viewDetailjBtn.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        viewDetailjBtn.setText("View Details");
+        viewDetailjBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewDetailjBtnActionPerformed(evt);
+            }
+        });
+
+        deletejButton.setBackground(new java.awt.Color(204, 204, 255));
+        deletejButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        deletejButton.setText("Delete");
+        deletejButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deletejButtonActionPerformed(evt);
+            }
+        });
+
+        placeOrderjBtn.setBackground(new java.awt.Color(204, 204, 255));
+        placeOrderjBtn.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        placeOrderjBtn.setText("Place Order");
+        placeOrderjBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                placeOrderjBtnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -129,8 +164,15 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
                                 .addComponent(customerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(140, 140, 140)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(247, 247, 247)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(112, 112, 112)
+                        .addComponent(viewDetailjBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(162, 162, 162)
+                        .addComponent(deletejButton, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(127, 127, 127)
+                        .addComponent(placeOrderjBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(140, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -142,9 +184,19 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(customerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(127, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(placeOrderjBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(35, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(viewDetailjBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(deletejButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(27, 27, 27))))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -159,12 +211,75 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
 
+    private void viewDetailjBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDetailjBtnActionPerformed
+        // TODO add your handling code here:
+
+        int selectedRow = customerCartjTable.getSelectedRow();
+        if (selectedRow < 0) {
+            JOptionPane.showMessageDialog(null, "Please select a row from table first to view data", "Warning", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        PersonalisedOrderItem oi = (PersonalisedOrderItem) customerCartjTable.getValueAt(selectedRow, 0);
+        ViewOrderDetailsJPanel vjp = new ViewOrderDetailsJPanel(userProcessContainer, oi);
+        userProcessContainer.add("SupplierWorkAreaJPanel", vjp);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+
+    }//GEN-LAST:event_viewDetailjBtnActionPerformed
+
+    private void deletejButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deletejButtonActionPerformed
+        // TODO add your handling code here:
+        int selectedRow = customerCartjTable.getSelectedRow();
+        if (selectedRow < 0) {
+            JOptionPane.showMessageDialog(null, "Please select a row from table first to delete data", "Warning", JOptionPane.WARNING_MESSAGE);
+        } else {
+            PersonalisedOrderItem oi = (PersonalisedOrderItem) customerCartjTable.getValueAt(selectedRow, 0);
+            order.removeOrderItem(oi);
+            populateTable();
+        }
+    }//GEN-LAST:event_deletejButtonActionPerformed
+
+    private void placeOrderjBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placeOrderjBtnActionPerformed
+
+        int selectedRow = customerCartjTable.getSelectedRow();
+        if (selectedRow < 0) {
+            JOptionPane.showMessageDialog(null, "Please select a row from table first to view data", "Warning", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        
+        mod.addOrderFromInput(order);
+
+        CustomerCustomizedWorkRequest cworkrequest = new CustomerCustomizedWorkRequest();
+        cworkrequest.setOrder(order);
+        cworkrequest.setStatus("Placed");
+        cworkrequest.setCustomerSender(userAccount);
+        userAccount.getWorkQueue().getWorkRequestList().add(cworkrequest);
+
+        for (Network network : business.getNetworkList()) {
+            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+                if (enterprise instanceof customerCareEnterprise) {
+                    for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
+                        if (organization instanceof StoreOrganization) {
+
+                            organization.getWorkQueue().getWorkRequestList().add(cworkrequest);
+
+                        }
+                    }
+                }
+            }
+        }
+        JOptionPane.showMessageDialog(null, "Order Placed Successfully", "Information!!", JOptionPane.WARNING_MESSAGE);
+    }//GEN-LAST:event_placeOrderjBtnActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
     private javax.swing.JTable customerCartjTable;
     private javax.swing.JTextField customerTextField;
+    private javax.swing.JButton deletejButton;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton placeOrderjBtn;
+    private javax.swing.JButton viewDetailjBtn;
     // End of variables declaration//GEN-END:variables
 }
