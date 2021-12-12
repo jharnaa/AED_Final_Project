@@ -142,7 +142,7 @@ public class RequestInventoryJPanel extends javax.swing.JPanel {
         String itemCount = itemCountJTextField.getText();
         String itemName = itemNameJTextField1.getText();
         InventoryWorkRequest request = new InventoryWorkRequest();
-        // validating the fields of the inventory
+        
         if (itemCount.matches("[0-9]+")) {
             request.setItemCount(Integer.parseInt(itemCount));
         } else {

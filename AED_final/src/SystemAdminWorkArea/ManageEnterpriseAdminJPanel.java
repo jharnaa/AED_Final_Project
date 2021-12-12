@@ -13,6 +13,7 @@ import business.role.AdminRole;
 import business.useraccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
@@ -185,11 +186,35 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_cmbNetworkActionPerformed
 
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
-
+        
+        //String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\\\S+$).{8, 20}$";
+        String password = String.valueOf(passwordJPasswordField.getPassword());
+//        boolean Passregex = password.matches(regex);
+//        if(Passregex == false){
+//            JOptionPane.showMessageDialog(this, "Include all types of characters");
+//            return;}
+        
+        if(usernameJTextField.getText().isEmpty() == true)
+        {
+            JOptionPane.showMessageDialog(this, "Please Fill in a Username");
+            return;
+        }
+        
+        if(passwordJPasswordField.getText().isEmpty() == true)
+        {
+            JOptionPane.showMessageDialog(this, "Please Fill in a password");
+            return;
+        }
+        
+        if(nameJTextField.getText().isEmpty() == true)
+        {
+            JOptionPane.showMessageDialog(this, "Please Fill in a Name");
+            return;
+        }
+        
         Enterprise enterprise = (Enterprise) cmbEnterprise.getSelectedItem();
 
         String username = usernameJTextField.getText();
-        String password = String.valueOf(passwordJPasswordField.getPassword());
         String name = nameJTextField.getText();
 
         Person employee = enterprise.getEmployeeDirectory().createPerson(name);

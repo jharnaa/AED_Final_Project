@@ -11,6 +11,7 @@ import business.person.Person;
 import business.role.Role;
 import business.useraccount.UserAccount;
 import java.awt.CardLayout;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
@@ -247,8 +248,15 @@ public class ManageUserJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_organizationJComboBoxActionPerformed
 
     private void btnCreateUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateUserActionPerformed
-        String userName = nameJTextField.getText();
+        
+        //String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\\\S+$).{8, 20}$";
         String password = passwordJTextField.getText();
+//        boolean Passregex = password.matches(regex);
+//        if(Passregex == false){
+//            JOptionPane.showMessageDialog(this, "Include all types of characters");
+//            return;}
+
+        String userName = nameJTextField.getText();
         Organization organization = (Organization) organizationJComboBox.getSelectedItem();
         Person employee = (Person) personJComboBox.getSelectedItem();
         Role role = (Role) roleJComboBox.getSelectedItem();

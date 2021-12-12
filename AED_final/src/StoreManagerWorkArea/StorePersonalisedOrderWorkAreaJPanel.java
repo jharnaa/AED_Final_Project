@@ -114,7 +114,7 @@ public class StorePersonalisedOrderWorkAreaJPanel extends javax.swing.JPanel {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(516, 351, 157, 43));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(516, 351, 210, 43));
 
         requestDesignJButton.setBackground(new java.awt.Color(204, 204, 255));
         requestDesignJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -125,7 +125,7 @@ public class StorePersonalisedOrderWorkAreaJPanel extends javax.swing.JPanel {
                 requestDesignJButtonActionPerformed(evt);
             }
         });
-        add(requestDesignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(462, 400, -1, 43));
+        add(requestDesignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(462, 400, 320, 43));
 
         refreshJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -135,7 +135,7 @@ public class StorePersonalisedOrderWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(963, 13, 91, 49));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(953, 13, 140, 49));
 
         backJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         backJButton.setForeground(new java.awt.Color(102, 0, 51));

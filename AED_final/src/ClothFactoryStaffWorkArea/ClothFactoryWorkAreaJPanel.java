@@ -20,6 +20,7 @@ import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
@@ -122,7 +123,7 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
         valueLabel.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         valueLabel.setForeground(new java.awt.Color(102, 0, 51));
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 90, 84, 30));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 90, 150, 30));
 
         enterpriseLabel2.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         enterpriseLabel2.setForeground(new java.awt.Color(102, 0, 51));
@@ -132,7 +133,7 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
         valueLabel1.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         valueLabel1.setForeground(new java.awt.Color(102, 0, 51));
         valueLabel1.setText("<value>");
-        add(valueLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 121, 84, 30));
+        add(valueLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 121, 180, 30));
 
         enterpriseLabel3.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         enterpriseLabel3.setForeground(new java.awt.Color(102, 0, 51));
@@ -152,14 +153,14 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
         createClothModelJButton.setBackground(new java.awt.Color(255, 255, 255));
         createClothModelJButton.setFont(new java.awt.Font("Palatino", 1, 14)); // NOI18N
         createClothModelJButton.setForeground(new java.awt.Color(102, 0, 51));
-        createClothModelJButton.setText("Create Order");
+        createClothModelJButton.setText("Stock Items");
         createClothModelJButton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         createClothModelJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 createClothModelJButtonActionPerformed(evt);
             }
         });
-        add(createClothModelJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(478, 314, 107, 30));
+        add(createClothModelJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 330, 107, 30));
 
         brandJComboBox.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         brandJComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Zara", "H&M" }));
@@ -169,17 +170,17 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
                 brandJComboBoxActionPerformed(evt);
             }
         });
-        add(brandJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(513, 196, 150, -1));
+        add(brandJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 160, 150, -1));
 
         jLabel1.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 0, 51));
         jLabel1.setText("Brand");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(451, 200, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 170, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 51));
         jLabel3.setText("Model Number");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(373, 237, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, -1, -1));
 
         modelNumberJComboBox.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         modelNumberJComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Zara Tshirt", "Zara Shirt", "Zara Hoodies", "Zara Sweat Shirts", "Zara Jackets", "Zara Tank Tops", "Zara Baby Bodysuits", "H&M Tshirt", "H&M Shirt", "H&M Hoodies", "H&M Sweat Shirts", "H&M Jackets", "H&M Tank Tops", "H&M Baby Bodysuits" }));
@@ -189,16 +190,16 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
                 modelNumberJComboBoxActionPerformed(evt);
             }
         });
-        add(modelNumberJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(513, 233, 150, -1));
+        add(modelNumberJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 210, 150, -1));
 
         jLabel4.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 0, 51));
         jLabel4.setText("Quantity");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(427, 272, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, -1, -1));
 
         quantityJTextField.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         quantityJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(quantityJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(513, 270, 150, -1));
+        add(quantityJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 260, 150, -1));
 
         workRequestJTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         workRequestJTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
@@ -251,7 +252,13 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_refreshTestJButtonActionPerformed
 
     private void createClothModelJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createClothModelJButtonActionPerformed
-
+        
+        if(quantityJTextField.getText().isEmpty() == true)
+        {
+            JOptionPane.showMessageDialog(this, "Please Fill in Quantity");
+            return;
+        }
+        
         ClothFactoryProduct clothFactoryProduct = null;
 
         for (Network network : business.getNetworkList()) {

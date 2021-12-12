@@ -35,6 +35,8 @@ public class InventoryManagerWorkAreaManagementJPanel extends javax.swing.JPanel
         this.userAccount = account;
         this.organization = (InventoryOrganization) organization;
         this.business = business;
+        valueLabel.setText(enterprise.getName());
+        orgValueLabel.setText(organization.getName());
     }
 
     /**

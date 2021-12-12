@@ -126,7 +126,7 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(customerCartjTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(278, 163, 530, 204));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(278, 163, 560, 210));
 
         viewDetailjBtn.setBackground(new java.awt.Color(204, 204, 255));
         viewDetailjBtn.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -159,7 +159,7 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
                 placeOrderjBtnActionPerformed(evt);
             }
         });
-        add(placeOrderjBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(678, 410, 130, -1));
+        add(placeOrderjBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(678, 410, 170, -1));
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel1.setText("The Cloth Factory");

@@ -34,6 +34,9 @@ public class StoreManagerWorkAreaJPanel extends javax.swing.JPanel {
         this.userAccount = account;
         this.enterprise = enterprise;
         this.business = business;
+        
+        valueLabel.setText(enterprise.getName());
+        orgValueLabel.setText(organization.getName());
     }
 
     /**
@@ -114,7 +117,7 @@ public class StoreManagerWorkAreaJPanel extends javax.swing.JPanel {
         tblManuRequest.setBackground(new java.awt.Color(255, 255, 255));
         tblManuRequest.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         tblManuRequest.setForeground(new java.awt.Color(102, 0, 51));
-        tblManuRequest.setText("Manufacturer's Work Requests");
+        tblManuRequest.setText("Producer's Work Requests");
         tblManuRequest.setToolTipText("");
         tblManuRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

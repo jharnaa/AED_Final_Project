@@ -31,6 +31,8 @@ private JPanel userProcessContainer;
         this.organization = (ClothFactoryStaffOrganization) organization;
         this.userAccount = account;
         this.business = business;
+        valueLabel.setText(enterprise.getName());
+        orgValueLabel.setText(organization.getName());
     }
 
     /** This method is called from within the constructor to
@@ -84,7 +86,7 @@ private JPanel userProcessContainer;
         orgValueLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         orgValueLabel.setForeground(new java.awt.Color(102, 0, 51));
         orgValueLabel.setText("<value>");
-        add(orgValueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 147, 26));
+        add(orgValueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 220, 26));
 
         CreateApparelJButton.setBackground(new java.awt.Color(255, 255, 255));
         CreateApparelJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N

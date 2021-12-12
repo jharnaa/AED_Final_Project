@@ -69,8 +69,6 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
         txtText = new javax.swing.JTextField();
         txtTextLocation = new javax.swing.JTextField();
         txtDesignType = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JLabel();
-        interiorTypejTextField1 = new javax.swing.JTextField();
         backJButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -116,7 +114,7 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
         jLabel10.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 51));
         jLabel10.setText("Quantity");
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 445, -1, -1));
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 420, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(102, 0, 51));
@@ -126,7 +124,7 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
         txtQuantity.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtQuantity.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtQuantity.setEnabled(false);
-        add(txtQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 443, 150, -1));
+        add(txtQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 420, 150, -1));
 
         txtCategory.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtCategory.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
@@ -173,16 +171,6 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
         txtDesignType.setEnabled(false);
         add(txtDesignType, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 371, 150, -1));
 
-        jLabel12.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(102, 0, 51));
-        jLabel12.setText("Interior Type");
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 407, -1, -1));
-
-        interiorTypejTextField1.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
-        interiorTypejTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        interiorTypejTextField1.setEnabled(false);
-        add(interiorTypejTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 405, 150, -1));
-
         backJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         backJButton.setForeground(new java.awt.Color(102, 0, 51));
         backJButton.setText("Back");
@@ -216,11 +204,9 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
-    private javax.swing.JTextField interiorTypejTextField1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
