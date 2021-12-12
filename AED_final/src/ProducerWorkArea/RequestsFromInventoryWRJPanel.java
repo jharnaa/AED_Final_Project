@@ -172,7 +172,7 @@ public class RequestsFromInventoryWRJPanel extends javax.swing.JPanel {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ProducerWorkArea/factory.gif"))); // NOI18N
         jLabel3.setText("jLabel3");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(714, 269, 409, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 330, 409, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void acceptRequestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptRequestJButtonActionPerformed

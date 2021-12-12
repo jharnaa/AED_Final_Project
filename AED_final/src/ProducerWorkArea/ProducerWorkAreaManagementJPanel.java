@@ -35,6 +35,8 @@ public class ProducerWorkAreaManagementJPanel extends javax.swing.JPanel {
         this.organization = (ManufacturingOrganization) organization;
         this.userAccount = account;
         this.business = business;
+        valueLabel.setText(enterprise.getName());
+        orgValueLabel.setText(organization.getName());
     }
 
     /**

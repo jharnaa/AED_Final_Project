@@ -253,7 +253,7 @@ public class ProducerWorkRequestsJPanel extends javax.swing.JPanel {
         }
         populateDesignerWorkRequestTable();
 
-        JOptionPane.showMessageDialog(null, "Order sent to Showroom", "Info", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Order sent to Online Store", "Info", JOptionPane.INFORMATION_MESSAGE);
 
     }//GEN-LAST:event_showroomRequestJButtonActionPerformed
 
