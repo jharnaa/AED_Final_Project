@@ -26,7 +26,7 @@ public class HazardousContentReport {
         this.report = report;
         this.barChart = ChartFactory.createBarChart3D(
                 chartTitle,
-                "CAR COMPONENTS",
+                "FACTORS",
                 "LEVEL OF CONTENTS",
                 createDataset(),
                 PlotOrientation.VERTICAL,
@@ -40,29 +40,26 @@ public class HazardousContentReport {
     }
 
     private CategoryDataset createDataset() {
-        final String airFilter = "AIR FILTERS";
-        final String engine = "ENGINE";
-        final String paint = "PAINT";
-        final String fuel = "FUEL";
-        final String lead = "Lead";
-        final String carbonMonoxide = "Carbon Monoxide";
-        final String formaldehyde = "Formaldehyde";
+        final String fabricType = "FABRIC TYPE";
+        final String designTechnique = "DESIGN TECHNIQUE";
+        final String manufacturingProcess = "MANUFACTURING PROCESS";
+        
+        final String carbonEmissions = "CARBON EMSSONS";
+        final String waterToxins = "WATER TOXINS";
+        final String waste = "WASTE";
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
         //adding values to the dataset 
-        dataset.addValue(report.getLeadAirFilter(), lead, airFilter);
-        dataset.addValue(report.getLeadEngine(), lead, engine);
-        dataset.addValue(report.getLeadPaint(), lead, paint);
-        dataset.addValue(report.getLeadFuel(), lead, fuel);
+        dataset.addValue(report.getCarbonEmissionFabricType(), carbonEmissions , fabricType);
+        dataset.addValue(report.getCarbonEmissionDesignTechnique(), carbonEmissions, designTechnique);
+        dataset.addValue(report.getCarbonEmissionManufacturingProcess(), carbonEmissions, manufacturingProcess);
 
-        dataset.addValue(report.getCmAirFilter(), carbonMonoxide, airFilter);
-        dataset.addValue(report.getCmEngine(), carbonMonoxide, engine);
-        dataset.addValue(report.getCmPaint(), carbonMonoxide, paint);
-        dataset.addValue(report.getCmFuel(), carbonMonoxide, fuel);
+        dataset.addValue(report.getWaterToxinFabricType(), waterToxins, fabricType);
+        dataset.addValue(report.getWaterToxinDesignTechnque(), waterToxins, designTechnique);
+        dataset.addValue(report.getWaterToxinManufacturingProcess(), waterToxins, manufacturingProcess);
 
-        dataset.addValue(report.getFmdhAirFilter(), formaldehyde, airFilter);
-        dataset.addValue(report.getFmdhEngine(), formaldehyde, engine);
-        dataset.addValue(report.getFmdhPaint(), formaldehyde, paint);
-        dataset.addValue(report.getFmdhFuel(), formaldehyde, fuel);
+        dataset.addValue(report.getWasteFabricType(), waste, fabricType);
+        dataset.addValue(report.getWasteManufacturingProcess(), waste, designTechnique);
+        dataset.addValue(report.getWasteManufacturingProcess(), waste, manufacturingProcess);
 
         return dataset;
     }

@@ -41,21 +41,18 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
     
     final String applicationTitle = "Hazardous Content Chart";
     final String chartTitle = "Hazardous Content Chart";
-    float airFilterLDContent = 0;
-    float airFilterFDHContent = 0;
-    float airFilterCMContent = 0;
+    float fabricTypeCEContent = 0;
+    float fabricTypeWTContent = 0;
+    float fabricTypeWContent = 0;
+    
+    float designTechniqueCEContent = 0;
+    float designTechniqueWTContent = 0;
+    float designTechniqueWContent = 0;
+    
+    float manufacturingProcessCEContent = 0;
+    float manufacturingProcessWTContent = 0;
+    float manufacturingProcessWContent = 0;
 
-    float paintLDContent = 0;
-    float paintFDHContent = 0;
-    float paintCMContent = 0;
-
-    float engineLDContent = 0;
-    float enginwFDHContent = 0;
-    float engineCMContent = 0;
-
-    float fuelLDContent = 0;
-    float fuelFDHContent = 0;
-    float fuelCMContent = 0;
     
     public HazardousContentReportJPanel(JPanel userProcessContainer, MasterOrderList mod,Ecosystem business) {
         initComponents();
@@ -102,17 +99,15 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
 
         backJButton7 = new javax.swing.JButton();
         reportDisplayjPanel = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         airFilterjComboBox = new javax.swing.JComboBox<>();
-        paintjComboBox = new javax.swing.JComboBox<>();
         engineTypejComboBox = new javax.swing.JComboBox();
         generatePieChartjButton = new javax.swing.JButton();
-        fuelTypejComboBox = new javax.swing.JComboBox<>();
         pieReportjPanel = new javax.swing.JPanel();
         generateGraphjButton1 = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        manufacturingProcessjComboBox = new javax.swing.JComboBox<>();
 
         backJButton7.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         backJButton7.setText("Back");
@@ -125,23 +120,15 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
         reportDisplayjPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         reportDisplayjPanel.setLayout(new java.awt.BorderLayout());
 
-        jLabel6.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 18)); // NOI18N
-        jLabel6.setText("Paint");
-
         jLabel7.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 18)); // NOI18N
-        jLabel7.setText("Airfilter");
+        jLabel7.setText("Fabric Type");
 
         jLabel8.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 18)); // NOI18N
-        jLabel8.setText("Engine");
+        jLabel8.setText("Design Technique");
 
-        jLabel9.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 18)); // NOI18N
-        jLabel9.setText("Fuel");
+        airFilterjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cotton", "Polyester", "Polyester-Cotton", "Satin", "Jersey", "Linen", "Fleece" }));
 
-        airFilterjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Paper", "Foam", "Cotton", "Stainless Steel", "Mesh" }));
-
-        paintjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pearl White", "Black", "Mettalic Grey", "Gold", "Red", "Silver", "Brown" }));
-
-        engineTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Diesel V6", "V-8s", "Three 4-cyl. turbos", "Two 2-cyl. turbos" }));
+        engineTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Printing", "Embroidery" }));
         engineTypejComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 engineTypejComboBoxActionPerformed(evt);
@@ -156,13 +143,6 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
             }
         });
 
-        fuelTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "FFV", "EV", "PHEV", "CNG", "FCV" }));
-        fuelTypejComboBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fuelTypejComboBoxActionPerformed(evt);
-            }
-        });
-
         pieReportjPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
         generateGraphjButton1.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -173,6 +153,11 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel9.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 18)); // NOI18N
+        jLabel9.setText("Manufacturirng Process");
+
+        manufacturingProcessjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bleaching", "Dyeing" }));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -180,35 +165,34 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addComponent(backJButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(236, 236, 236)
+                                .addComponent(generateGraphjButton1)
+                                .addGap(473, 473, 473)
+                                .addComponent(generatePieChartjButton))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(106, 106, 106)
+                                .addComponent(reportDisplayjPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(190, 190, 190)
+                                .addComponent(pieReportjPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 680, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel7)
-                        .addGap(16, 16, 16)
+                        .addGap(18, 18, 18)
                         .addComponent(airFilterjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
+                        .addGap(96, 96, 96)
                         .addComponent(jLabel8)
-                        .addGap(16, 16, 16)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(engineTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
+                        .addGap(38, 38, 38)
                         .addComponent(jLabel9)
-                        .addGap(16, 16, 16)
-                        .addComponent(fuelTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabel6)
-                        .addGap(19, 19, 19)
-                        .addComponent(paintjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(230, 230, 230)
-                        .addComponent(generateGraphjButton1)
-                        .addGap(473, 473, 473)
-                        .addComponent(generatePieChartjButton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(100, 100, 100)
-                        .addComponent(reportDisplayjPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(190, 190, 190)
-                        .addComponent(pieReportjPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 680, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addComponent(manufacturingProcessjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(405, 405, 405))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -217,22 +201,23 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
                 .addComponent(backJButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(41, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(airFilterjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(manufacturingProcessjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel9))
                     .addComponent(engineTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9)
-                    .addComponent(fuelTypejComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6)
-                    .addComponent(paintjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(80, 80, 80)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel8)
+                        .addComponent(airFilterjComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel7)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(generateGraphjButton1))
-                    .addComponent(generatePieChartjButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(54, 54, 54)
+                        .addComponent(generatePieChartjButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(65, 65, 65)
+                        .addComponent(generateGraphjButton1)))
                 .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(reportDisplayjPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -256,9 +241,9 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
 
         DefaultCategoryDataset barchartdata = new DefaultCategoryDataset();
         //setting values of the bar chart
-        barchartdata.setValue(report.getCumleadContent(), "Lead", "Lead");
-        barchartdata.setValue(report.getCumCarbonMContent(), "Lead", "Carbon Monoxide");
-        barchartdata.setValue(report.getCumFMDHContent(), "Lead", "Formalehyde");
+        barchartdata.setValue(report.getCumCarbonEmission(), "Carbon Emission", "Carbon Emission");
+        barchartdata.setValue(report.getCumWaterToxin(), "Carbon Emission", "Water Toxin");
+        barchartdata.setValue(report.getCumWaste(), "Carbon Emission", "Waste");
 
         JFreeChart barchart = ChartFactory.createBarChart3D("Report", "TYPES", "Hazardous Content Value", barchartdata, PlotOrientation.VERTICAL, true, true, false);
         CategoryPlot p = barchart.getCategoryPlot();
@@ -274,128 +259,82 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
         pieReportjPanel.validate();
     }//GEN-LAST:event_generatePieChartjButtonActionPerformed
 
-    private void fuelTypejComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fuelTypejComboBoxActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_fuelTypejComboBoxActionPerformed
-
     private void generateGraphjButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generateGraphjButton1ActionPerformed
         setValuesForGraph();
     }//GEN-LAST:event_generateGraphjButton1ActionPerformed
 
 private void setValuesForGraph() {
 
-        if (airFilterjComboBox.getSelectedItem().equals("Paper")) {
-            airFilterLDContent = (float) (airFilterLDContent + 3.0);
-            airFilterCMContent = (float) (airFilterCMContent + 4.0);
-            airFilterFDHContent = (float) (airFilterFDHContent + 3.4);
-        } else if (airFilterjComboBox.getSelectedItem().equals("Foam")) {
-            airFilterLDContent = (float) (airFilterLDContent + 6.7);
-            airFilterCMContent = (float) (airFilterCMContent + 8.8);
-            airFilterFDHContent = (float) (airFilterFDHContent + 7.9);
-        } else if (airFilterjComboBox.getSelectedItem().equals("Cotton")) {
-            airFilterLDContent = (float) (airFilterLDContent + 2.3);
-            airFilterCMContent = (float) (airFilterCMContent + 5.4);
-            airFilterFDHContent = (float) (airFilterFDHContent + 6.8);
-        } else if (airFilterjComboBox.getSelectedItem().equals("Stainless Steel")) {
-            airFilterLDContent = (float) (airFilterLDContent + 8.5);
-            airFilterCMContent = (float) (airFilterCMContent + 9.02);
-            airFilterFDHContent = (float) (airFilterFDHContent + 8.79);
-        } else if (airFilterjComboBox.getSelectedItem().equals("Mesh")) {
-            airFilterLDContent = (float) (airFilterLDContent + 2.8);
-            airFilterCMContent = (float) (airFilterCMContent + 3.8);
-            airFilterFDHContent = (float) (airFilterFDHContent + 3.48);
+        if (airFilterjComboBox.getSelectedItem().equals("Cotton")) {
+            fabricTypeCEContent = (float) (fabricTypeCEContent + 3.0);
+            fabricTypeWTContent = (float) (fabricTypeWTContent + 4.0);
+            fabricTypeWContent = (float) (fabricTypeWContent + 3.4);
+        } else if (airFilterjComboBox.getSelectedItem().equals("Polyester")) {
+            fabricTypeCEContent = (float) (fabricTypeCEContent + 6.7);
+            fabricTypeWTContent = (float) (fabricTypeWTContent + 8.8);
+            fabricTypeWContent = (float) (fabricTypeWContent + 7.9);
+        } else if (airFilterjComboBox.getSelectedItem().equals("Polyester-Cotton")) {
+            fabricTypeCEContent = (float) (fabricTypeCEContent + 2.3);
+            fabricTypeWTContent = (float) (fabricTypeWTContent + 5.4);
+            fabricTypeWContent = (float) (fabricTypeWContent + 6.8);
+        } else if (airFilterjComboBox.getSelectedItem().equals("Satin")) {
+            fabricTypeCEContent = (float) (fabricTypeCEContent + 8.5);
+            fabricTypeWTContent = (float) (fabricTypeWTContent + 9.02);
+            fabricTypeWContent = (float) (fabricTypeWContent + 8.79);
+        } else if (airFilterjComboBox.getSelectedItem().equals("Jersey")) {
+            fabricTypeCEContent = (float) (fabricTypeCEContent + 2.8);
+            fabricTypeWTContent = (float) (fabricTypeWTContent + 3.8);
+            fabricTypeWContent = (float) (fabricTypeWContent + 3.48);
+        }
+        else if (airFilterjComboBox.getSelectedItem().equals("Linen")) {
+            fabricTypeCEContent = (float) (fabricTypeCEContent + 2.8);
+            fabricTypeWTContent = (float) (fabricTypeWTContent + 3.8);
+            fabricTypeWContent = (float) (fabricTypeWContent + 3.48);
+        }
+        else if (airFilterjComboBox.getSelectedItem().equals("Fleece")) {
+            fabricTypeCEContent = (float) (fabricTypeCEContent + 2.8);
+            fabricTypeWTContent = (float) (fabricTypeWTContent + 3.8);
+            fabricTypeWContent = (float) (fabricTypeWContent + 3.48);
         }
 
-        if (engineTypejComboBox.getSelectedItem().equals("Diesel V6")) {
-            engineLDContent = (float) (engineLDContent + 8.8);
-            engineCMContent = (float) (engineCMContent + 9.78);
-            enginwFDHContent = (float) (enginwFDHContent + 9.0);
-        } else if (engineTypejComboBox.getSelectedItem().equals("V-8s")) {
-            engineLDContent = (float) (engineLDContent + 6.87);
-            engineCMContent = (float) (engineCMContent + 8.85);
-            enginwFDHContent = (float) (enginwFDHContent + 5.7);
-        } else if (engineTypejComboBox.getSelectedItem().equals("Three 4-cyl. turbos")) {
-            engineLDContent = (float) (engineLDContent + 5.4);
-            engineCMContent = (float) (engineCMContent + 6.32);
-            enginwFDHContent = (float) (enginwFDHContent + 4.53);
-        } else if (engineTypejComboBox.getSelectedItem().equals("Two 2-cyl. turbos")) {
-            engineLDContent = (float) (engineLDContent + 4.38);
-            engineCMContent = (float) (engineCMContent + 5.3);
-            enginwFDHContent = (float) (enginwFDHContent + 8.3);
-        }
+        if (engineTypejComboBox.getSelectedItem().equals("Printing")) {
+            designTechniqueCEContent = (float) (designTechniqueCEContent + 8.8);
+            designTechniqueWTContent = (float) (designTechniqueWTContent + 9.78);
+            designTechniqueWContent = (float) (designTechniqueWContent + 9.0);
+        } else if (engineTypejComboBox.getSelectedItem().equals("Embroidery")) {
+            designTechniqueCEContent = (float) (designTechniqueCEContent + 6.87);
+            designTechniqueWTContent = (float) (designTechniqueWTContent+ 8.85);
+            designTechniqueWContent = (float) (designTechniqueWContent + 5.7);
+        } 
+        
+        if (manufacturingProcessjComboBox.getSelectedItem().equals("Bleaching")) {
+            manufacturingProcessCEContent = (float) (manufacturingProcessCEContent + 8.8);
+            manufacturingProcessWTContent = (float) (manufacturingProcessWTContent + 9.78);
+            manufacturingProcessWContent = (float) (manufacturingProcessWContent + 9.0);
+        } else if (manufacturingProcessjComboBox.getSelectedItem().equals("Dyeing")) {
+            manufacturingProcessCEContent = (float) (manufacturingProcessCEContent + 6.87);
+            manufacturingProcessWTContent = (float) (manufacturingProcessWTContent + 8.85);
+            manufacturingProcessWContent = (float) (manufacturingProcessWContent + 5.7);
+        } 
 
-        if (paintjComboBox.getSelectedItem().equals("Pearl White")) {
-            paintLDContent = (float) (paintLDContent + 4.2);
-            paintFDHContent = (float) (paintFDHContent + 3.5);
-            paintCMContent = (float) (paintCMContent + 6.0);
-        } else if (paintjComboBox.getSelectedItem().equals("Black")) {
-            paintLDContent = (float) (paintLDContent + 9.6);
-            paintFDHContent = (float) (paintFDHContent + 8.55);
-            paintCMContent = (float) (paintCMContent + 9.5);
-        } else if (paintjComboBox.getSelectedItem().equals("Mettalic Grey")) {
-            paintLDContent = (float) (paintLDContent + 7.9);
-            paintFDHContent = (float) (paintFDHContent + 9.56);
-            paintCMContent = (float) (paintCMContent + 9.7);
-        } else if (paintjComboBox.getSelectedItem().equals("Gold")) {
-            paintLDContent = (float) (paintLDContent + 6.33);
-            paintFDHContent = (float) (paintFDHContent + 5.35);
-            paintCMContent = (float) (paintCMContent + 6.99);
-        } else if (paintjComboBox.getSelectedItem().equals("Red")) {
-            paintLDContent = (float) (paintLDContent + 7.85);
-            paintFDHContent = (float) (paintFDHContent + 9.38);
-            paintCMContent = (float) (paintCMContent + 7.54);
-        } else if (paintjComboBox.getSelectedItem().equals("Silver")) {
-            paintLDContent = (float) (paintLDContent + 8.97);
-            paintFDHContent = (float) (paintFDHContent + 7.77);
-            paintCMContent = (float) (paintCMContent + 6.32);
-        } else if (paintjComboBox.getSelectedItem().equals("Brown")) {
-            paintLDContent = (float) (paintLDContent + 9.45);
-            paintFDHContent = (float) (paintFDHContent + 9.8);
-            paintCMContent = (float) (paintCMContent + 8.34);
-        }
 
-        if (fuelTypejComboBox.getSelectedItem().equals("FFV")) {
-            fuelLDContent = (float) (fuelLDContent + 7.33);
-            fuelCMContent = (float) (fuelCMContent + 8.5);
-            fuelFDHContent = (float) (fuelFDHContent + 6.74);
-        } else if (fuelTypejComboBox.getSelectedItem().equals("EV")) {
-            fuelLDContent = (float) (fuelLDContent + 4.33);
-            fuelCMContent = (float) (fuelCMContent + 5.3);
-            fuelFDHContent = (float) (fuelFDHContent + 8.3);
-        } else if (fuelTypejComboBox.getSelectedItem().equals("PHEV")) {
-            fuelLDContent = (float) (fuelLDContent + 4.42);
-            fuelCMContent = (float) (fuelCMContent + 7.4);
-            fuelFDHContent = (float) (fuelFDHContent + 7.3);
-        } else if (fuelTypejComboBox.getSelectedItem().equals("CNG")) {
-            fuelLDContent = (float) (fuelLDContent + 3.4);
-            fuelCMContent = (float) (fuelCMContent + 2.4);
-            fuelFDHContent = (float) (fuelFDHContent + 1.45);
-        } else if (fuelTypejComboBox.getSelectedItem().equals("FCV")) {
-            fuelLDContent = (float) (fuelLDContent + 6.76);
-            fuelCMContent = (float) (fuelCMContent + 8.45);
-            fuelFDHContent = (float) (fuelFDHContent + 8.54);
-        }
+        report.setCarbonEmissionFabricType(fabricTypeCEContent);
+        report.setWaterToxinFabricType(fabricTypeWTContent);
+        report.setWasteFabricType(fabricTypeWContent);
 
-        report.setLeadAirFilter(airFilterLDContent);
-        report.setCmAirFilter(airFilterCMContent);
-        report.setFmdhAirFilter(airFilterFDHContent);
+        report.setCarbonEmissionDesignTechnique(designTechniqueCEContent);
+        report.setWaterToxinDesignTechnque(designTechniqueWTContent);
+        report.setWasteDesignTechnique(designTechniqueWContent);
 
-        report.setLeadPaint(paintLDContent);
-        report.setCmPaint(paintCMContent);
-        report.setFmdhPaint(paintFDHContent);
+        report.setCarbonEmissionManufacturingProcess(manufacturingProcessCEContent);
+        report.setWaterToxinManufacturingProcess(manufacturingProcessWTContent);
+        report.setWasteManufacturingProcess(manufacturingProcessWContent);
 
-        report.setLeadEngine(engineLDContent);
-        report.setCmEngine(engineCMContent);
-        report.setFmdhEngine(enginwFDHContent);
-
-        report.setLeadFuel(fuelLDContent);
-        report.setCmFuel(fuelCMContent);
-        report.setFmdhFuel(fuelFDHContent);
-
+        
         //For use in pie-chart   
-        report.setCumleadContent(airFilterLDContent + paintLDContent + fuelLDContent);
-        report.setCumCarbonMContent(airFilterCMContent + paintCMContent + fuelLDContent);
-        report.setCumFMDHContent(airFilterFDHContent + paintFDHContent + fuelFDHContent);
+        report.setCumCarbonEmission(fabricTypeCEContent + designTechniqueCEContent + manufacturingProcessCEContent);
+        report.setCumWaterToxin(fabricTypeWTContent + designTechniqueWTContent + manufacturingProcessWTContent);
+        report.setCumWaste(fabricTypeWContent + designTechniqueWContent + manufacturingProcessWContent);
 
 
         //initComponents();
@@ -410,14 +349,12 @@ private void setValuesForGraph() {
     private javax.swing.JComboBox<String> airFilterjComboBox;
     private javax.swing.JButton backJButton7;
     private javax.swing.JComboBox engineTypejComboBox;
-    private javax.swing.JComboBox<String> fuelTypejComboBox;
     private javax.swing.JButton generateGraphjButton1;
     private javax.swing.JButton generatePieChartjButton;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JComboBox<String> paintjComboBox;
+    private javax.swing.JComboBox<String> manufacturingProcessjComboBox;
     private javax.swing.JPanel pieReportjPanel;
     private javax.swing.JPanel reportDisplayjPanel;
     // End of variables declaration//GEN-END:variables
