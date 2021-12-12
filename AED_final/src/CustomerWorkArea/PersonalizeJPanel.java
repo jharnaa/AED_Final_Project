@@ -36,7 +36,7 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
     private UserAccount account;
     private Enterprise enterprise;
     private Ecosystem business;
-    private static int count;
+    private int count;
     
     public PersonalizeJPanel(JPanel userProcessContainer, Organization organization, UserAccount account, Enterprise enterprise, Ecosystem business) {
         initComponents();
@@ -337,7 +337,7 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
             }
         }
 
-        // add customised order item to the order
+        
         count++;
         PersonalisedOrderItem oi = order.addPersonalisedOrderItem();
         order.setCustomer(account.getEmployee());
