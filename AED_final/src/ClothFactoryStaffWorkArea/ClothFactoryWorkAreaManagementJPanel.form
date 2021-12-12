@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="cc" green="cc" red="ff" type="rgb"/>
+    </Property>
+  </Properties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -19,50 +24,75 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="backJButton" min="-2" pref="110" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" pref="284" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="enterpriseLabel" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="45" pref="45" max="-2" attributes="0"/>
-                              <Component id="valueLabel" min="-2" pref="250" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="enterpriseLabel1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="26" pref="26" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="CreateCrsJButton" alignment="0" pref="398" max="32767" attributes="0"/>
-                                  <Component id="orgValueLabel" min="-2" pref="300" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="enterpriseLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="enterpriseLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="valueLabel" min="-2" pref="155" max="-2" attributes="0"/>
+                                  <Component id="orgValueLabel" min="-2" pref="147" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="185" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="CreateCrsJButton" min="-2" pref="313" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="backJButton" min="-2" pref="103" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" pref="172" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-              <Component id="backJButton" min="-2" pref="40" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="enterpriseLabel" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="valueLabel" min="-2" pref="26" max="-2" attributes="0"/>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLabel2" min="-2" pref="197" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="325" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="backJButton" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="enterpriseLabel" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="valueLabel" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="enterpriseLabel1" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="orgValueLabel" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="CreateCrsJButton" min="-2" pref="102" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" pref="249" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="enterpriseLabel1" min="-2" pref="26" max="-2" attributes="0"/>
-                  <Component id="orgValueLabel" min="-2" pref="26" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-              <Component id="CreateCrsJButton" min="-2" pref="102" max="-2" attributes="0"/>
-              <EmptySpace pref="111" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -70,8 +100,11 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="backJButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Palatino" size="18" style="1"/>
+          <Font name="Malayalam MN" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Back"/>
       </Properties>
@@ -82,7 +115,7 @@
     <Component class="javax.swing.JLabel" name="enterpriseLabel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Palatino" size="18" style="1"/>
+          <Font name="Malayalam MN" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Enterprise :"/>
       </Properties>
@@ -90,7 +123,7 @@
     <Component class="javax.swing.JLabel" name="enterpriseLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Palatino" size="18" style="1"/>
+          <Font name="Malayalam MN" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Organization:"/>
       </Properties>
@@ -98,7 +131,7 @@
     <Component class="javax.swing.JLabel" name="valueLabel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Palatino" size="18" style="1"/>
+          <Font name="Malayalam MN" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&lt;value&gt;"/>
       </Properties>
@@ -106,7 +139,7 @@
     <Component class="javax.swing.JLabel" name="orgValueLabel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Palatino" size="18" style="1"/>
+          <Font name="Malayalam MN" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&lt;value&gt;"/>
       </Properties>
@@ -114,16 +147,40 @@
     <Component class="javax.swing.JButton" name="CreateCrsJButton">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="cc" red="cc" type="rgb"/>
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Palatino" size="18" style="1"/>
+          <Font name="Malayalam MN" size="18" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Place Car Requests"/>
+        <Property name="text" type="java.lang.String" value="Place Apparel requests"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CreateCrsJButtonActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Malayalam MN" size="24" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="The Cloth Factory"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/ClothFactoryStaffWorkArea/frock.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel2"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/ClothFactoryStaffWorkArea/frock2.gif"/>
+        </Property>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
