@@ -6,6 +6,7 @@ package CustomerWorkArea;
 
 import Business.customer.MasterOrderList;
 import Business.customer.PersonalisedOrder;
+import Business.customer.PersonalisedOrderItem;
 import business.organization.CustomerOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
@@ -13,6 +14,7 @@ import business.organization.Organization;
 import business.useraccount.UserAccount;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -41,6 +43,22 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
         this.enterprise = enterprise;
         this.business = business;
         customerTextField.setText(userAccount.getUsername());
+        
+        populateTable();
+    }
+    
+    private void populateTable() {
+
+        DefaultTableModel dtm = (DefaultTableModel) customerCartjTable.getModel();
+        dtm.setRowCount(0);
+
+        for (PersonalisedOrderItem oi : order.getOrderItemList()) {
+            Object[] row = new Object[2];
+            row[0] = oi;
+            row[1] = oi.getPersonaliseProduct().getPrice();
+            dtm.addRow(row);
+        }
+
     }
 
     /**
@@ -55,6 +73,8 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
         customerTextField = new javax.swing.JTextField();
         backJButton = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        customerCartjTable = new javax.swing.JTable();
 
         customerTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         customerTextField.setEnabled(false);
@@ -75,19 +95,43 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
         jLabel8.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel8.setText("Hello!");
 
+        customerCartjTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        customerCartjTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "OrderItemId", "Price"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(customerCartjTable);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(customerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(203, Short.MAX_VALUE))
+                        .addGap(14, 14, 14)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(customerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(140, 140, 140)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(140, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -98,7 +142,9 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(customerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(182, Short.MAX_VALUE))
+                .addGap(31, 31, 31)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(127, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -116,7 +162,9 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
+    private javax.swing.JTable customerCartjTable;
     private javax.swing.JTextField customerTextField;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
