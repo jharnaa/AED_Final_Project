@@ -5,6 +5,7 @@
  */
 package CustomerWorkArea;
 
+import Business.WorkQueue.OrderOnlineWorkRequest;
 import Business.customer.ClothFactoryCatalog;
 import Business.customer.ClothFactoryOrderItem;
 import Business.customer.ClothFactoryProduct;
@@ -187,10 +188,10 @@ public class BuyOnlineJPanel extends javax.swing.JPanel {
         cfo.setClothFactoryProduct(cc);
         oo.setCustomer(account.getEmployee());
 
-        mod.addStoreOrder(oo);
+        mod.addOnlineOrder(oo);
 
-        OrderAtStoreWorkRequest orderAtStoreWR = new OrderAtStoreWorkRequest();
-        orderAtStoreWR.setOrderAtStore(oas);
+        OrderOnlineWorkRequest orderAtStoreWR = new OrderOnlineWorkRequest();
+        orderAtStoreWR.setOrderOnline(oo);
         orderAtStoreWR.setStatus("Placed");
         orderAtStoreWR.setSender(account);
         account.getWorkQueue().getWorkRequestList().add(orderAtStoreWR);
