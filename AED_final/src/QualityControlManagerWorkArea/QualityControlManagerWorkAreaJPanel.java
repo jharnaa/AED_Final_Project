@@ -4,11 +4,20 @@
  */
 package QualityControlManagerWorkArea;
 
+import Business.WorkQueue.QualityControlWorkRequest;
 import business.organization.QualityControlOrganization;
 import business.ecosystem.Ecosystem;
 import business.enterprise.Enterprise;
+import business.enterprise.productionEnterprise;
+import business.network.Network;
 import business.organization.Organization;
+import business.organization.ReportOrganization;
 import business.useraccount.UserAccount;
+import java.awt.CardLayout;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
@@ -33,6 +42,9 @@ public class QualityControlManagerWorkAreaJPanel extends javax.swing.JPanel {
         this.organization = (QualityControlOrganization) organization;
         this.userAccount = account;
         this.business = business;
+        
+        valueLabel.setText(enterprise.getName());
+        orgValueLabel.setText(organization.getName());
     }
 
     /**
@@ -44,19 +56,180 @@ public class QualityControlManagerWorkAreaJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        enterpriseLabel = new javax.swing.JLabel();
+        enterpriseLabel1 = new javax.swing.JLabel();
+        orgValueLabel = new javax.swing.JLabel();
+        valueLabel = new javax.swing.JLabel();
+        backJButton = new javax.swing.JButton();
+        btnRequestReport = new javax.swing.JButton();
+        btnFetchReports = new javax.swing.JButton();
+
+        enterpriseLabel.setFont(new java.awt.Font("Palatino", 0, 24)); // NOI18N
+        enterpriseLabel.setText("Enterprise :");
+
+        enterpriseLabel1.setFont(new java.awt.Font("Palatino", 0, 24)); // NOI18N
+        enterpriseLabel1.setText("Organization:");
+
+        orgValueLabel.setFont(new java.awt.Font("Palatino", 0, 18)); // NOI18N
+        orgValueLabel.setText("<value>");
+
+        valueLabel.setFont(new java.awt.Font("Palatino", 0, 18)); // NOI18N
+        valueLabel.setText("<value>");
+
+        backJButton.setFont(new java.awt.Font("Palatino", 0, 24)); // NOI18N
+        backJButton.setText("Back");
+        backJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backJButtonActionPerformed(evt);
+            }
+        });
+
+        btnRequestReport.setBackground(new java.awt.Color(204, 204, 255));
+        btnRequestReport.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        btnRequestReport.setText("Request Report");
+        btnRequestReport.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequestReportActionPerformed(evt);
+            }
+        });
+
+        btnFetchReports.setBackground(new java.awt.Color(204, 204, 255));
+        btnFetchReports.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        btnFetchReports.setText("Fetch Quality Reports");
+        btnFetchReports.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFetchReportsActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(23, 23, 23)
+                        .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(enterpriseLabel1)
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnRequestReport, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(orgValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnFetchReports, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(121, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(valueLabel)))
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(orgValueLabel))
+                .addGap(18, 18, 18)
+                .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
+                .addComponent(btnFetchReports, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(btnRequestReport, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
+        userProcessContainer.remove(this);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_backJButtonActionPerformed
+
+    private void btnRequestReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequestReportActionPerformed
+        //request sent to regulatory
+        QualityControlWorkRequest rwr = new QualityControlWorkRequest();
+        rwr.setStatus("Report Requested");
+        rwr.setSender(userAccount);
+        String reportType = "Hazardous Content";
+        rwr.setReportType(reportType);
+        //adding work request to the reporting organization work queue
+        for (Network network : business.getNetworkList()) {
+            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+                if (enterprise instanceof productionEnterprise) {
+                    for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
+                        if (organization instanceof ReportOrganization) {
+                            organization.getWorkQueue().getWorkRequestList().add(rwr);
+                        }
+                    }
+                }
+            }
+        }
+
+        JOptionPane.showMessageDialog(null, "Report requested to Reporting", "Info", JOptionPane.INFORMATION_MESSAGE);
+
+    }//GEN-LAST:event_btnRequestReportActionPerformed
+
+    private void btnFetchReportsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFetchReportsActionPerformed
+        //reports generated with the regulatory
+        File file = new File("/Users/mrunalbhalerao/NetBeansProjects/AED_Final_Project/AED_final/src/QualityControlManagerWorkArea/Report.csv");
+        float content1 = 0;
+        float content2 = 0;
+        float content3 = 0;
+        for (Network network : business.getNetworkList()) {
+            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+                if (enterprise instanceof productionEnterprise) {
+                    for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
+                        if (organization instanceof ReportOrganization) {
+
+                           // content1 = ((ReportOrganization) organization).getReport().getCumCarbonMContent();
+                            //content2 = ((ReportOrganization) organization).getReport().getCumFMDHContent();
+                            //content3 = ((ReportOrganization) organization).getReport().getCumleadContent();
+
+                        }
+                    }
+                }
+            }
+        }
+
+        String content = "Hazardous Components Reports is as follows:" + "||" + "Carbon Mono-oxide Content:" + " " + content1 + " " + "Formaldehyde Content:" + " " + content2 + " " + "Lead Content:" + " " + content3;
+
+        try (FileOutputStream fop = new FileOutputStream(file)) {
+
+            // if file doesn't exists, then create it
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+
+            // get the content in bytes
+            byte[] contentInBytes = content.getBytes();
+
+            fop.write(contentInBytes);
+            fop.flush();
+            fop.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        JOptionPane.showMessageDialog(null, "Report downloaded", "Info", JOptionPane.INFORMATION_MESSAGE);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnFetchReportsActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton backJButton;
+    private javax.swing.JButton btnFetchReports;
+    private javax.swing.JButton btnRequestReport;
+    private javax.swing.JLabel enterpriseLabel;
+    private javax.swing.JLabel enterpriseLabel1;
+    private javax.swing.JLabel orgValueLabel;
+    private javax.swing.JLabel valueLabel;
     // End of variables declaration//GEN-END:variables
 }
