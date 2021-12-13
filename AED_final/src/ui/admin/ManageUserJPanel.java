@@ -141,6 +141,11 @@ public class ManageUserJPanel extends javax.swing.JPanel {
 
         passwordJTextField.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         passwordJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        passwordJTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passwordJTextFieldActionPerformed(evt);
+            }
+        });
         add(passwordJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 260, 146, -1));
 
         jLabel3.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -250,11 +255,26 @@ public class ManageUserJPanel extends javax.swing.JPanel {
     private void btnCreateUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateUserActionPerformed
         
         //String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\\\S+$).{8, 20}$";
-        String password = passwordJTextField.getText();
+        //String password = passwordJTextField.getText();
 //        boolean Passregex = password.matches(regex);
 //        if(Passregex == false){
 //            JOptionPane.showMessageDialog(this, "Include all types of characters");
 //            return;}
+        boolean flag=false;String password="";
+        while(flag==false)
+        {
+            password = passwordJTextField.getText();
+            if (password.length()>=8 && containsNumber(password) && containsCapital(password))
+            {
+                flag=true;
+                break;}
+            else
+            {
+            JOptionPane.showMessageDialog(this, "Enter a strong password");
+            return;
+            }
+                
+        }
 
         String userName = nameJTextField.getText();
         Organization organization = (Organization) organizationJComboBox.getSelectedItem();
@@ -265,6 +285,38 @@ public class ManageUserJPanel extends javax.swing.JPanel {
 
         popData();
     }//GEN-LAST:event_btnCreateUserActionPerformed
+    public Boolean containsNumber(String s)
+    {
+        boolean flag=false;
+        for(int i=0;i<s.length();i++)
+        {
+            char a=s.charAt(i);
+            if(Character.isDigit(a))
+            {flag=true;break;}
+        }
+        
+        
+        return flag;
+    }
+     public Boolean containsCapital(String s)
+    {
+        boolean flag=false;
+        for(int i=0;i<s.length();i++)
+        {
+            char a=s.charAt(i);
+            if(Character.isUpperCase(a))
+            {flag=true;break;}
+        }
+        
+        
+        return flag;
+    }
+    
+    
+    
+    private void passwordJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordJTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passwordJTextFieldActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
