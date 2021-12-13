@@ -188,12 +188,14 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
         
         //String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\\\S+$).{8, 20}$";
-        String password = String.valueOf(passwordJPasswordField.getPassword());
+        
 //        boolean Passregex = password.matches(regex);
 //        if(Passregex == false){
 //            JOptionPane.showMessageDialog(this, "Include all types of characters");
 //            return;}
         
+
+//String password = String.valueOf(passwordJPasswordField.getPassword());
         if(usernameJTextField.getText().isEmpty() == true)
         {
             JOptionPane.showMessageDialog(this, "Please Fill in a Username");
@@ -212,6 +214,24 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
             return;
         }
         
+        
+        boolean flag=false;
+        String password="";
+        while(flag==false)
+        {
+            password = String.valueOf(passwordJPasswordField.getPassword());
+            if (password.length()>=8 && containsNumber(password) && containsCapital(password))
+            {
+                flag=true;
+                break;}
+            else
+            {
+            JOptionPane.showMessageDialog(this, "Enter a strong password");
+            return;
+            }
+                
+        }
+        
         Enterprise enterprise = (Enterprise) cmbEnterprise.getSelectedItem();
 
         String username = usernameJTextField.getText();
@@ -222,7 +242,33 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new AdminRole());
         populateTable();
     }//GEN-LAST:event_submitJButtonActionPerformed
-
+public Boolean containsNumber(String s)
+    {
+        boolean flag=false;
+        for(int i=0;i<s.length();i++)
+        {
+            char a=s.charAt(i);
+            if(Character.isDigit(a))
+            {flag=true;break;}
+        }
+        
+        
+        return flag;
+    }
+     public Boolean containsCapital(String s)
+    {
+        boolean flag=false;
+        for(int i=0;i<s.length();i++)
+        {
+            char a=s.charAt(i);
+            if(Character.isUpperCase(a))
+            {flag=true;break;}
+        }
+        
+        
+        return flag;
+    }
+    
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
