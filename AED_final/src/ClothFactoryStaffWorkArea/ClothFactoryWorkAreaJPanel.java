@@ -179,11 +179,11 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
 
         jLabel3.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 51));
-        jLabel3.setText("Model Number");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, -1, -1));
+        jLabel3.setText("Model Type");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 210, -1, -1));
 
         modelNumberJComboBox.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
-        modelNumberJComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Zara Tshirt", "Zara Shirt", "Zara Hoodies", "Zara Sweat Shirts", "Zara Jackets", "Zara Tank Tops", "Zara Baby Bodysuits", "H&M Tshirt", "H&M Shirt", "H&M Hoodies", "H&M Sweat Shirts", "H&M Jackets", "H&M Tank Tops", "H&M Baby Bodysuits" }));
+        modelNumberJComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tshirt", "Shirt", "Hoodies", "Sweat Shirts", "Jackets", "Tank Tops", "Baby Bodysuits", " " }));
         modelNumberJComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         modelNumberJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -209,7 +209,7 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Apparel ID", "Brand", "Model Number", "Quantity", "Price"
+                "Apparel ID", "Brand", "Model Type", "Quantity", "Price"
             }
         ) {
             Class[] types = new Class [] {
@@ -282,48 +282,48 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
                             clothFactoryProduct.setQuantity(Integer.parseInt(quantityJTextField.getText()));
 
                             if (clothFactoryProduct.getBrand().equalsIgnoreCase("Zara")) {
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Zara Tshirt")) {
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Tshirt")) {
                                     price = price + 25;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Zara Shirt")) {
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Shirt")) {
                                     price = price + 23;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Zara Hoodies")) {
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Hoodies")) {
                                     price = price + 60;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Zara Sweat Shirts")) {
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Sweat Shirts")) {
                                     price = price + 55;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Zara Jackets")) {
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Jackets")) {
                                     price = price + 70;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Zara Tank Tops")) {
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Tank Tops")) {
                                     price = price + 15;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Zara Baby Bodysuits")) {
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Baby Bodysuits")) {
                                     price = price + 20;
                                 }
                             }
                             if (clothFactoryProduct.getBrand().equalsIgnoreCase("H&M")) {
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("H&M Tshirt")) {
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Tshirt")) {
                                     price = price + 19;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("H&M Shirt")) {
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Shirt")) {
                                     price = price + 24;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("H&M Hoodies")) {
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Hoodies")) {
                                     price = price + 36;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("H&M Sweat Shirts")) {
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Sweat Shirts")) {
                                     price = price + 45;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("H&M Jackets")) {
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Jackets")) {
                                     price = price + 50;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("H&M Tank Tops")) {
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Tank Tops")) {
                                     price = price + 32;
                                 }
-                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("H&M Baby Bodysuits")) {
+                                if (clothFactoryProduct.getModelNumber().equalsIgnoreCase("Baby Bodysuits")) {
                                     price = price + 16;
                                 }
                             }
@@ -342,8 +342,7 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
 
     private void brandJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brandJComboBoxActionPerformed
 
-        final DefaultComboBoxModel teslaModelNumberJComboBox = new DefaultComboBoxModel(new String[]{"T78", "E45", "Y89"});
-        final DefaultComboBoxModel vwModelNumberJComboBox = new DefaultComboBoxModel(new String[]{"T56", "E45", "Y67"});
+        /*
 
         brandJComboBox.addActionListener(new ActionListener() {
             @Override
@@ -357,7 +356,7 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
 
             }
 
-        });
+        });*/
     }//GEN-LAST:event_brandJComboBoxActionPerformed
 
     private void modelNumberJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modelNumberJComboBoxActionPerformed

@@ -135,7 +135,7 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 10, 140, 40));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 10, 140, 40));
 
         enterpriseLabel3.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         enterpriseLabel3.setForeground(new java.awt.Color(102, 0, 51));
