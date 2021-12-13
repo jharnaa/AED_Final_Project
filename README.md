@@ -1,8 +1,8 @@
 # The Cloth Factory
 
 **Authors:**
-Mrunal Bhalerao
-Jharna Doda
+Mrunal Bhalerao,
+Jharna Doda,
 Saloni Sankhe
 
 **The Cloth Factory is a Java Swing Application wherein customers can buy apparrels as well as personalise their apparels.**
@@ -25,4 +25,4 @@ There are **8 organisations** namely:
 8. Quality Control
 
 
-
+There are multiple roles and work requests through which we communicate between organisations and enterprises. 
