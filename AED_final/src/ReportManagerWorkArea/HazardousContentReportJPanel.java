@@ -111,6 +111,7 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
+        setForeground(new java.awt.Color(102, 0, 51));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         backJButton7.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -125,28 +126,30 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
 
         reportDisplayjPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         reportDisplayjPanel.setLayout(new java.awt.BorderLayout());
-        add(reportDisplayjPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 223, 500, 400));
+        add(reportDisplayjPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, 500, 400));
 
         jLabel7.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(102, 0, 51));
         jLabel7.setText("Fabric Type");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 128, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(102, 0, 51));
         jLabel8.setText("Design Technique");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(485, 128, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, -1, -1));
 
+        airFilterjComboBox.setForeground(new java.awt.Color(102, 0, 51));
         airFilterjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cotton", "Polyester", "Polyester-Cotton", "Satin", "Jersey", "Linen", "Fleece" }));
-        add(airFilterjComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 128, 140, 30));
+        add(airFilterjComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 140, 30));
 
+        engineTypejComboBox.setForeground(new java.awt.Color(102, 0, 51));
         engineTypejComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Printing", "Embroidery" }));
         engineTypejComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 engineTypejComboBoxActionPerformed(evt);
             }
         });
-        add(engineTypejComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 130, 140, -1));
+        add(engineTypejComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 130, 140, -1));
 
         generatePieChartjButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         generatePieChartjButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -156,10 +159,10 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
                 generatePieChartjButtonActionPerformed(evt);
             }
         });
-        add(generatePieChartjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(738, 171, -1, 40));
+        add(generatePieChartjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 210, -1, 40));
 
         pieReportjPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(pieReportjPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(576, 223, 680, 400));
+        add(pieReportjPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 680, 400));
 
         generateGraphjButton1.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         generateGraphjButton1.setForeground(new java.awt.Color(102, 0, 51));
@@ -169,19 +172,20 @@ public class HazardousContentReportJPanel extends javax.swing.JPanel {
                 generateGraphjButton1ActionPerformed(evt);
             }
         });
-        add(generateGraphjButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 176, -1, -1));
+        add(generateGraphjButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(102, 0, 51));
         jLabel9.setText("Manufacturing Process");
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 129, -1, -1));
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 130, -1, -1));
 
+        manufacturingProcessjComboBox.setForeground(new java.awt.Color(102, 0, 51));
         manufacturingProcessjComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bleaching", "Dyeing" }));
-        add(manufacturingProcessjComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(1122, 129, 140, 30));
+        add(manufacturingProcessjComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 130, 140, 30));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 15, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 20, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButton7ActionPerformed

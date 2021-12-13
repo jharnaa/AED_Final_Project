@@ -126,7 +126,7 @@ public class ProducerWorkRequestsJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 111, 38));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 111, 38));
 
         designerWorkRequestJTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         designerWorkRequestJTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
@@ -156,7 +156,7 @@ public class ProducerWorkRequestsJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(designerWorkRequestJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 342, 850, 290));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 850, 290));
 
         showroomRequestJButton.setBackground(new java.awt.Color(204, 204, 255));
         showroomRequestJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -199,18 +199,18 @@ public class ProducerWorkRequestsJPanel extends javax.swing.JPanel {
                 refreshTestJButtonActionPerformed(evt);
             }
         });
-        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(888, 0, 140, 38));
+        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 30, 140, 38));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 8, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 40, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ProducerWorkArea/approved.gif"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(855, 62, 173, 178));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 70, 173, 178));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ProducerWorkArea/excited.gif"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 638, 199, 171));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 540, 199, 171));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

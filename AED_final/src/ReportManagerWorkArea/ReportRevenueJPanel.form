@@ -55,7 +55,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="202" y="166" width="690" height="310"/>
+          <AbsoluteConstraints x="240" y="250" width="690" height="310"/>
         </Constraint>
       </Constraints>
 
@@ -64,13 +64,13 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Malayalam MN" size="24" style="1"/>
+          <Font name="Malayalam MN" size="36" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="The Cloth Factory"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="451" y="16" width="-1" height="-1"/>
+          <AbsoluteConstraints x="420" y="60" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

@@ -118,7 +118,7 @@ public class RequestsFromInventoryWRJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(inventoryWorkRequestJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(238, 172, 631, 270));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 200, 631, 270));
 
         acceptRequestJButton.setBackground(new java.awt.Color(204, 204, 255));
         acceptRequestJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -129,12 +129,12 @@ public class RequestsFromInventoryWRJPanel extends javax.swing.JPanel {
                 acceptRequestJButtonActionPerformed(evt);
             }
         });
-        add(acceptRequestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 448, -1, 49));
+        add(acceptRequestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 480, -1, 49));
 
-        jLabel6.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(102, 0, 51));
         jLabel6.setText("Inventory Work Queue");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(468, 119, 209, 26));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 150, 290, 30));
 
         backJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         backJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -144,7 +144,7 @@ public class RequestsFromInventoryWRJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 6, 105, 37));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 105, 37));
 
         enterpriseLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(102, 0, 51));
@@ -166,9 +166,9 @@ public class RequestsFromInventoryWRJPanel extends javax.swing.JPanel {
         valueLabel.setText("<value>");
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(141, 94, 220, 26));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(468, 19, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 30, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ProducerWorkArea/factory.gif"))); // NOI18N
         jLabel3.setText("jLabel3");

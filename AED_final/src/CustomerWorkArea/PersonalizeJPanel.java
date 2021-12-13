@@ -95,7 +95,7 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 204, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        backJButton.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
+        backJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         backJButton.setForeground(new java.awt.Color(102, 0, 51));
         backJButton.setText("Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -103,14 +103,14 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 18, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(102, 0, 51));
         jLabel8.setText("Hello!");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 74, 59, 45));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 59, 45));
 
-        btnAdd.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
+        btnAdd.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         btnAdd.setForeground(new java.awt.Color(102, 0, 51));
         btnAdd.setText("Add to Cart");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
@@ -118,9 +118,9 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
                 btnAddActionPerformed(evt);
             }
         });
-        add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(393, 514, 139, 46));
+        add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 520, 139, 46));
 
-        btnNext.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
+        btnNext.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         btnNext.setForeground(new java.awt.Color(102, 0, 51));
         btnNext.setText("Next");
         btnNext.addActionListener(new java.awt.event.ActionListener() {
@@ -128,35 +128,35 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
                 btnNextActionPerformed(evt);
             }
         });
-        add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(1064, 18, 77, -1));
+        add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 30, 110, 40));
 
         jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 0, 51));
         jLabel2.setText("Category :");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 153, -1, 20));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, -1, 20));
 
         jLabel3.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 51));
         jLabel3.setText("Color :");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(389, 220, -1, 30));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 220, -1, 30));
 
         jLabel4.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 0, 51));
         jLabel4.setText("Size :");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(399, 260, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(102, 0, 51));
         jLabel5.setText("Fabric Type:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 294, -1, 20));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, -1, 20));
 
         jLabel6.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(102, 0, 51));
         jLabel6.setText("Quantity :");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 325, -1, 30));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 320, -1, 30));
 
         cmbQuantity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten" }));
-        add(cmbQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 328, 140, -1));
+        add(cmbQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 320, 170, -1));
 
         cmbCategory.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Men", "Women", "Kids", "Baby" }));
         cmbCategory.addActionListener(new java.awt.event.ActionListener() {
@@ -164,7 +164,7 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
                 cmbCategoryActionPerformed(evt);
             }
         });
-        add(cmbCategory, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 151, 140, -1));
+        add(cmbCategory, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 170, -1));
 
         cmbColor.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Basic Black", "Basic White", "Beige", "Red", "Blue", "Lemon Yellow", "Pink", " " }));
         cmbColor.addActionListener(new java.awt.event.ActionListener() {
@@ -172,34 +172,34 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
                 cmbColorActionPerformed(evt);
             }
         });
-        add(cmbColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 223, 140, -1));
+        add(cmbColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 220, 170, -1));
 
         cmbSize.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "XL", "L", "M", "S", "XS", "6 Months", "12 Months", "18 Months", "New Born" }));
-        add(cmbSize, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 256, 140, 30));
+        add(cmbSize, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 250, 170, 30));
 
         cmbFabricType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cotton", "Polyester", "Cotton Polyester", "Satin", "Jersey", "Linen", "Fleece" }));
-        add(cmbFabricType, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 292, 140, -1));
+        add(cmbFabricType, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, 170, -1));
 
         jLabel7.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(102, 0, 51));
         jLabel7.setText("Text :");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(397, 361, -1, 30));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 360, -1, 30));
 
         cmbText.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "No Text", "Text" }));
-        add(cmbText, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 364, 140, -1));
+        add(cmbText, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 360, 170, -1));
 
         jLabel9.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(102, 0, 51));
         jLabel9.setText("Text Location:");
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(338, 433, -1, 30));
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 430, -1, 30));
 
         cmbTextLocation.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Front", "Back", "Sleeve Right", "Sleeve Left", "Both Sleeves" }));
-        add(cmbTextLocation, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 436, 140, -1));
+        add(cmbTextLocation, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 430, 180, -1));
 
         jLabel10.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 51));
         jLabel10.setText("Design Technique:");
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(311, 471, -1, -1));
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 470, -1, -1));
 
         cmbDesignTechnique.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Printing", "Embroidery" }));
         cmbDesignTechnique.addActionListener(new java.awt.event.ActionListener() {
@@ -207,12 +207,12 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
                 cmbDesignTechniqueActionPerformed(evt);
             }
         });
-        add(cmbDesignTechnique, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 469, 140, -1));
+        add(cmbDesignTechnique, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 470, 180, -1));
 
         jLabel11.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(102, 0, 51));
         jLabel11.setText("Style :");
-        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(393, 184, -1, 30));
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, -1, 30));
 
         cmbStyle.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tshirt", "Shirt", "Hoodies", "Sweatshirts", "Jackets", "Tank Tops", "Baby Bodysuits" }));
         cmbStyle.addActionListener(new java.awt.event.ActionListener() {
@@ -220,27 +220,30 @@ public class PersonalizeJPanel extends javax.swing.JPanel {
                 cmbStyleActionPerformed(evt);
             }
         });
-        add(cmbStyle, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 187, 140, -1));
+        add(cmbStyle, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 180, 170, -1));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 20, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 40, -1, -1));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CustomerWorkArea/clotjhes (1).gif"))); // NOI18N
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(746, 151, 248, 331));
-        add(customerName, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 74, 102, 45));
+        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 160, 248, 331));
+
+        customerName.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        customerName.setForeground(new java.awt.Color(102, 0, 51));
+        add(customerName, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 102, 45));
 
         jLabel13.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(102, 0, 51));
         jLabel13.setText("Text to be printed :");
-        add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 397, -1, 30));
+        add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 390, -1, 30));
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
-        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 399, 132, -1));
+        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 390, 170, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

@@ -154,9 +154,9 @@ public class ReportManagerWorkAreaJPanel extends javax.swing.JPanel {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ReportManagerWorkArea/reporting.gif"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(524, 233, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel2.setText("The Cloth Factory");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(425, 10, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButton7ActionPerformed

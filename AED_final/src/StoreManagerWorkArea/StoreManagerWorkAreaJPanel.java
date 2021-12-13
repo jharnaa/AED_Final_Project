@@ -101,7 +101,7 @@ public class StoreManagerWorkAreaJPanel extends javax.swing.JPanel {
                 btnCustomizedOrdersActionPerformed(evt);
             }
         });
-        add(btnCustomizedOrders, new org.netbeans.lib.awtextra.AbsoluteConstraints(238, 196, 380, 70));
+        add(btnCustomizedOrders, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 380, 70));
 
         btnOnlineOrders.setBackground(new java.awt.Color(255, 255, 255));
         btnOnlineOrders.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -112,7 +112,7 @@ public class StoreManagerWorkAreaJPanel extends javax.swing.JPanel {
                 btnOnlineOrdersActionPerformed(evt);
             }
         });
-        add(btnOnlineOrders, new org.netbeans.lib.awtextra.AbsoluteConstraints(238, 302, 380, 70));
+        add(btnOnlineOrders, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 380, 70));
 
         tblManuRequest.setBackground(new java.awt.Color(255, 255, 255));
         tblManuRequest.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -124,14 +124,14 @@ public class StoreManagerWorkAreaJPanel extends javax.swing.JPanel {
                 tblManuRequestActionPerformed(evt);
             }
         });
-        add(tblManuRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(238, 411, 380, 70));
+        add(tblManuRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 380, 70));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(459, 10, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 20, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/StoreManagerWorkArea/work.gif"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(666, 175, 343, 326));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 230, 343, 326));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

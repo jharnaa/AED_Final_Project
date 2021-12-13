@@ -65,25 +65,31 @@ public class RequestInventoryJPanel extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
+        setForeground(new java.awt.Color(102, 0, 51));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         enterpriseLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        enterpriseLabel.setForeground(new java.awt.Color(102, 0, 51));
         enterpriseLabel.setText("Enterprise :");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 113, -1, 30));
 
         enterpriseLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        enterpriseLabel1.setForeground(new java.awt.Color(102, 0, 51));
         enterpriseLabel1.setText("Organization:");
         add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 154, -1, 26));
 
         orgValueLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        orgValueLabel.setForeground(new java.awt.Color(102, 0, 51));
         orgValueLabel.setText("<value>");
         add(orgValueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 154, 230, 26));
 
         valueLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        valueLabel.setForeground(new java.awt.Color(102, 0, 51));
         valueLabel.setText("<value>");
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 115, 210, 26));
 
         backJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(102, 0, 51));
         backJButton.setText("Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,37 +99,42 @@ public class RequestInventoryJPanel extends javax.swing.JPanel {
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 7, 103, 39));
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 0, 51));
         jLabel1.setText("Item Count");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(385, 176, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 190, -1, -1));
 
         itemCountJTextField.setFont(new java.awt.Font("Palatino", 0, 18)); // NOI18N
+        itemCountJTextField.setForeground(new java.awt.Color(102, 0, 51));
         itemCountJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(itemCountJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(497, 172, 194, 37));
+        add(itemCountJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 194, 37));
 
         requestInventoryJButton.setBackground(new java.awt.Color(255, 255, 255));
         requestInventoryJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        requestInventoryJButton.setForeground(new java.awt.Color(102, 0, 51));
         requestInventoryJButton.setText("Send Inventory Request");
         requestInventoryJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 requestInventoryJButtonActionPerformed(evt);
             }
         });
-        add(requestInventoryJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(431, 276, 250, 50));
+        add(requestInventoryJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, 250, 50));
 
         jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 0, 51));
         jLabel2.setText("Item Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 225, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 240, -1, -1));
 
         itemNameJTextField1.setFont(new java.awt.Font("Palatino", 0, 18)); // NOI18N
+        itemNameJTextField1.setForeground(new java.awt.Color(102, 0, 51));
         itemNameJTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(itemNameJTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 221, 194, 37));
+        add(itemNameJTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 240, 194, 37));
 
-        jLabel3.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel3.setText("The Cloth Factory");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(448, 6, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/start page.gif"))); // NOI18N
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 332, 516, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 380, 516, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

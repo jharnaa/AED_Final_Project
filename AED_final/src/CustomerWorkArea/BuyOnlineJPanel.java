@@ -110,7 +110,7 @@ public class BuyOnlineJPanel extends javax.swing.JPanel {
             tblclothfactory.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 88, 494, 319));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, 590, 350));
 
         placeOrderJButton.setBackground(new java.awt.Color(255, 255, 255));
         placeOrderJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -121,20 +121,20 @@ public class BuyOnlineJPanel extends javax.swing.JPanel {
                 placeOrderJButtonActionPerformed(evt);
             }
         });
-        add(placeOrderJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(394, 436, 197, 43));
+        add(placeOrderJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 540, 197, 43));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(294, 17, 435, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 30, 435, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CustomerWorkArea/order (1).gif"))); // NOI18N
         jLabel2.setText("jLabel2");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 419, 198, 192));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, 198, 192));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CustomerWorkArea/ordernow (1).gif"))); // NOI18N
         jLabel4.setText("jLabel4");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 0, 204, 135));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 0, 204, 135));
     }// </editor-fold>//GEN-END:initComponents
 
     private void populateTable() {

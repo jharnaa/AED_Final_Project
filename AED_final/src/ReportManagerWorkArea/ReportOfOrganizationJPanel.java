@@ -137,7 +137,7 @@ public class ReportOfOrganizationJPanel extends javax.swing.JPanel {
         reportDisplayjPanel.setBackground(new java.awt.Color(255, 204, 204));
         reportDisplayjPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         reportDisplayjPanel.setLayout(new java.awt.BorderLayout());
-        add(reportDisplayjPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(114, 296, 710, 310));
+        add(reportDisplayjPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 300, 710, 310));
 
         backJButton7.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         backJButton7.setForeground(new java.awt.Color(102, 0, 51));
@@ -147,7 +147,7 @@ public class ReportOfOrganizationJPanel extends javax.swing.JPanel {
                 backJButton7ActionPerformed(evt);
             }
         });
-        add(backJButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 100, -1, -1));
+        add(backJButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 0, 51));
@@ -187,12 +187,12 @@ public class ReportOfOrganizationJPanel extends javax.swing.JPanel {
         });
         add(generateGraphJBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(372, 243, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel2.setText("The Cloth Factory");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(407, 43, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ReportManagerWorkArea/moving.gif"))); // NOI18N
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(842, 519, -1, 87));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 540, -1, 87));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ReportManagerWorkArea/excited.gif"))); // NOI18N
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(842, 124, 217, 201));

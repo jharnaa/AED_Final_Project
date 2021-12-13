@@ -56,47 +56,50 @@ public class CustomerMainJPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         customizejBtn.setBackground(new java.awt.Color(255, 255, 255));
-        customizejBtn.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        customizejBtn.setFont(new java.awt.Font("Palatino", 1, 24)); // NOI18N
+        customizejBtn.setForeground(new java.awt.Color(102, 0, 51));
         customizejBtn.setText("Customize");
         customizejBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 customizejBtnActionPerformed(evt);
             }
         });
-        add(customizejBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(393, 222, 210, 52));
+        add(customizejBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 270, 370, 60));
 
         buyOnlinejBtn.setBackground(new java.awt.Color(255, 255, 255));
-        buyOnlinejBtn.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        buyOnlinejBtn.setFont(new java.awt.Font("Palatino", 1, 24)); // NOI18N
+        buyOnlinejBtn.setForeground(new java.awt.Color(102, 0, 51));
         buyOnlinejBtn.setText("Buy Online");
         buyOnlinejBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buyOnlinejBtnActionPerformed(evt);
             }
         });
-        add(buyOnlinejBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(393, 304, 210, 53));
+        add(buyOnlinejBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 350, 370, 60));
 
         customerOrdersJButton.setBackground(new java.awt.Color(255, 255, 255));
-        customerOrdersJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        customerOrdersJButton.setFont(new java.awt.Font("Palatino", 1, 24)); // NOI18N
+        customerOrdersJButton.setForeground(new java.awt.Color(102, 0, 51));
         customerOrdersJButton.setText("Requested Orders");
         customerOrdersJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 customerOrdersJButtonActionPerformed(evt);
             }
         });
-        add(customerOrdersJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(393, 389, 210, 59));
+        add(customerOrdersJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 430, 370, 70));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(393, 32, 252, 35));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 30, 330, 50));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CustomerWorkArea/customise (1).gif"))); // NOI18N
         jLabel2.setText("jLabel2");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 210, 180, 414));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 180, 414));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CustomerWorkArea/storefinal (1).gif"))); // NOI18N
         jLabel4.setText("jLabel4");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 85, 299, 272));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 90, 299, 272));
     }// </editor-fold>//GEN-END:initComponents
 
     private void customizejBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customizejBtnActionPerformed
