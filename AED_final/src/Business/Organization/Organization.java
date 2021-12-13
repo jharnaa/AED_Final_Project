@@ -33,7 +33,7 @@ public abstract class Organization {
         Admin("Admin"),
         Design("Design"),
         Report("Report"),
-        ClothFactoryStaff("Car Company Staff"),
+        ClothFactoryStaff("Cloth Factory Staff"),
         Inventory("Inventory"),
         Customer("Customer"),
         Store("Store"),
