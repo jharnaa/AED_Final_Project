@@ -26,3 +26,6 @@ There are **8 organisations** namely:
 
 
 There are multiple roles and work requests through which we communicate between organisations and enterprises. 
+
+
+<img width="1189" alt="image" src="https://user-images.githubusercontent.com/90533620/145741251-6460444b-f552-4853-b9ef-3e2811d4af43.png">
