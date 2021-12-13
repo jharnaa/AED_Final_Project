@@ -24,4 +24,4 @@ hs_err_pid*
 /AED_final/build/
 
 /AED_final/nbproject/
-.DS_Store
+*.DS_Store
