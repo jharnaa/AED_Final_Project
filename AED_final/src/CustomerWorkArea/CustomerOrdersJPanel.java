@@ -137,12 +137,12 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(975, 7, 125, 28));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 30, 125, 28));
 
         customerOrdersjProgressBar.setBackground(new java.awt.Color(255, 153, 153));
         customerOrdersjProgressBar.setForeground(new java.awt.Color(102, 0, 51));
         customerOrdersjProgressBar.setStringPainted(true);
-        add(customerOrdersjProgressBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(947, 41, 170, -1));
+        add(customerOrdersjProgressBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 60, 170, -1));
 
         checkOrderStatusJButton.setBackground(new java.awt.Color(204, 204, 255));
         checkOrderStatusJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -153,12 +153,12 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
                 checkOrderStatusJButtonActionPerformed(evt);
             }
         });
-        add(checkOrderStatusJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(923, 67, -1, -1));
+        add(checkOrderStatusJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 90, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 0, 51));
         jLabel2.setText("Customized Orders");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(433, 104, 190, 70));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, 320, 60));
 
         customisedOrderJTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
         customisedOrderJTable.setForeground(new java.awt.Color(102, 0, 51));
@@ -190,12 +190,12 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(customisedOrderJTable);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 203, 790, 170));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 840, 180));
 
-        jLabel3.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 51));
         jLabel3.setText("Online Orders");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(452, 404, 150, 19));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 390, 290, 60));
 
         onlineOrdersJTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
         onlineOrdersJTable.setForeground(new java.awt.Color(102, 0, 51));
@@ -227,12 +227,15 @@ public class CustomerOrdersJPanel extends javax.swing.JPanel {
         });
         jScrollPane3.setViewportView(onlineOrdersJTable);
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 441, 800, 170));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 460, 840, 190));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(422, 25, -1, -1));
-        add(customerName, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 93, 83, 27));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 360, 60));
+
+        customerName.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        customerName.setForeground(new java.awt.Color(102, 0, 51));
+        add(customerName, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 180, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

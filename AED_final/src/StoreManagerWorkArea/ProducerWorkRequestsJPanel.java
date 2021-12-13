@@ -99,7 +99,7 @@ public class ProducerWorkRequestsJPanel extends javax.swing.JPanel {
                 assignJButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(assignJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(482, 393, 157, 43));
+        jPanel1.add(assignJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 410, 157, 43));
 
         sendToCustomerJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         sendToCustomerJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -109,7 +109,7 @@ public class ProducerWorkRequestsJPanel extends javax.swing.JPanel {
                 sendToCustomerJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(sendToCustomerJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 448, 360, 43));
+        jPanel1.add(sendToCustomerJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 460, 360, 43));
 
         refreshJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -124,7 +124,7 @@ public class ProducerWorkRequestsJPanel extends javax.swing.JPanel {
         enterpriseLabel3.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         enterpriseLabel3.setForeground(new java.awt.Color(102, 0, 51));
         enterpriseLabel3.setText("Producer's Requests");
-        jPanel1.add(enterpriseLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 207, 235, 30));
+        jPanel1.add(enterpriseLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 180, 235, 30));
 
         enterpriseLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(102, 0, 51));
@@ -177,7 +177,7 @@ public class ProducerWorkRequestsJPanel extends javax.swing.JPanel {
         });
         jScrollPane3.setViewportView(producerWorkRequestJTable);
 
-        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 259, 890, 80));
+        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 890, 160));
 
         backJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         backJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -187,14 +187,14 @@ public class ProducerWorkRequestsJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 0, 90, 40));
+        jPanel1.add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 110, 40));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/StoreManagerWorkArea/work.gif"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 393, 339, 218));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(453, 6, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 30, 410, 70));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

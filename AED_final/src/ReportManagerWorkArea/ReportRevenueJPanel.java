@@ -95,11 +95,11 @@ public class ReportRevenueJPanel extends javax.swing.JPanel {
         reportDisplayjPanel.setBackground(new java.awt.Color(255, 204, 204));
         reportDisplayjPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         reportDisplayjPanel.setLayout(new java.awt.BorderLayout());
-        add(reportDisplayjPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 166, 690, 310));
+        add(reportDisplayjPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 250, 690, 310));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(451, 16, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 60, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButton7ActionPerformed

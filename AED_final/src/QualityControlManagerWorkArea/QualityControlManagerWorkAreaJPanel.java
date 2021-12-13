@@ -81,11 +81,13 @@ public class QualityControlManagerWorkAreaJPanel extends javax.swing.JPanel {
         enterpriseLabel1.setText("Organization:");
         add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 116, -1, 26));
 
-        orgValueLabel.setFont(new java.awt.Font("Palatino", 0, 18)); // NOI18N
+        orgValueLabel.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        orgValueLabel.setForeground(new java.awt.Color(102, 0, 51));
         orgValueLabel.setText("<value>");
         add(orgValueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 120, 130, -1));
 
-        valueLabel.setFont(new java.awt.Font("Palatino", 0, 18)); // NOI18N
+        valueLabel.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
+        valueLabel.setForeground(new java.awt.Color(102, 0, 51));
         valueLabel.setText("<value>");
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 84, 130, -1));
 
@@ -101,7 +103,7 @@ public class QualityControlManagerWorkAreaJPanel extends javax.swing.JPanel {
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 103, 26));
 
         btnRequestReport.setBackground(new java.awt.Color(255, 255, 255));
-        btnRequestReport.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        btnRequestReport.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         btnRequestReport.setForeground(new java.awt.Color(102, 0, 51));
         btnRequestReport.setText("Request Report");
         btnRequestReport.addActionListener(new java.awt.event.ActionListener() {
@@ -109,10 +111,10 @@ public class QualityControlManagerWorkAreaJPanel extends javax.swing.JPanel {
                 btnRequestReportActionPerformed(evt);
             }
         });
-        add(btnRequestReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 353, 500, 90));
+        add(btnRequestReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 390, 500, 90));
 
         btnFetchReports.setBackground(new java.awt.Color(255, 255, 255));
-        btnFetchReports.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        btnFetchReports.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         btnFetchReports.setForeground(new java.awt.Color(102, 0, 51));
         btnFetchReports.setText("Fetch Quality Reports");
         btnFetchReports.addActionListener(new java.awt.event.ActionListener() {
@@ -120,11 +122,11 @@ public class QualityControlManagerWorkAreaJPanel extends javax.swing.JPanel {
                 btnFetchReportsActionPerformed(evt);
             }
         });
-        add(btnFetchReports, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 193, 500, 90));
+        add(btnFetchReports, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 250, 500, 90));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 6, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, -1, -1));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QualityControlManagerWorkArea/dog.gif"))); // NOI18N

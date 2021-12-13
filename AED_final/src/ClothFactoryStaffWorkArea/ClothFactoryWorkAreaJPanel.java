@@ -118,7 +118,7 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 93, 37));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 93, 37));
 
         valueLabel.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         valueLabel.setForeground(new java.awt.Color(102, 0, 51));
@@ -151,7 +151,7 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
         add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 10, 130, 37));
 
         createClothModelJButton.setBackground(new java.awt.Color(255, 255, 255));
-        createClothModelJButton.setFont(new java.awt.Font("Palatino", 1, 14)); // NOI18N
+        createClothModelJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         createClothModelJButton.setForeground(new java.awt.Color(102, 0, 51));
         createClothModelJButton.setText("Stock Items");
         createClothModelJButton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -160,7 +160,7 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
                 createClothModelJButtonActionPerformed(evt);
             }
         });
-        add(createClothModelJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 330, 107, 30));
+        add(createClothModelJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 320, 150, 40));
 
         brandJComboBox.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         brandJComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Zara", "H&M" }));
@@ -170,7 +170,7 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
                 brandJComboBoxActionPerformed(evt);
             }
         });
-        add(brandJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 160, 150, -1));
+        add(brandJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 160, 180, -1));
 
         jLabel1.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 0, 51));
@@ -190,7 +190,7 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
                 modelNumberJComboBoxActionPerformed(evt);
             }
         });
-        add(modelNumberJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 210, 150, -1));
+        add(modelNumberJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 210, 180, -1));
 
         jLabel4.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 0, 51));
@@ -199,7 +199,7 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
 
         quantityJTextField.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         quantityJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(quantityJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 260, 150, -1));
+        add(quantityJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 260, 180, -1));
 
         workRequestJTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         workRequestJTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
@@ -229,11 +229,11 @@ public class ClothFactoryWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(workRequestJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 690, 160));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 410, 750, 190));
 
-        jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel2.setText("The Cloth Factory");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ClothFactoryStaffWorkArea/jacket1.gif"))); // NOI18N
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 140, -1, 224));

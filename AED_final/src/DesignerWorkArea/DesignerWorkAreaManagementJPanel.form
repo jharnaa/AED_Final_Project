@@ -43,7 +43,10 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Malayalam MN" size="18" style="1"/>
+              <Font name="Malayalam MN" size="24" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="0" red="66" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Customized Products Work Requests"/>
           </Properties>
@@ -52,21 +55,21 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="273" y="256" width="600" height="150"/>
+              <AbsoluteConstraints x="230" y="290" width="660" height="190"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Malayalam MN" size="24" style="1"/>
+              <Font name="Malayalam MN" size="36" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="The Cloth Factory"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="0" y="47" width="1147" height="-1"/>
+              <AbsoluteConstraints x="-10" y="50" width="1147" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>

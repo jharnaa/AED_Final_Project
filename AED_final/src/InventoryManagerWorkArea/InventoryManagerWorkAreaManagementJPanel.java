@@ -68,7 +68,7 @@ public class InventoryManagerWorkAreaManagementJPanel extends javax.swing.JPanel
                 backJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 9, 73, -1));
+        jPanel1.add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 73, -1));
 
         valueLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         valueLabel.setForeground(new java.awt.Color(102, 0, 51));
@@ -99,11 +99,11 @@ public class InventoryManagerWorkAreaManagementJPanel extends javax.swing.JPanel
                 btnProducersWRActionPerformed(evt);
             }
         });
-        jPanel1.add(btnProducersWR, new org.netbeans.lib.awtextra.AbsoluteConstraints(388, 163, 537, 270));
+        jPanel1.add(btnProducersWR, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 280, 537, 270));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 22, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 60, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

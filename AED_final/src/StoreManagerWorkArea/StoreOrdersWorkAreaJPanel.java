@@ -114,7 +114,7 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
                 btnAcceptActionPerformed(evt);
             }
         });
-        add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(499, 441, -1, 40));
+        add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 480, -1, 40));
 
         btnSendToCustomer.setBackground(new java.awt.Color(204, 204, 255));
         btnSendToCustomer.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -125,7 +125,7 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
                 btnSendToCustomerActionPerformed(evt);
             }
         });
-        add(btnSendToCustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(423, 487, -1, 43));
+        add(btnSendToCustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 530, -1, 43));
 
         refreshJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -135,12 +135,12 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 15, 140, 40));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 10, 140, 40));
 
         enterpriseLabel3.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         enterpriseLabel3.setForeground(new java.awt.Color(102, 0, 51));
         enterpriseLabel3.setText("Store Order Requests");
-        add(enterpriseLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(468, 241, 290, 30));
+        add(enterpriseLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 240, 290, 30));
 
         tblworkRequest.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         tblworkRequest.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
@@ -173,7 +173,7 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(tblworkRequest);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(173, 304, 820, 111));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, 820, 170));
 
         enterpriseLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(102, 0, 51));
@@ -195,9 +195,9 @@ public class StoreOrdersWorkAreaJPanel extends javax.swing.JPanel {
         enterpriseLabel1.setText("Organization:");
         add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 127, -1, 26));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 19, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

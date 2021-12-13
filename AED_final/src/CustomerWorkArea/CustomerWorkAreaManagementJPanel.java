@@ -47,7 +47,7 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
         this.userAccount = userAccount;
         this.enterprise = enterprise;
         this.business = business;
-        customerName.setText(userAccount.getUsername());
+        customerName1.setText(userAccount.getUsername());
         
         populateTable();
     }
@@ -83,8 +83,8 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
         deletejButton = new javax.swing.JButton();
         placeOrderjBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        customerName = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        customerName1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
         setForeground(new java.awt.Color(102, 0, 51));
@@ -103,7 +103,7 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
         jLabel8.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(102, 0, 51));
         jLabel8.setText("Hello!");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 90, -1, 30));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, 30));
 
         customerCartjTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         customerCartjTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
@@ -126,7 +126,7 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(customerCartjTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(278, 163, 560, 210));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 620, 220));
 
         viewDetailjBtn.setBackground(new java.awt.Color(204, 204, 255));
         viewDetailjBtn.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -137,7 +137,7 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
                 viewDetailjBtnActionPerformed(evt);
             }
         });
-        add(viewDetailjBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(278, 410, -1, -1));
+        add(viewDetailjBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 530, -1, -1));
 
         deletejButton.setBackground(new java.awt.Color(204, 204, 255));
         deletejButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -148,7 +148,7 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
                 deletejButtonActionPerformed(evt);
             }
         });
-        add(deletejButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(471, 410, 160, -1));
+        add(deletejButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 530, 160, -1));
 
         placeOrderjBtn.setBackground(new java.awt.Color(204, 204, 255));
         placeOrderjBtn.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -159,15 +159,18 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
                 placeOrderjBtnActionPerformed(evt);
             }
         });
-        add(placeOrderjBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(678, 410, 170, -1));
+        add(placeOrderjBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 530, 170, -1));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(411, 17, -1, -1));
-        add(customerName, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 90, 107, 31));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(388, 17, 340, 60));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/StoreManagerWorkArea/blossoms.gif"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(847, 0, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 0, -1, -1));
+
+        customerName1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        customerName1.setForeground(new java.awt.Color(102, 0, 51));
+        add(customerName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 220, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -242,7 +245,7 @@ public class CustomerWorkAreaManagementJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
     private javax.swing.JTable customerCartjTable;
-    private javax.swing.JLabel customerName;
+    private javax.swing.JLabel customerName1;
     private javax.swing.JButton deletejButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

@@ -52,7 +52,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="6" y="9" width="73" height="-1"/>
+              <AbsoluteConstraints x="10" y="30" width="73" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -138,20 +138,20 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="388" y="163" width="537" height="270"/>
+              <AbsoluteConstraints x="340" y="280" width="537" height="270"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Malayalam MN" size="24" style="1"/>
+              <Font name="Malayalam MN" size="36" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="The Cloth Factory"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="540" y="22" width="-1" height="-1"/>
+              <AbsoluteConstraints x="450" y="60" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>

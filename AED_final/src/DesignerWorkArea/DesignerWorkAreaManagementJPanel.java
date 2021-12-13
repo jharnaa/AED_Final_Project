@@ -53,19 +53,20 @@ public class DesignerWorkAreaManagementJPanel extends javax.swing.JPanel {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         designProductJButton.setBackground(new java.awt.Color(255, 255, 255));
-        designProductJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        designProductJButton.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        designProductJButton.setForeground(new java.awt.Color(102, 0, 51));
         designProductJButton.setText("Customized Products Work Requests");
         designProductJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 designProductJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(designProductJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 256, 600, 150));
+        jPanel1.add(designProductJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 660, 190));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("The Cloth Factory");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 47, 1147, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 50, 1147, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

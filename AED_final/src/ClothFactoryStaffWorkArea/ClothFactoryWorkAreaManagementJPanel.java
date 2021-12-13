@@ -89,19 +89,19 @@ private JPanel userProcessContainer;
         add(orgValueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 220, 26));
 
         CreateApparelJButton.setBackground(new java.awt.Color(255, 255, 255));
-        CreateApparelJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        CreateApparelJButton.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         CreateApparelJButton.setForeground(new java.awt.Color(102, 0, 51));
-        CreateApparelJButton.setText("Place Apparel requests");
+        CreateApparelJButton.setText("Place Apparel Requests");
         CreateApparelJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CreateApparelJButtonActionPerformed(evt);
             }
         });
-        add(CreateApparelJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 404, 150));
+        add(CreateApparelJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 460, 180));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 20, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, -1, -1));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ClothFactoryStaffWorkArea/frock.gif"))); // NOI18N
@@ -109,7 +109,7 @@ private JPanel userProcessContainer;
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 50, 172, 197));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ClothFactoryStaffWorkArea/frock2.gif"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 368, 284, 249));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 284, 249));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

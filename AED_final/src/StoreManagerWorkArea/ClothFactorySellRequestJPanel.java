@@ -101,7 +101,7 @@ public class ClothFactorySellRequestJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 6, 96, 37));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 96, 37));
 
         enterpriseLabel.setBackground(new java.awt.Color(255, 255, 255));
         enterpriseLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -136,7 +136,7 @@ public class ClothFactorySellRequestJPanel extends javax.swing.JPanel {
                 assignToMeJButtonActionPerformed(evt);
             }
         });
-        add(assignToMeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 204, -1, 40));
+        add(assignToMeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 320, 190, 40));
 
         refreshJButton.setBackground(new java.awt.Color(255, 255, 255));
         refreshJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -147,7 +147,7 @@ public class ClothFactorySellRequestJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(523, 467, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 320, 130, -1));
 
         clothFactorySellWorkRequestJTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         clothFactorySellWorkRequestJTable.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
@@ -180,11 +180,11 @@ public class ClothFactorySellRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(clothFactorySellWorkRequestJTable);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 320, 840, 86));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 410, 850, 180));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 6, 220, 51));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 30, 390, 70));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/StoreManagerWorkArea/blossoms.gif"))); // NOI18N

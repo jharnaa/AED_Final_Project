@@ -79,77 +79,77 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 0, 51));
         jLabel2.setText("Category");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 127, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 51));
         jLabel3.setText("Color");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(416, 203, 49, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 250, 49, -1));
 
         jLabel4.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 0, 51));
         jLabel4.setText("Size");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(424, 235, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 280, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(102, 0, 51));
         jLabel5.setText("Fabric Type");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(367, 267, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 310, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(102, 0, 51));
         jLabel6.setText("Text");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(429, 299, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 340, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(102, 0, 51));
         jLabel7.setText("Text Location");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(353, 335, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 380, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(102, 0, 51));
         jLabel9.setText("Design Type");
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(359, 377, -1, -1));
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 420, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 51));
         jLabel10.setText("Quantity");
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 420, -1, -1));
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 460, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(102, 0, 51));
         jLabel11.setText("Style");
-        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(423, 165, -1, -1));
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 210, -1, -1));
 
         txtQuantity.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtQuantity.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtQuantity.setEnabled(false);
-        add(txtQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 420, 150, -1));
+        add(txtQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 460, 150, -1));
 
         txtCategory.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtCategory.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtCategory.setEnabled(false);
-        add(txtCategory, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 125, 150, -1));
+        add(txtCategory, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 170, 150, -1));
 
         txtStyle.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtStyle.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtStyle.setEnabled(false);
-        add(txtStyle, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 163, 150, -1));
+        add(txtStyle, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, 150, -1));
 
         txtColor.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtColor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtColor.setEnabled(false);
-        add(txtColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 201, 150, -1));
+        add(txtColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 240, 150, -1));
 
         txtSize.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtSize.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtSize.setEnabled(false);
-        add(txtSize, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 233, 150, -1));
+        add(txtSize, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 280, 150, -1));
 
         txtFabricType.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtFabricType.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtFabricType.setEnabled(false);
-        add(txtFabricType, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 265, 150, -1));
+        add(txtFabricType, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 310, 150, -1));
 
         txtText.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
@@ -159,17 +159,17 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
                 txtTextActionPerformed(evt);
             }
         });
-        add(txtText, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 297, 150, -1));
+        add(txtText, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 340, 150, -1));
 
         txtTextLocation.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtTextLocation.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtTextLocation.setEnabled(false);
-        add(txtTextLocation, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 333, 150, -1));
+        add(txtTextLocation, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 380, 150, -1));
 
         txtDesignType.setFont(new java.awt.Font("ITF Devanagari Marathi", 1, 14)); // NOI18N
         txtDesignType.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         txtDesignType.setEnabled(false);
-        add(txtDesignType, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 371, 150, -1));
+        add(txtDesignType, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 410, 150, -1));
 
         backJButton.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         backJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -179,15 +179,15 @@ public class ViewOrderDetailsJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 29, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, -1, -1));
 
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CustomerWorkArea/confirm.gif"))); // NOI18N
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(726, 163, 186, 219));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 190, 186, 219));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
