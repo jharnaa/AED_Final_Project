@@ -127,17 +127,17 @@ public class ManageUserJPanel extends javax.swing.JPanel {
         valueLabel.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         valueLabel.setForeground(new java.awt.Color(102, 0, 51));
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 230, 30));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 230, 30));
 
         roleJComboBox.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         roleJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         roleJComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(roleJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 180, 146, -1));
+        add(roleJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 190, 170, -1));
 
         jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 0, 51));
         jLabel2.setText("Password");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, -1, 20));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 270, -1, 20));
 
         passwordJTextField.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         passwordJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
@@ -146,17 +146,17 @@ public class ManageUserJPanel extends javax.swing.JPanel {
                 passwordJTextFieldActionPerformed(evt);
             }
         });
-        add(passwordJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 260, 146, -1));
+        add(passwordJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 270, 170, -1));
 
         jLabel3.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 51));
         jLabel3.setText("Person");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 140, -1, 30));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, -1, 30));
 
         personJComboBox.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         personJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         personJComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(personJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 146, -1));
+        add(personJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 170, -1));
 
         jLabel5.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(102, 0, 51));
@@ -171,21 +171,21 @@ public class ManageUserJPanel extends javax.swing.JPanel {
                 organizationJComboBoxActionPerformed(evt);
             }
         });
-        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 110, 146, -1));
+        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 110, 170, -1));
 
         nameJTextField.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         nameJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 220, 146, -1));
+        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 230, 170, -1));
 
         jLabel4.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 0, 51));
         jLabel4.setText("Role");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 180, -1, 30));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 190, -1, 30));
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 0, 51));
         jLabel1.setText("User Name");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 220, -1, 20));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 230, -1, 20));
 
         btnCreateUser.setBackground(new java.awt.Color(204, 204, 255));
         btnCreateUser.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
@@ -196,7 +196,7 @@ public class ManageUserJPanel extends javax.swing.JPanel {
                 btnCreateUserActionPerformed(evt);
             }
         });
-        add(btnCreateUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 320, -1, -1));
+        add(btnCreateUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 330, -1, -1));
 
         tblUser.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         tblUser.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -226,11 +226,11 @@ public class ManageUserJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblUser);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 360, 345, 216));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 380, 345, 216));
 
-        jLabel6.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel6.setText("The Cloth Factory");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 30, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, -1, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/admin/fashion.gif"))); // NOI18N
         jLabel7.setText("jLabel7");

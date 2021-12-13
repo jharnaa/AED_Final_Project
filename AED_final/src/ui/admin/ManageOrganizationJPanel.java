@@ -63,10 +63,12 @@ private void populateCombo(){
         jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
+        setForeground(new java.awt.Color(102, 0, 51));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnBack.setBackground(new java.awt.Color(204, 204, 255));
         btnBack.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        btnBack.setForeground(new java.awt.Color(102, 0, 51));
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,10 +107,11 @@ private void populateCombo(){
         });
         jScrollPane1.setViewportView(tblOrganization);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 510, 170));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 560, 240));
 
         btnAdd.setBackground(new java.awt.Color(204, 204, 255));
         btnAdd.setFont(new java.awt.Font("Malayalam MN", 1, 14)); // NOI18N
+        btnAdd.setForeground(new java.awt.Color(102, 0, 51));
         btnAdd.setText("Add Organization");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,22 +120,24 @@ private void populateCombo(){
         });
         add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 280, 210, -1));
 
+        cmbOrganization.setForeground(new java.awt.Color(102, 0, 51));
         cmbOrganization.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cmbOrganization.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         add(cmbOrganization, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, 143, -1));
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 0, 51));
         jLabel1.setText("Organization Type");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 200, 200, 40));
 
-        jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel2.setText("The Cloth Factory");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 50, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 50, -1, -1));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/admin/plant.gif"))); // NOI18N
         jLabel3.setText("jLabel3");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 210, 306, 207));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 120, 306, 207));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
