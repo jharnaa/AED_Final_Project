@@ -205,11 +205,11 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="0" red="66" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Model Number"/>
+        <Property name="text" type="java.lang.String" value="Model Type"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="370" y="210" width="-1" height="-1"/>
+          <AbsoluteConstraints x="390" y="210" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -219,21 +219,15 @@
           <Font name="Palatino" size="18" style="1"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="14">
-            <StringItem index="0" value="Zara Tshirt"/>
-            <StringItem index="1" value="Zara Shirt"/>
-            <StringItem index="2" value="Zara Hoodies"/>
-            <StringItem index="3" value="Zara Sweat Shirts"/>
-            <StringItem index="4" value="Zara Jackets"/>
-            <StringItem index="5" value="Zara Tank Tops"/>
-            <StringItem index="6" value="Zara Baby Bodysuits"/>
-            <StringItem index="7" value="H&amp;M Tshirt"/>
-            <StringItem index="8" value="H&amp;M Shirt"/>
-            <StringItem index="9" value="H&amp;M Hoodies"/>
-            <StringItem index="10" value="H&amp;M Sweat Shirts"/>
-            <StringItem index="11" value="H&amp;M Jackets"/>
-            <StringItem index="12" value="H&amp;M Tank Tops"/>
-            <StringItem index="13" value="H&amp;M Baby Bodysuits"/>
+          <StringArray count="8">
+            <StringItem index="0" value="Tshirt"/>
+            <StringItem index="1" value="Shirt"/>
+            <StringItem index="2" value="Hoodies"/>
+            <StringItem index="3" value="Sweat Shirts"/>
+            <StringItem index="4" value="Jackets"/>
+            <StringItem index="5" value="Tank Tops"/>
+            <StringItem index="6" value="Baby Bodysuits"/>
+            <StringItem index="7" value=" "/>
           </StringArray>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -316,7 +310,7 @@
               <Table columnCount="5" rowCount="0">
                 <Column editable="false" title="Apparel ID" type="java.lang.String"/>
                 <Column editable="false" title="Brand" type="java.lang.String"/>
-                <Column editable="false" title="Model Number" type="java.lang.String"/>
+                <Column editable="false" title="Model Type" type="java.lang.String"/>
                 <Column editable="false" title="Quantity" type="java.lang.String"/>
                 <Column editable="false" title="Price" type="java.lang.Object"/>
               </Table>
