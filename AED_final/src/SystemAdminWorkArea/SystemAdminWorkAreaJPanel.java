@@ -65,7 +65,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(JTree);
 
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 149, 463));
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 149, 463));
 
         btnManageNetwork.setBackground(new java.awt.Color(255, 255, 255));
         btnManageNetwork.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -76,7 +76,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                 btnManageNetworkActionPerformed(evt);
             }
         });
-        jPanel1.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 253, 350, 42));
+        jPanel1.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 210, 370, 42));
 
         btnManageEnterprise.setBackground(new java.awt.Color(255, 255, 255));
         btnManageEnterprise.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -87,7 +87,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                 btnManageEnterpriseActionPerformed(evt);
             }
         });
-        jPanel1.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 326, 350, 40));
+        jPanel1.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, 370, 40));
 
         btnEnterpriseAdmin.setBackground(new java.awt.Color(255, 255, 255));
         btnEnterpriseAdmin.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -98,14 +98,14 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                 btnEnterpriseAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(btnEnterpriseAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 402, 350, 41));
+        jPanel1.add(btnEnterpriseAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, 380, 41));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SystemAdminWorkArea/manager1.gif"))); // NOI18N
         jLabel2.setText("jLabel2");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 150, 271, 346));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 160, 271, 346));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("The Cloth Factory");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 20, 343, -1));
@@ -114,10 +114,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

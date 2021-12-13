@@ -72,7 +72,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         jLabel5.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(102, 0, 51));
         jLabel5.setText("Name");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(259, 206, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, -1, 30));
 
         passwordJPasswordField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         passwordJPasswordField.addActionListener(new java.awt.event.ActionListener() {
@@ -80,12 +80,12 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 passwordJPasswordFieldActionPerformed(evt);
             }
         });
-        add(passwordJPasswordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(328, 272, 180, -1));
+        add(passwordJPasswordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 260, 180, 20));
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 0, 51));
         jLabel1.setText("Network");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(236, 132, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, -1, 30));
 
         cmbNetwork.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Select Network" }));
         cmbNetwork.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
@@ -94,24 +94,24 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 cmbNetworkActionPerformed(evt);
             }
         });
-        add(cmbNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 132, 180, -1));
+        add(cmbNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 120, 180, 30));
 
         jLabel2.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 0, 51));
         jLabel2.setText("Username");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 239, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 230, -1, 30));
 
         usernameJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(usernameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(328, 239, 180, -1));
+        add(usernameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 230, 180, 20));
 
         jLabel3.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 51));
         jLabel3.setText("Enterprise");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 169, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, -1, 30));
 
         cmbEnterprise.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Select Enterprise" }));
         cmbEnterprise.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(cmbEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 169, 180, -1));
+        add(cmbEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, 180, 30));
 
         submitJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         submitJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -121,15 +121,15 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(345, 299, 93, 23));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, 93, 20));
 
         jLabel4.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 0, 51));
         jLabel4.setText("Password");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 272, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, -1, 30));
 
         nameJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(328, 210, 180, -1));
+        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 180, 20));
 
         backJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
         backJButton.setForeground(new java.awt.Color(102, 0, 51));
@@ -163,14 +163,14 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(enterpriseJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 380, 598, 183));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, 598, 240));
 
-        jLabel6.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel6.setText("The Cloth Factory");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 31, -1, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SystemAdminWorkArea/clothes raw.gif"))); // NOI18N
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 115, -1, 222));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 90, -1, 222));
     }// </editor-fold>//GEN-END:initComponents
 
     private void passwordJPasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordJPasswordFieldActionPerformed

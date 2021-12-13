@@ -134,7 +134,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         enterpriseJTable.setToolTipText("");
         jScrollPane1.setViewportView(enterpriseJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 835, 90));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 835, 210));
 
         jLabel4.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -143,7 +143,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SystemAdminWorkArea/enterprise1.gif"))); // NOI18N
         jLabel5.setText("jLabel5");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 30, 258, 312));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 30, 258, 312));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

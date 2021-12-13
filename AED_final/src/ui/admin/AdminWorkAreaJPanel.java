@@ -58,17 +58,19 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 backjButton1ActionPerformed(evt);
             }
         });
-        add(backjButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, -1, -1));
+        add(backjButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
         enterpriseLabel.setBackground(new java.awt.Color(204, 204, 255));
-        enterpriseLabel.setFont(new java.awt.Font("Palatino Linotype", 0, 18)); // NOI18N
+        enterpriseLabel.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
+        enterpriseLabel.setForeground(new java.awt.Color(102, 0, 51));
         enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 71, 100, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 130, 40));
 
         valueLabel.setBackground(new java.awt.Color(204, 204, 255));
-        valueLabel.setFont(new java.awt.Font("Palatino Linotype", 0, 18)); // NOI18N
+        valueLabel.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
+        valueLabel.setForeground(new java.awt.Color(102, 0, 51));
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 71, 220, 30));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, 220, 30));
 
         manageOrganizationJButton.setBackground(new java.awt.Color(204, 204, 255));
         manageOrganizationJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -79,7 +81,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 manageOrganizationJButtonActionPerformed(evt);
             }
         });
-        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 242, 50));
+        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 330, 50));
 
         userJButton.setBackground(new java.awt.Color(204, 204, 255));
         userJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -90,7 +92,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 userJButtonActionPerformed(evt);
             }
         });
-        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 242, 47));
+        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, 330, 50));
 
         manageEmployeeJButton.setBackground(new java.awt.Color(204, 204, 255));
         manageEmployeeJButton.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
@@ -101,15 +103,14 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 manageEmployeeJButtonActionPerformed(evt);
             }
         });
-        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 242, 52));
+        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 330, 60));
 
-        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 36)); // NOI18N
         jLabel1.setText("The Cloth Factory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 29, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/admin/peace.gif"))); // NOI18N
-        jLabel3.setText("jLabel3");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 100, 460, 310));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 220, 460, 310));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backjButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backjButton1ActionPerformed
